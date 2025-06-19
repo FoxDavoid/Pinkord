@@ -1,0 +1,300 @@
+ :root {
+    /* STATE VARIABLES */
+    --hover: hsla(221, 19%, 40%, 0.026);
+    --active: hsla(219, 19%, 40%, 0.054);
+    --active-2: hsla(219, 19%, 40%, 0.047);
+    --message-hover: hsla(0, 0%, 0%, 0.023);
+    
+    /* GRADIENT DEFINITIONS */
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--hachiko-2), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--hachiko-2), transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--hachiko-3), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--hachiko-3), transparent 95%) 40%, transparent);
+    
+    /* BORDER COLORS */
+    --border-light: hsl(230, 20%, 40%, 0.1);
+    --border: hsl(230, 20%, 40%, 0.2);
+    --button-border: hsl(0, 0%, 100%, 0.1);
+    
+    /* ACCENT COLORS */
+    --accent-1: var(--hachiko-1);
+    --accent-2: var(--hachiko-2);
+    --accent-3: var(--hachiko-3);
+    --accent-4: var(--hachiko-4);
+    --accent-5: var(--hachiko-5);
+    --accent-new: var(--hachiko-2);
+    
+    /* STATUS INDICATORS */
+    --online: var(--green-2);
+    --dnd: var(--red-2);
+    --idle: var(--yellow-2);
+    --streaming: var(--purple-2);
+    --offline: hsl(220, 15%, 40%);
+  
+    /* BASE COLOR PALETTE */
+    /* item__0b5bb */
+    --brand-100: oklch(93.5% 0.135 85.3);
+    --brand-110: oklch(93.5% 0.135 85.3);
+    --brand-120: oklch(93.5% 0.135 85.3);
+    --brand-130: oklch(93.5% 0.135 85.3);
+    --brand-140: oklch(93.5% 0.135 85.3);
+    --brand-150: oklch(93.5% 0.135 85.3);
+    --brand-160: oklch(93.5% 0.135 85.3);
+    --brand-170: oklch(93.5% 0.135 85.3);
+    --brand-180: oklch(93.5% 0.135 85.3);
+    --brand-190: oklch(93.5% 0.135 85.3);
+    --brand-200: oklch(90.5% 0.135 85.3);
+    --brand-210: oklch(90.5% 0.135 85.3);
+    --brand-220: oklch(90.5% 0.135 85.3);
+    --brand-230: oklch(90.5% 0.135 85.3);
+    --brand-240: oklch(90.5% 0.135 85.3);
+    --brand-250: oklch(90.5% 0.135 85.3);
+    --brand-260: oklch(90.5% 0.135 85.3);
+    --brand-270: oklch(90.5% 0.135 85.3);
+    --brand-280: oklch(90.5% 0.135 85.3);
+    --brand-290: oklch(90.5% 0.135 85.3);
+    --brand-300: oklch(87.5% 0.135 85.3);
+    --brand-310: oklch(87.5% 0.135 85.3);
+    --brand-320: oklch(87.5% 0.135 85.3);
+    --brand-330: oklch(87.5% 0.135 85.3);
+    --brand-340: oklch(87.5% 0.135 85.3);
+    --brand-350: oklch(87.5% 0.135 85.3);
+    --brand-360: oklch(87.5% 0.135 85.3);
+    --brand-370: oklch(87.5% 0.135 85.3);
+    --brand-380: oklch(87.5% 0.135 85.3);
+    --brand-390: oklch(87.5% 0.135 85.3);
+    --brand-400: oklch(87.5% 0.135 85.3);
+    --brand-410: oklch(87.5% 0.135 85.3);
+    --brand-420: oklch(87.5% 0.135 85.3);
+    --brand-430: oklch(87.5% 0.135 85.3);
+    --brand-440: oklch(87.5% 0.135 85.3);
+    --brand-450: oklch(87.5% 0.135 85.3);
+    --brand-460: oklch(87.5% 0.135 85.3);
+    --brand-470: oklch(87.5% 0.135 85.3);
+    --brand-480: oklch(87.5% 0.135 85.3);
+    --brand-490: oklch(87.5% 0.135 85.3);
+    --brand-500: oklch(84.5% 0.135 85.3);
+    --brand-510: oklch(84.5% 0.135 85.3);
+    --brand-520: oklch(84.5% 0.135 85.3);
+    --brand-530: oklch(84.5% 0.135 85.3);
+    --brand-540: oklch(84.5% 0.135 85.3);
+    --brand-550: oklch(84.5% 0.135 85.3);
+    --brand-560: oklch(84.5% 0.135 85.3);
+    --brand-570: oklch(84.5% 0.135 85.3);
+    --brand-580: oklch(84.5% 0.135 85.3);
+    --brand-590: oklch(84.5% 0.135 85.3);
+    --brand-600: oklch(81.5% 0.135 85.3);
+    --brand-610: oklch(81.5% 0.135 85.3);
+    --brand-620: oklch(81.5% 0.135 85.3);
+    --brand-630: oklch(81.5% 0.135 85.3);
+    --brand-640: oklch(81.5% 0.135 85.3);
+    --brand-650: oklch(81.5% 0.135 85.3);
+    --brand-660: oklch(81.5% 0.135 85.3);
+    --brand-670: oklch(81.5% 0.135 85.3);
+    --brand-680: oklch(81.5% 0.135 85.3);
+    --brand-690: oklch(81.5% 0.135 85.3);
+    --brand-700: oklch(78.5% 0.135 85.3);
+    --brand-710: oklch(78.5% 0.135 85.3);
+    --brand-720: oklch(78.5% 0.135 85.3);
+    --brand-730: oklch(78.5% 0.135 85.3);
+    --brand-740: oklch(78.5% 0.135 85.3);
+    --brand-750: oklch(78.5% 0.135 85.3);
+    --brand-760: oklch(78.5% 0.135 85.3);
+    --brand-770: oklch(78.5% 0.135 85.3);
+    --brand-780: oklch(78.5% 0.135 85.3);
+    --brand-790: oklch(78.5% 0.135 85.3);
+    --brand-800: oklch(75.5% 0.135 85.3);
+    --brand-810: oklch(75.5% 0.135 85.3);
+    --brand-820: oklch(75.5% 0.135 85.3);
+    --brand-830: oklch(75.5% 0.135 85.3);
+    --brand-840: oklch(75.5% 0.135 85.3);
+    --brand-850: oklch(75.5% 0.135 85.3);
+    --brand-860: oklch(75.5% 0.135 85.3);
+    --brand-870: oklch(75.5% 0.135 85.3);
+    --brand-880: oklch(75.5% 0.135 85.3);
+    --brand-890: oklch(75.5% 0.135 85.3);
+    --brand-900: oklch(72.5% 0.135 85.3);
+    --brand-910: oklch(72.5% 0.135 85.3);
+    --brand-920: oklch(72.5% 0.135 85.3);
+    --brand-930: oklch(72.5% 0.135 85.3);
+    --brand-940: oklch(72.5% 0.135 85.3);
+    --brand-950: oklch(72.5% 0.135 85.3);
+    --brand-960: oklch(72.5% 0.135 85.3);
+    --brand-970: oklch(72.5% 0.135 85.3);
+    --brand-980: oklch(72.5% 0.135 85.3);
+    --brand-990: oklch(72.5% 0.135 85.3);
+  
+  
+  
+    --brand-360: oklch(83.3% 0.095 42.5);
+    --brand-400: oklch(80.3% 0.095 42.5);
+    --brand-500: oklch(69.3% 0.095 42.5);
+    --brand-460: oklch(75.3% 0.095 42.5);
+    --hachiko-1: oklch(75% 0.08 42.5);
+    --hachiko-2: oklch(69.3% 0.095 42.5);
+    --hachiko-3: oklch(64% 0.085 42.5);
+    --hachiko-4: oklch(58% 0.075 42.5);
+    --hachiko-5: oklch(52% 0.065 42.5);
+    /* #d37f76 */
+  
+    --red-1: oklch(76% 0.12 0);
+    --red-2: oklch(70% 0.12 0);
+    --red-3: oklch(64% 0.12 0);
+    --red-4: oklch(58% 0.12 0);
+    --red-5: oklch(52% 0.12 0);
+  
+    --green-1: oklch(76% 0.11 170);
+    --green-2: oklch(70% 0.11 170);
+    --green-3: oklch(64% 0.11 170);
+    --green-4: oklch(58% 0.11 170);
+    --green-5: oklch(52% 0.11 160);
+  
+    --blue-1: oklch(76% 0.1 215);
+    --blue-2: oklch(70% 0.1 215);
+    --blue-3: oklch(64% 0.1 215);
+    --blue-4: oklch(58% 0.1 215);
+    --blue-5: oklch(52% 0.1 215);
+  
+    --yellow-1: oklch(80% 0.11 90);
+    --yellow-2: oklch(74% 0.11 90);
+    --yellow-3: oklch(68% 0.11 90);
+    --yellow-4: oklch(62% 0.11 90);
+    --yellow-5: oklch(56% 0.11 90);
+  
+    --purple-1: oklch(76% 0.11 310);
+    --purple-2: oklch(70% 0.11 310);
+    --purple-3: oklch(64% 0.11 310);
+    --purple-4: oklch(58% 0.11 310);
+    --purple-5: oklch(52% 0.11 310);
+  
+    /* ACCENT TEXT PROPERTIES */
+    --text-brand: var(--accent-1);
+    --text-link: var(--accent-1);
+    --text-danger: var(--red-1);
+    --text-positive: var(--green-1);
+    --text-warning: var(--yellow-1);
+  
+    /* BUTTON STATES */
+    --button-filled-brand-background: var(--accent-3);
+    --button-filled-brand-background-active: var(--accent-5);
+    --button-filled-brand-background-hover: var(--accent-4);
+    
+    --button-danger-background: var(--red-3);
+    --button-danger-background-active: var(--red-5);
+    --button-danger-background-hover: var(--red-4);
+    
+    --button-positive-background: var(--green-2);
+    --button-positive-background-active: var(--green-4);
+    --button-positive-background-hover: var(--green-3);
+    
+    --button-outline-danger-background: transparent;
+    --button-outline-danger-text: var(--red-1);
+    
+    /* BORDERS */
+    --border-faint: var(--border-light);
+    --border-subtle: var(--border);
+    --border-normal: var(--border);
+    --input-border: var(--border);
+    
+    /* GRADIENTS & STATES */
+    --background-mentioned: var(--mention);
+    --background-mentioned-hover: var(--mention-hover);
+    --background-message-hover: var(--message-hover);
+    --background-modifier-hover: var(--hover);
+    --background-modifier-active: var(--active);
+    --background-modifier-selected: var(--active);
+    
+    /* STATUS INDICATORS */
+    --status-danger: var(--red-2);
+    --status-dnd: var(--dnd);
+    --status-idle: var(--idle);
+    --status-online: var(--online);
+    --status-streaming: var(--streaming);
+    --status-speaking: var(--green-2);
+    
+    /* MENTIONS & REPLIES */
+    --mention-foreground: var(--accent-1);
+    --mention-background: color-mix(in hsl, var(--accent-2), transparent 90%);
+    
+    /* SPECIAL CASES */
+    --brand-360: var(--accent-2);
+    --brand-500: var(--accent-2);
+    --blurple-50: var(--accent-2);
+  }
+  
+  /* ::selection and .highlight styles */
+  ::selection,
+  .highlight {
+    background: var(--accent-3);
+    color: white;
+  }
+  
+  /* STATUS INDICATOR OVERRIDES */
+  rect[fill='#82838b'] {
+    fill: var(--offline);
+  }
+  .status_a423bd[style*='rgb(130, 131, 139)'] {
+    background-color: var(--offline) !important;
+  }
+  rect[fill='#43a25a'],
+  path[fill='#43a25a'] {
+    fill: var(--online);
+  }
+  .status_a423bd[style*='rgb(67, 162, 90)'] {
+    background-color: var(--online) !important;
+  }
+  rect[fill='#ca9654'] {
+    fill: var(--idle);
+  }
+  .status_a423bd[style*='rgb(202, 150, 84)'] {
+    background-color: var(--idle) !important;
+  }
+  rect[fill='#d83a42'] {
+    fill: var(--dnd);
+  }
+  .status_a423bd[style*='rgb(216, 58, 66)'] {
+    background-color: var(--dnd) !important;
+  }
+  rect[fill='#9147ff'] {
+    fill: var(--streaming);
+  }
+  
+  /* ACCENT UI ELEMENTS */
+  .container__87bf1.checked__87bf1 {
+    background-color: var(--accent-2) !important;
+  }
+  .newMessagesBar__0f481 {
+    background-color: var(--accent-2);
+  }
+  .mentionsBar__7aaec {
+    background-color: #fff;
+  }
+  .botTagRegular__82f07 {
+    background-color: var(--accent-2);
+  }
+  
+  .mentioned__5126c:before {
+    background-color: var(--accent-2) !important;
+  }
+  .replying__5126c:before {
+    background-color: var(--accent-2) !important;
+  }
+
+
+
+/* EXTRA */
+.info__2debe::after {
+    width: 100%;
+    display: block;
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 8px;
+    margin-top: 8px;
+    content: "Pinkord \A Hachiko flavor \A By Fox \A Dedicated to my girlfriend, Pinkie \A I love you, Ximena";
+    text-transform: none;
+    font-family: var(--font-primary);
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--text-muted);
+    white-space: pre;
+  }
