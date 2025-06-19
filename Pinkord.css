@@ -1,0 +1,3360 @@
+/**
+ * @name Pinkord
+ * @description Discord theme made for my girlfriend, Ximena.
+ * @author FoxDavoid
+ * @authorId 927049723599265822
+ * @version 1
+ * @updateUrl 
+ * @source 
+ * @invite fWQmQBgCCv
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Will-change and translateZ (optimization) */
+.container_c8ffbb,
+.members_c8ffbb,
+.chat_f75fb0,
+.sidebarList_c48ade,
+.container__2637a,
+.privateChannels__35e86,
+.layerContainer_da8173,
+.page_c48ade,
+.modalTextContainer__4d95d,
+.bd-modal-root,
+.popoutContainer__0f481,
+.icon__9293f,
+.iconWrapper__9293f,
+.button__201d5,
+.button__02a39,
+.typingDots_b88801,
+.vc-typing-indicator-dots,
+.membersWrap_c8ffbb,
+.outer_c0bea0.panel_c0bea0 {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+.scroller__99e7c,
+.scroller__629e4, .dot__9293f,
+.icon__9293f,
+.iconContainer_fea832, .badgeContainer__635ed, .contentImage__42bf5.thumbnail__0f2e8, .scroller__99e7c, 
+.scroller__629e4, .link__2ea32, .search__97492:not(.open__97492), .animatedContainer_f37cb1,
+.bannerImage_f37cb1, .iconContainer__2ea32 {
+  will-change: scroll-position;
+}
+
+.dot__9293f,
+.icon__9293f,
+.iconContainer_fea832,
+.contentImage__42bf5.thumbnail__0f2e8,
+.avatar__37e49, .animatedContainer_f37cb1,
+.bannerImage_f37cb1, .scroller__99e7c,
+.scroller__629e4, .iconContainer__2ea32,
+.badgeContainer__635ed {
+  transform: translateZ(0);
+}
+
+[class*='scroll'] {
+  will-change: transform;
+}
+
+.badgeContainer__635ed {
+  will-change: backdrop-filter;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 4px;
+  isolation: isolate;
+  contain: paint;
+}
+
+.contentImage__42bf5.thumbnail__0f2e8 {
+  will-change: transform;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%!important;
+  height: 100%!important;
+  max-width: none!important;
+  z-index: -1;
+  border-radius: 0px;
+  transform: translateZ(0);
+  contain: strict;
+}
+
+@container body style(--animations: on) {
+  .visual-refresh {
+    .wrapper__2ea32 .link__2ea32,
+    .container__91a9d,
+    .channel__972a0,
+    .side_b3f026 .item_b3f026 {
+      transition: margin-left var(--list-item-transition);
+      will-change: transform;
+      contain: layout style;
+    }
+    
+    .unread__2ea32 {
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      margin-left: -4px;
+      transition: var(--list-item-transition);
+      will-change: transform;
+      contain: paint;
+    }
+  }
+}
+
+/* ROUNDED STUFF */
+:root {
+  --radius: 16px;
+}
+
+#bd-editor-controls button,
+#floating-editor-window,
+.accountProfileCard__1fed1,
+.achievementContainer_f8824b,
+.actionButtons_cc1819,
+.actionContainer__6446f,
+.action_c66e86,
+.activityItem__18da2,
+.activityTag__18da2,
+.activity__5be3e,
+.activity_f00225,
+.addAnotherRuleCardContainer__0c1e8,
+.addAnswerButton_d97f89,
+.addFriendInputWrapper__72ba7,
+.addGamePopout_cc46f0,
+.addReactButton__34c2c,
+.answerInner__4c520,
+.appContainer__5a4b6,
+.app__160d8 button,
+.applicationLargeImage__16b66,
+.appliedBoostContainer_ceb06a,
+.auditLog__43dab,
+.authBox_dc6abe,
+.authedAppV2__50a54,
+.autocomplete__6b0e0,
+.avatarCard__02e4c,
+.avatarUploaderInnerSquare_e04502,
+.backgroundContainer_eaaeee,
+.backgroundModifierContainer_e5c5d5,
+.backgroundOptionInner__53965,
+.backgroundOptionRing__53965,
+.background__1fed1,
+.background_e681d1,
+.badgeLabel_aeaaeb,
+.badgeList_ab525a,
+.badgeList_ec3b75,
+.bannedUser_cdb2b0,
+.banner__84995,
+.banner_ec75b3,
+.baseCardOutline__1ab14,
+.base__13533,
+.bd-addon-error,
+.bd-addon-store-card,
+.bd-button,
+.bd-changelog-modal img,
+.bd-changelog-modal video,
+.bd-description-wrap .banner,
+.bd-install-modal-clickable,
+.bd-install-modal-items,
+.bd-modal-root,
+.bd-notice,
+.bd-notice-button,
+.bd-notice:first-child,
+.bd-number-input,
+.bd-search-wrapper,
+.bd-select,
+.bd-select .bd-select-option,
+.bd-select-transparent,
+.bd-select-transparent .bd-select-options,
+.bd-store-card,
+.bd-tab-item,
+.bd-toast,
+.bodyMedia__9a337,
+.body__00943,
+.border__2f4f7,
+.box_d9914b,
+.burstGlow__23977,
+.burstGlow_f8896c,
+.buttonInner__34c2c,
+.button__02a39,
+.button__14992,
+.button__201d5,
+.button_aec7ab,
+.button_f23d00,
+.button_f7ecac.selected_f7ecac,
+.button_f7ecac:hover,
+.calloutContainer__6fddf,
+.cameraPreview__19236,
+.cameraWrapper_d41d5f,
+.cardContainerWithoutTopIndicator__3efc4,
+.cardIcon__29abc:after,
+.cardIcon__29abc:before,
+.cardInput__8b579,
+.cardWrapper_aae012,
+.card__4bb93,
+.card__5cea9,
+.card__73069,
+.card__73069:not(.outline__73069),
+.card__84e3e,
+.card_aae012,
+.card_b846e5:before,
+.card_c59071,
+.card_e90143,
+.card_e90879,
+.card_ea91d1,
+.card_fc2e20,
+.card_x5zW6z,
+.categoryFadeBlurple_d02962,
+.categoryFadeBlurple_d02962:hover,
+.categoryFade_d02962,
+.categoryFade_d02962:hover,
+.category__97499,
+.category_d169f5,
+.category_d7acc7,
+.category_ed45d7,
+.category_fa8ebf,
+.changelog_abe1fa,
+.channelContainer_d5f35b,
+.channelTabs-closeTab,
+.channelTabs-fav,
+.channelTabs-tab,
+.channelTabs-tabNav > div,
+.channelTextArea__74017,
+.channelTextArea_f75fb0 .scrollableContainer__74017,
+.childButton__3ed08,
+.chipletContainerInner__10651,
+.choiceContainer_c28af8,
+.clickableContainer_e5c5d5,
+.clickable_a97e58,
+.clipBadge__1d12e,
+.clipForm__54978,
+.clipItem__1d12e,
+.collapseable__217b7,
+.collapseable__217b7:before,
+.colorPickerSwatch__459fb.custom__459fb,
+.colorPickerSwatch__459fb.default__459fb,
+.commandName_e0307d,
+.connectContainer_c7f964,
+.connectedAccountContainer_e6abe8,
+.connection_c7f964,
+.containerBackground_d4ced7,
+.containerBorderRadius_cb32c7,
+.container__0800c,
+.container__0f2e8,
+.container__13b2a,
+.container__23c08,
+.container__2692d,
+.container__26dff,
+.container__33507,
+.container__34940,
+.container__37e49,
+.container__3a5a1,
+.container__3dc42,
+.container__3dde2,
+.container__42e04,
+.container__4e30a,
+.container__55c99,
+.container__56cd1,
+.container__5b321,
+.container__5dbf8,
+.container__62119,
+.container__6436f,
+.container__65338,
+.container__6764b,
+.container__8061a,
+.container__812a7,
+.container__8279f,
+.container__8cc9a,
+.container__8e680,
+.container__8e75f,
+.container__9271d,
+.container_a11d84,
+.container_a3e8db,
+.container_a45028,
+.container_a76561,
+.container_adb50a,
+.container_b962dc,
+.container_c44293,
+.container_cc2dff,
+.container_cec934,
+.container_d8f25b,
+.container_d9c848,
+.container_d9c882,
+.container_e48555,
+.container_e5c5d5,
+.container_e88f3f,
+.container_e97453,
+.container_eb2cd2,
+.container_f89b2c,
+.container_fb1896,
+.container_fc561d,
+.container_fcf29c,
+.container_fea832,
+.contentContainer__8f46b,
+.contentContainer_c6b177,
+.contentContainer_f8758b,
+/* .contentImage__42bf5.thumbnail__0f2e8, */
+/* THAT LINE HAS BEEN COMMENTED BECAUSE IT CREATES A QUITE WEIRD BORDER RADIUS TO THE IMAGE OF THE ACTIVITIES. Issue 02 */
+.contentPreview__9a337,
+.contentWrapper__08434,
+.contentWrapper__9b0f4:only-child,
+.contentWrapper__9c62c,
+.contentWrapper_eab878,
+.contentWrapper_eab878.isBurstReactionPicker_c0e32c,
+.content__07f91,
+.content__49fc1,
+.controlButton_ab6641,
+.copyInput_fffc15,
+.coverBadge_I41ZIY,
+.credentialList__6c75d,
+.css-19vtg9u-control,
+.customColorPicker_bbc020,
+.datePicker__123cc,
+.decorationGridItem_dfa67d,
+.defaultTextInputWrapper__7b848,
+.descriptionBox__981f7,
+.detailsBlock_e335a7,
+.developerPortalCtaWrapper_bf485f,
+.diversityEmojiItem_a45a2a,
+.diversitySelectorOptions_a45a2a,
+.earningsPreviewContainer__02e4c,
+.editCard_a25a68,
+.editCard_a25a68:before,
+.effectGridItem_b4019a,
+.embed__623de,
+.enableSwitch__3c9fa,
+.error__4cd16,
+.executedCommand_c19a55 .appLauncherOnboardingCommandName_c19a55,
+.expandedInfo_e9cb00,
+.featureBorder__65c15,
+.featureBorder_fbfab6,
+.featureCard_bebc5b,
+.fieldBackground_d48a51,
+.fieldBackground_d48a51:hover:not(:focus),
+.fileWrapper__0ccae,
+.fileWrapper__0ccae.newMosaicStyle_b52bef,
+.friendRequestsButton__523aa,
+.friend_bbd192,
+.gif__2dc39,
+.groupCollapsedContainer_b6a9f9,
+.group__344e6,
+.group_f5fff4,
+.guildPopout__51eb2,
+.headerBanner_a1eac2,
+.headerBar__8a7fc,
+.headerImage_a39aa3,
+.headerImage_a3a4ce,
+.header_f37cb1,
+.hero_af3b89,
+.hljs,
+.hoverButtonGroup__06ab4,
+.howItWorksContainer_aa72d6,
+.howItWorksContainer_dd30dc,
+.iconButton__8a7fc,
+.iconWidget__669b5,
+.imageContainer_ef9ae7 .contentImage_ef9ae7,
+.imageWrapper__178ee,
+.innerWrapperV1__70f7f,
+.inner__02fc8,
+.inner_c0bea0,
+.input__0f084,
+.input_ac6cb0,
+.interactive_bf202d,
+.inventoryControlsButton__6980e,
+.inviteContainer__23437,
+.inviteContainer__4d80b,
+.inviteSplash_d5f3cd,
+.invite__4d3fa,
+.itemCard__7e549,
+.itemContainer_ec9088,
+.itemSelected_ec9088,
+.item__001a7,
+.item__97e86,
+.item_c1e9c4,
+.joinOptionContent__959cb,
+.joinOptions__959cb,
+.jumpButton__45690,
+.jumpButton_ed0c8c,
+.key_fcddc1,
+.keywordsTextArea__6a631,
+.languageSelector__4d95d,
+.learnMoreTipContainer__9c6a8,
+.linkCalloutContainer_ad9c52,
+.link__2ea32,
+.listRow__9d78f,
+.list__920b8,
+.list_e0307d,
+.loadingPopout__58f1c,
+.mainCard_f369db,
+.markup__75297 pre,
+.memberListItem_ec58fe,
+.memberRow__9a73f,
+.membershipDialog__2d899,
+.mention,
+.mentionLimitContainer_ed9c90,
+.menu_c1e9c4,
+.messageAttachmentMediaMosaic__67262,
+.messageContainer__95796,
+.messageGroupWrapper__45690,
+.messageInputContainer_f2c0a8,
+.messagePreviewContainer_f96002,
+.message__89466,
+.messagesPopoutWrap__45690,
+.messages__1ccd1,
+.metadataContainer_c7f964,
+.modInfoItemContainer__96c0b,
+.monaco-editor .overflow-guard,
+.mosaicItemMediaMosaic__6c706,
+.navItem__551b0,
+.noiseCancellationPopout_e131a9,
+.notDetected_cc46f0,
+.nowPlaying_cc46f0,
+.oauth2Wrapper_c2b22e,
+.optionBox_edf440,
+.optionButtonWrapper__270d7,
+.optionButton__669b5,
+.optionContainer__949ab,
+.optionPill__1464f,
+.option__3f413,
+.option__56fec,
+.option_e03935,
+.outerWrapper_d1405b,
+.overlayBackground_c69a7b,
+.overlayTitle__2f4f7,
+.overridePlaceholder_db81c6,
+.panels_c48ade,
+.paymentBanner_e335a7,
+.paymentPane__01014,
+.payment_e9cb00,
+.peopleListItem_cc6179.active_cc6179,
+.peopleListItem_cc6179:hover,
+.perks__30359,
+.permissionChiplet__1ef77,
+.permissionItemContainer__3f11f,
+.phoneField_a0c54f,
+.phoneField_a0c54f .countryButton_a0c54f,
+.picker__09f65,
+.pill_dfa8b6,
+.pill_fccfdf,
+.placeholder__2dc39,
+.popoutContainer__0f481,
+.popoutList__92efc,
+.popout__3f413,
+.popout__3f413.popoutPositionTop__3f413,
+.popout__669b5,
+.popout__76f04,
+.premiumMemberCountSwitchContainer__3c9fa,
+.premiumUpsell_edf440,
+.presetEffectImg_b4019a,
+.presetImage__14992,
+.previewBorder__36852:before,
+.previewBox__36852,
+.previewChannelRowContent_d59199,
+.previewContainer__05e8e,
+.previewContainer__50f14,
+.previewContainer__981c8,
+.previewListItem_d9161f,
+.previewNotice__60f3f,
+.productCard__79d38,
+.profileBadges_f89da9,
+.profileCard__5d7c9,
+.progressBarImage_cd0bbe,
+.promotionCard_d4883c,
+.prompt__5d7c9,
+.prompt_fe70ca,
+.px__82f07.botTag__82f07,
+.qualitySettingsContainer_c6d3dc,
+.questsCard__72a00,
+.quickswitcher_ac6cb0,
+.qwert-toast,
+.radioBar__001a7.radioPositionLeft__001a7,
+.reactionDefault_cc2dff,
+.reactionSelected_cc2dff,
+.reactionTooltip_b49891,
+.reaction__23977,
+.reaction_f8896c,
+.reactors_cc2dff,
+.recentClipsPopout__20c92,
+.recommendedServerCard__51537,
+.rem__82f07.botTag__82f07,
+.requiredPermissionsBanner__9c74b,
+.result__2dc39,
+.result__2dc39:after,
+.result__71961,
+.roleChiplet__3f11f,
+.roleMessagePreview__3efc4,
+.roleRow_a930f1,
+.role__48c1c,
+.role_b4b2c3,
+.root__2dbe1,
+.root__49fc1,
+.root_a77292,
+.root_e3f97f,
+.root_f90ef0,
+.row__0624f,
+.row__76f04,
+.row_d13feb,
+.safetyChecklist_eae0ef,
+.saturation__889ee > div,
+.saturation__889ee > div > div,
+.scrollableContainer__74017,
+.scroller__23746,
+.scroller_d6b206,
+.scroller_ef4a91,
+.searchBar__35e86 .searchBarComponent__35e86,
+.searchBar__97492,
+.searchBox_d727b3,
+.searchResult__02a39,
+.search_aabd24,
+.section__00943:only-child,
+.section__6fdb8,
+.section_cc79ae,
+.selectGuildPseudoCta__39466,
+.selectPositionTop__3f413.open__3f413,
+.select__3f413,
+.selectableItem_eb626b,
+.selected_dcc822,
+.selectionBox_b13085,
+.setCustomButton__669b5,
+.settingCard_dd864e,
+.shc-lock-screen-allowed-users-and-roles-container,
+.side_b3f026 .item_b3f026,
+.simpleItemWrapper__5dac8,
+.soundButtonSettingContainer__84bad,
+.soundButton__9be63,
+.sourceThumbnail_a2de16,
+.spamBanner_a2eac3,
+.splashContainer_e825f6,
+.stackedBars__74017,
+.statusBubbleSingleLineWithTextShape_af9888,
+.stepperContainer_ed9c90,
+.stepper_ed9c90,
+.streamPreview__6da2d,
+.swatch__2d060,
+.tab_d804ff,
+.tableRowGroup__19fd1 .content__19fd1,
+.table_fda3e4,
+.tag_fea832,
+.termsFieldBody_fe70ca,
+.testimonialHeroContainer__3e7e2,
+.textArea_c615b7,
+.tierHeaderWithoutCardBody_f15dca,
+.tile__72090,
+.tile__90dc5,
+.toast_g4bfgI,
+.toolbar_bba883,
+.tooltip__382e7,
+.tooltip_c530da,
+.topPill_b3f026 .item_b3f026,
+.topicsDropdownBase__0f481,
+.traitContainer__4cbea,
+.triggerMainContainer_b6c6eb,
+.twitchSectionPreview__00943,
+.uploadButton_f8e959,
+.upload_aa605f,
+.upsellBanner__39bd2,
+.upsellContainer_c0eeaa,
+.upsellOverlay__0f7dc,
+.upsellPreview_d9161f,
+.upsell__5be3e div,
+.upsell_ac65bb,
+.userCardInner_c69a7b,
+.userPopoutInner_c69a7b,
+.userPopoutInner_c69a7b:before,
+.userPopoutOverlayBackground_c69a7b,
+.userProfileInner_c69a7b,
+.userProfileModalInner_c69a7b:before,
+.userProfileOuterThemed_c69a7b,
+.userProfileOuter_c69a7b,
+.vc-error-card,
+.vc-permviewer-perms-list-item,
+.vc-shiki-root,
+.visual-refresh .auditLog__43dab,
+.visual-refresh .backgroundModifierContainer__6cd3a,
+.visual-refresh .button_f89b2c,
+.visual-refresh .button_fffc15,
+.visual-refresh .clickableContainer__6cd3a,
+.visual-refresh .collapseable__217b7,
+.visual-refresh .container__3dde2,
+.visual-refresh .container__55c99,
+.visual-refresh .container__6436f,
+.visual-refresh .container__6cd3a,
+.visual-refresh .container_f89b2c,
+.visual-refresh .container_fcf29c,
+.visual-refresh .container_fea832,
+.visual-refresh .contentWrapper__08434,
+.visual-refresh .copyInput_fffc15,
+.visual-refresh .editCard_a25a68,
+.visual-refresh .hljs,
+.visual-refresh .jumpButton_ed0c8c,
+.visual-refresh .markup__75297 code,
+.visual-refresh .messageContainer__95796,
+.visual-refresh .navButton__08434,
+.visual-refresh .option__56fec,
+.visual-refresh .panels_c48ade,
+.visual-refresh .popout__76f04,
+.visual-refresh .root__24502,
+.visual-refresh .root__49fc1,
+.visual-refresh .searchAnswer_bd8186:first-child,
+.visual-refresh .searchBar__97492,
+.visual-refresh .searchFilter_bd8186:first-child,
+.visual-refresh .sidebarListRounded_c48ade,
+.visual-refresh .topPill_b3f026 .item_b3f026,
+.visual-refresh .upload_aa605f,
+.visual-refresh .wrapper__44df5,
+.visual-refresh .wrapper_d5f3cd,
+.visualMediaItemContainer_f4758a,
+.voiceChannelsButton__29444,
+.votePercentageBar__4c520,
+.warningContainer_d80a13,
+.withTagAsButton_b2ca13,
+.withTagless_b2ca13,
+.wrapperAudio_f316dd.newMosaicStyle_f316dd,
+.wrapper__14403,
+.wrapper__2ea32,
+.wrapper__37ae5,
+.wrapper__44df5,
+.wrapper__4d7bb,
+.wrapper__5b98e,
+.wrapper__97f37,
+.wrapper_a7c28c,
+.wrapper_c0e32c,
+.wrapper_c0e32c.isBurstReactionPicker_c0e32c,
+.wrapper_c0e32c.isBurstReactionPicker_c0e32c:before,
+.wrapper_d4fa29,
+.wrapper_d5f3cd,
+.wrapper_e03935,
+.wrapper_f61d60,
+.wrapper_f7ecac,
+:where(.outer_c0bea0).user-profile-popout,
+:where(.overlay_c0bea0),
+:where(.visual-refresh) .colorDefault_c1e9c4.focused_c1e9c4,
+:where(.visual-refresh) .itemFilled__001a7[aria-checked="true"],
+:where(.visual-refresh) .item__001a7,
+:where(.visual-refresh) .item__001a7[aria-checked="true"],
+:where(.visual-refresh) .lookFilled__3f413.select__3f413,
+div#anchor,
+html:not(.visual-refresh-chat-input) .inner_a99829 {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+#replugged-quickcss-wrapper .cm-editor,
+.audioControls_f316dd,
+.avatarWrapper__37e49,
+.better-codeblocks,
+.callContainer_cb9592,
+.headerClickable__43dab,
+.lastChannel_e4503a.firstChannel_e4503a,
+.replugged-addon-card,
+.replugged-updater-item,
+.vc-addon-card,
+.vc-notification-root,
+.vc-st-modal-content input,
+.ͼ1 .cm-scroller {
+  border-radius: var(--radius) !important;
+}
+/* SLTDND */
+#bd-editor-controls,
+#vc-spotify-player,
+.activityPanel_c48ade,
+/* .bannerSVGWrapper_b32cc2:not(:has([style*="image"])) [style*="background-color"], */
+.banner__183e8,
+.bd-modal-header,
+.borders__22c64,
+.cardHeader_b44011,
+.card_f04ae9,
+.commandContainer_c94584 .command_c94584:first-child,
+.connectionHeader_c7f964,
+.container__9293f,
+.container_e131a9,
+.contentWrapperAccepted__0d616,
+.contentWrapper__0d616,
+.contentWrapper__0d616:after,
+.deny__344e6,
+.deny_f5fff4,
+.disabledButtonWrapper__201d5,
+.firstChannel_e4503a,
+.gradient__8e08c,
+.guildSidebar_b962dc,
+.headerImage__2dea3,
+.header__43dab,
+.header__49fc1,
+.header_c0e32c,
+.item__3d4a0:first-child,
+.jumpToPresentBar__0f481,
+.modalTextContainer__4d95d,
+.newMosaicStyle__4d95d .textContainer__4d95d,
+.popoutContentWrapper_af3b89,
+.postEnrollmentBackground__636a2,
+.roundedBanner_c3e427,
+.roundedRow__71c22 td:first-child,
+.rowContainer_cb32c7:first-child,
+.row_b1c9f2:first-child,
+.splashImage_c59071,
+.tierHeaderLocked_f15dca,
+.tierHeaderUnlocked_f15dca,
+.topicsDropdownHeading__0f481,
+.upsellContent__4cfe2,
+.vc-gp-banner,
+.visual-refresh .firstChannel_e4503a,
+.visual-refresh .panel__5dec7,
+.withFooter__44c9a,
+.wrapper__0d616 {
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+/* SLTDND */
+#replugged-quickcss-wrapper .cm-gutters,
+.backdrop__8a7fc,
+.bd-controls > .bd-addon-button:first-of-type,
+.contentWrapper__9b0f4,
+.deny__344e6,
+.deny_f5fff4,
+.guildSidebar_b962dc,
+.item__3d4a0:first-child,
+.optionPillKey__1464f,
+.roundedRow__71c22 td:first-child,
+.scroller_cc2dff,
+.searchFilter_bd8186,
+.sidebarContainer__1d6c7 {
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+/* SLTDND */
+.allow__344e6,
+.allow_f5fff4,
+.bd-controls > .bd-addon-button:last-of-type,
+.inviteSplash__9b0f4,
+.item__3d4a0:last-child,
+.modal_b962dc,
+.roundedRow__71c22 td:last-child {
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+/* SLTDND */
+.animatedContainer_f37cb1,
+.bd-modal-footer,
+.changeDetails__43dab,
+.clipsFooter__41ea0,
+.commandContainer_c94584 .command_c94584:last-child,
+.emojiPicker_c0e32c,
+.footerContainer__44492,
+.footer__3d3b0,
+.footer__49fc1,
+.footer__4d95d,
+.interactionsContainer_af3b89,
+.lastChannel_e4503a,
+.monaco-editor,
+.navButtons_fe70ca,
+.navRow__86e92,
+.newMessagesBar__0f481,
+.newMosaicStyle__4d95d .footer__4d95d,
+.newTopicsBarContainer__0f481,
+.root_e5f3a9 > :last-child,
+.rowContainer_cb32c7:last-child,
+.row_b1c9f2:last-child,
+.scroller__808a1,
+.searchHeader_f3b986,
+.selectPositionTop__3f413.open__3f413,
+.temporaryMembershipContainerBackground_cedfaf,
+.threadSuggestionBar__841c8,
+.tierBody_f15dca,
+.tooltipPremiumFooterContainer__7d7fe,
+.topicsPillContainer__0f481,
+.topicsScroller__0f481,
+.uploadModal_dbca3c .footer_dbca3c,
+.upsellFooter__4cfe2,
+.videoControls_f316dd,
+.visual-refresh .groupCollapsedContainer_b6a9f9,
+.visual-refresh .lastChannel_e4503a {
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+/* SLTDND */
+/* IT HAS A HAS */
+/* .wrapper_e131a9:has(.container_e131a9) ~ .container__37e49 {
+  border-radius: 0 0 var(--radius) var(--radius) !important;
+} */
+/* SLTDND */
+.modal_b962dc .footer__49fc1 {
+  border-radius: 0 0 var(--radius) 0;
+}
+/* SLTDND */
+.activityPanel_c48ade ~ .wrapper_e131a9 .container_e131a9,
+.content__49fc1.body_c6f1a4.thin__99f8c.scrollerBase__99f8c,
+.floating-window #bd-editor-controls,
+.floating-window .monaco-editor,
+.formContainer_d9be46 .channelTextAreaInner_d9be46,
+.formContainer_d9be46 .title_d9be46,
+.iconWrapper__96f95 ~ .inputWrapper__0f084,
+.root_e5f3a9 .body_c6f1a4 {
+  border-radius: 0 !important;
+}
+/* SLTDND */
+.categoryList_c0e32c,
+.wrapper__4e6ce {
+  border-bottom-left-radius: var(--radius);
+}
+/* SLTDND */
+.applicationStore_f07d62,
+.chat_f75fb0,
+.containerSidenav_dc2e0e,
+.container__01ae2,
+.container__133bf,
+.container__49668,
+.container__808a1,
+.container_a592e1,
+.main_c08b38,
+.pageWrapper_a3a4ce,
+.shop__6db1d,
+.sidebarContainer__656be {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.sidebar_c48ade {
+  border-radius: var(--radius) !important;
+}
+.wrapper_ef3116 {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.channelChatWrapper_cb9592 {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.container__0be77 {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.chat_f75fb0.threadSidebarOpen_f75fb0 {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+div.profileThemedContainer__656be {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.editor__2a891,
+.notice__6e2b9,
+.themeEditor_cf6da1 {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.shopScroll__6db1d {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.container__2637a,
+.container__551b0,
+.privateChannels__35e86 {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.visual-refresh .sidebarList_c48ade {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.banReasonOtherClickable__837b7 {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.vc-shiki-btn:last-child {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.better-codeblocks-btn:last-child {
+  border-radius: var(--radius) !important;
+}
+/* SLTDND */
+.categoryItemDefaultCategory_b9ee0c {
+  border-radius: 8px;
+}
+/* SLTDND */
+.cozy_c19a55.hasThread_c19a55:after {
+  border-bottom-left-radius: var(--radius) !important;
+}
+/* SLTDND */
+.suggestedColor__713b5 {
+  border-radius: 10px;
+}
+/* SLTDND */
+.userProfileOuterUnthemed_c69a7b {
+  border-radius: var(--radius);
+}
+.childContainer__91a9d,
+.layout__91a9d,
+.visual-refresh .layout__91a9d {
+  border-radius: 20px;
+}
+/* SLTDND */
+.bottomControls_bfe55a .button__201d5 {
+  border-radius: 30px !important;
+}
+/* SLTDND */
+.inviteRow__67dba {
+  border-radius: var(--radius);
+}
+/* SLTDND */
+.profileCustomizationSection__44061 .clickable__75b30:hover {
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+/* END OF ROUNDED STUFF */
+
+/* THIS ONE MAKES SEVERAL THINGS TRANSPARENT, SUCH AS THE LIST OF THE CHANNELS AND THE LIST OF MEMBERS.
+EVEN THE IT'S REMOVED EVERYTHING TURNS DARKER IN THE BACKGROUND */
+.container_c8ffbb,
+.members_c8ffbb,
+.member__5d473,
+.chat_f75fb0,
+.sidebarList_c48ade,
+.container__2637a,
+.privateChannels__35e86,
+.scroller__99e7c,
+section.panels_c48ade,
+.container__37e49 {
+  background: var(--theme-base-color-hsl);
+  background-color: var(--theme-base-color-hsl);
+  border: none !important;
+}
+
+/* .bg__960e4: This "fixes" the background, add it if you want */
+
+/* SLTDND */
+.members_c8ffbb,
+.guilds_c48ade,
+.chatContent_f75fb0,
+/* .sidebarList_c48ade, */
+.layerContainer_da8173,
+.app__160d8 {
+  contain: strict !important;
+}
+
+/* SLTDND */
+.typingDots_b88801,
+.vc-typing-indicator-dots {
+  contain: paint !important;
+}
+
+/* THIS ONE CREATES MORE CONTRAST IN THE DARK MODE BY MAKING THE CONTAINER BRIGHTER. */
+.theme-darker:not(.custom-theme-background) {
+  --bg-base-tertiary: #171717;
+  --background-base-lowest: var(--bg-base-tertiary) !important;
+  --background-base-lower: #272727 !important;
+  --background-surface-higher: #2c2c2c !important;
+  --background-floating: var(--background-surface-higher) !important;
+  --bg-surface-overlay: var(--background-surface-higher) !important;
+  --bg-surface-raised: var(--background-surface-higher) !important;
+  --chat-background-default: var(--background-base-lower) !important;
+  --background-primary: var(--background-base-lower);
+  --background-secondary: var(--bg-base-tertiary);
+  --background-tertiary: var(--bg-base-tertiary);
+  --background-secondary-alt: var(--background-surface-higher);
+  --modal-background: var(--background-floating);
+  --modal-footer-background: var(--background-floating);
+  --background-base-low: var(--background-base-lower);
+}
+
+/* CHAT - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* THIS ONE IS RESPONSIBLE FOR THE ROUNDED AND SPACING LOOK IN THE BOTTOM OF THE CHATS */
+.chatContent_f75fb0{
+  margin: 0 0 32px 0px;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  contain: paint;
+  box-shadow: 0px 16px 90px rgba(0,0,0,0.6);
+}
+
+/* THIS ONE CREATES A SPACING ABOVE THE CHAT CONTAINER, IT ALSO (REALLY) GET THE TITLE THICKER AND CONSISTENT. AS CONSEQUENCE, THE MEMBER LIST GET ALSO PLACEDD OR MODIFIED. */
+.title_f75fb0 {
+  width: 100%;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  height: var(--custom-channel-header-height) !important;
+  height: 64px !important;
+  padding-right: 20px !important;
+  contain: paint;
+  /* border-left: 1px solid var(--border-subtle);
+  border-right: 1px solid var(--border-subtle);
+  border-top: 1px solid var(--border-subtle); */
+}
+
+/* SLTDND */
+.dot__9293f {
+  will-change: transform;
+  transform: scale(2);
+}
+
+/* SLTDND */
+.icon__9293f {
+  will-change: transform;
+  transform: scale(0.8398320336);
+  --channel-icon: var(--header-primary);
+}
+
+/* THIS ONE CHANGES THE COLOR OF THE DESCRIPCION OF THE CHANNEL (IN THE TITLE) */
+.topic__6ec1a {
+  --text-tertiary: color-mix(in oklab, var(--neutral-40) 100%, var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
+  font-weight: 300 !important;
+}
+
+/* SLTDND */
+.title__9293f {
+  font-weight: 450 !important;
+}
+
+/* OKAY, NO IDEA WHAT THE HELL IS HAPPENING, BUT WITHOUT THIS THE SHADOW FOR THE CONTAINER THAT IMPACTS THE CHANNEL LIST GETS MESSED UP, LMAO */
+.chat_f75fb0 {
+  overflow: visible !important;
+}
+
+/* COMMENT/DELETE THIS AND THE WHOLE BOTTOM OF DISCORD WILL GO DOWN TO OBLIVION */
+.page_c48ade {
+  max-height: calc(100vh - var(--custom-app-top-bar-height)) !important;
+}
+
+/* THIS ONE CHANGES THE ORDER FOR THE MIGNIFYING GLASS
+IT HAS A HAS*/
+/* .iconWrapper__9293f:has([d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM18.44 17.27c.15.43.54.73 1 .73h1.06c.83 0 1.5-.67 1.5-1.5a7.5 7.5 0 0 0-6.5-7.43c-.55-.08-.99.38-1.1.92-.06.3-.15.6-.26.87-.23.58-.05 1.3.47 1.63a9.53 9.53 0 0 1 3.83 4.78ZM12.5 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM2 20.5a7.5 7.5 0 0 1 15 0c0 .83-.67 1.5-1.5 1.5a.2.2 0 0 1-.2-.16c-.2-.96-.56-1.87-.88-2.54-.1-.23-.42-.15-.42.1v2.1a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z"]) {
+  order: 1;
+} */
+
+/* SLTDND */
+.iconWrapper__9293f[class^="vc-"] {
+  order: 2;
+}
+
+/* THIS ONE IS RESPONSIBLE OF THE COLOR OF THE CHANNEL SELECTED. */
+.modeSelected__2ea32 {
+  .link__2ea32 {
+    /* background: url(https://media.discordapp.net/attachments/1037057936960274532/1382782593941901412/videoframe_4073.png?ex=684c6825&is=684b16a5&hm=d69271f321a05e9da80e8a459cbb3539bdcadea71cb5ca7b4e80e481b99d8d6d&=&width=358&height=67), var(--brand-500); */
+    background: var(--brand-500);
+    /* background: var(--brand-500); */
+    background-size: cover;
+    --icon-primary: #FFF;
+    .name__2ea32 {
+      color: #FFF;
+    }
+  }
+
+  &:hover .link__2ea32 {
+    background: var(--brand-460);
+  }
+}
+
+/* FIRST OF ALL ONE MAKES THE SCROLLING BAR APPEAR (FOR DISCORD ITSELF) AND PLACE THE CONTAINER OR SOMETHING ELSE IN THE WRONG LAYER */
+.page_c48ade {
+  z-index: 3;
+  overflow: visible !important;
+}
+
+/* THIS ONE IS THE GREAT RESPONSIBLE OF MAKING THE SEARCH BAR AND OPTIONS FIT WITH THE CONTAINER */
+.page_c48ade:has(.membersWrap_c8ffbb) .title_f75fb0 {
+  width: calc(100% - var(--custom-member-list-width));
+}
+
+/* BY LOOKING AT IT I ALREADY NOTICED THAT THIS ONE FIXES SOMETHING ABOUT THE SIZE OF THE PREVIOUS RULE. DOESN'T DO ANYTHING TO ME, BUT IT MIGHT FOR ANYONE ELSE*/
+/* .page_c48ade:has(.panel_c0bea0) .title_f75fb0 {
+  width: calc(100% - 348px);
+} */
+
+/* THIS ONE SEEMS TO ADD MARGIN TO THE MEMBER LIST, SINCE IT WOULD BE THE OPPOSITE IF IT WAS FOR THE CONTAINER. IT'S WEIRD BECAUSE IT SAID CONTENT */
+.content_c48ade {
+  margin-right: 16px;
+}
+
+/* Container of the DMs tab, like, where you see the online people and all that */
+.container__133bf,
+.applicationStore_f07d62,
+.shop__6db1d,
+.container_a592e1 {
+  margin: 0 0 32px 0px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0px 0px 60px rgba(0,0,0,0.3);
+  overflow: hidden;
+  contain: paint;
+}
+
+/* THIS ONE IS THE CODE THAT MAKES THE MAGNIFYING GLASS SO AMAZING */
+.search__97492:not(.open__97492) {
+  .searchBar__97492 {
+    width: 22px;
+    background: transparent;
+    border: none;
+  }
+
+  .icon__97492 {
+    cursor: pointer;
+
+    .iconContainer_fea832 {
+      will-change: transform;
+      margin-top: 3px;
+      transform: scale(1.25);
+
+      .icon_fea832 {
+        color: var(--interactive-normal);
+      }
+
+      &:hover>svg.icon_fea832 {
+        color: var(--interactive-active);
+      }
+    }
+  }
+
+  /* &:hover::before {
+    will-change: transform;
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    z-index: 1002;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-normal);
+    padding: 8px 12px;
+    background-color: var(--background-floating);
+    content: 'Search';
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+  } */
+
+  &:hover::after {
+    will-change: transform;
+    content: '..';
+    --aeiou: color-mix(in srgb, var(--background-floating), var(--border-subtle) 75%);
+    overflow: hidden;
+    font-size: 15px;
+    position: absolute;
+    z-index: 1003;
+    top: calc(100% + 4.7px);
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 6.076px !important;
+    height: 6.076px !important;
+    background-color: var(--background-floating);
+    background-image: linear-gradient(to bottom, var(--border-subtle) 0%, var(--border-subtle) 25%, transparent 25%), linear-gradient(to right, var(--aeiou) 0%, var(--aeiou) 25%, var(--background-floating) 25%), ;
+    pointer-events: none;
+  }
+
+  .DraftEditor-root {
+    padding: 0px !important;
+  }
+}
+
+/* TEXTBOX - - - - - - - - - - - - - - - - - - - - - -   */
+/* THIS ONE DELETES A PADDING FROM THE TEXTBOX, PERSONALLY I PREFER IT WITH THE PADDING */
+.form_f75fb0 {
+  padding: 0px !important;
+}
+
+/* THIS HERE IS WHAT IS MAKING THE TEXTBOX SO GOOD-LOOKING MATCHIHG THE THEME */
+.channelTextArea_f75fb0 {
+  --custom-chat-input-margin-bottom: 2px;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0px;
+  --custom-channel-textarea-text-area-height: 70px;
+}
+
+/* TODO: DELETE THIS. Look, this one messes with the line limit in the textbox. */
+/* .scrollableContainer__74017 {
+  background: transparent !important;
+  border-radius: 0px;
+} */
+
+/* THIS ONE MANAGES THE SPACE WHEN YOU ARE GONNA SEND AN IMAGE, FOR EXAMPLE */
+.channelAttachmentArea_b77158 {
+  background: transparent !important;
+  padding: 10px !important;
+  border-top: 1px solid var(--border-subtle) !important;
+  margin: 0px !important;
+}
+
+/* THIS IS THE LINE THAT DIVIDES THE TEXTBOX AND THE ZONE WHERE YOUR IMAGE PREVIEW BEFORE SENDING IS
+BUT IT'S ALSO JUST THE LINE ABOVE THE TEXTBOX */
+.inner__74017 {
+  border-top: 1px solid var(--border-subtle) !important;
+}
+
+/* Who really knows what this one does. All I've seen it doing was to move the content in the textbox a little more to the right. */
+.attachButton__0923f {
+  padding-left: 20px !important;
+}
+
+/* This one creates a padding for the button on the right (textbox). Like the gift nitro, gif, sticker, emoji, yk */
+/* .buttons__74017 {
+  padding-right: 8px;
+} */
+
+/* This one deletes the button to start an activity */
+.channelAppLauncher_e6e74f {
+  display: none !important;
+}
+
+.buttons__74017 {
+  padding-right: 9px;
+}
+
+/* MEMBERS - - - - - - - - - - - - - - - - - - - - - - - */
+/* This one creates a spacing above the member list */
+.membersWrap_c8ffbb {
+  top: calc(0px - var(--custom-channel-header-height));
+  height: calc(100vh - var(--custom-app-top-bar-height)) !important;
+  max-height: none !important;
+  background: transparent !important;
+  justify-content: start;
+}
+
+/* This one unlimits the height of the member list, or sets it a height */
+.members_c8ffbb {
+  height: calc(100vh - var(--custom-app-top-bar-height)) !important;
+}
+
+/* This one sets a width for the member list, making it thiner */
+:root {
+  --custom-member-list-width: 236px !important;
+}
+
+/* └ DMS -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  */
+/* SLTDND */
+.outer_c0bea0.panel_c0bea0 {
+  top: calc(0px - var(--custom-channel-header-height) - 6px);
+  margin-left: 8px !important;
+  border-radius: var(--radius-lg) !important;
+  overflow: hidden;
+  height: calc(100% + var(--custom-channel-header-height) - 16px) !important;
+  contain: paint;
+}
+/* ACTIVITY GOOBERS  -  -  -  -  -  -  -  -  -  -  -  -  - */
+.container__0f2e8 {
+  /* gradient */
+  z-index: 0;
+  overflow: hidden;
+  background-color: black !important;
+  margin-left: 0px;
+  padding-left: 16px;
+  height: 120px;
+  border-radius: 0px 12px 12px 0px;
+  border: none !important;
+  contain: paint;
+
+  &::after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      right: 0px;
+      left: 0px;
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+      background-blend-mode: screen, difference, ligthen;
+      border-radius: 0px 0px 0 0;
+      opacity: 0.6;
+      contain: paint;
+  }
+}
+
+.infoSection__0f2e8 {
+  height: 100%;
+  justify-content: end;
+  z-index: 0;
+
+  .contentTitle__0f2e8::before {
+      color: #ffffff;
+      opacity: 0.75;
+      font-size: 12px;
+  }
+
+  * {
+      /* text-shadow: 0px 0px 10px rgb(0, 0, 0); */
+      overflow: visible !important;
+      z-index: 1;
+  }
+
+  /* svg>path {
+      box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  } */
+}
+
+/* username */
+.userName__0f2e8 {
+  position: relative;
+  left: 6px;
+  top: 21px;
+  font-family: "figtree";
+  font-size: 13px;
+  white-space: normal;
+  font-weight: 700;
+  text-shadow: #000 0px 0px 10px;
+}
+
+/* below username text */
+.contentTitle__0f2e8 {
+  position: relative;
+  font-size: 10px;
+  width: 150px;
+  white-space: wrap;
+  bottom: 3px;
+  left: 44px;
+  top: 16px;
+  color: #fff !important;
+  font-family: "figtree";
+  opacity: 0.75;
+  text-shadow: #000 0px 0px 10px;
+}
+
+.facePile__0f2e8,
+.facePileItem__0f2e8,
+.facePileItem__0f2e8 div,
+.facePileItem__0f2e8 svg,
+.facePileItem__0f2e8 foreignObject {
+  top: 12px;
+  width: 23px !important;
+  height: 23px !important;
+  contain: none;
+  align-self: center;
+  overflow: hidden;
+}
+
+.userSection__0f2e8 {
+  gap: 8px;
+}
+
+/* .badgeContainer__635ed:has(path[fill="var(--status-positive)"]),
+.badgeContainer__635ed:has(path[d^="M4 12a8 8 0 0 1 14.93-4H15a1"]) {
+  height: 16px !important;
+  width: 16px;
+  justify-content: center;
+
+  .badgeLabel__635ed {
+      display: none;
+
+  }
+} */
+
+.badgeContainer__635ed:has([style*="color: var(--text-positive);"]) {
+  background-color: rgba(0, 125, 50, 0.726) !important;
+
+  .tabularNumbers__4bd52 {
+      color: #ffffff !important;
+      text-shadow: none !important;
+      font-family: "figtree";
+      font-size: 10px;
+      font-weight: 400;
+  }
+}
+
+.badgesContainer__635ed {
+  position: relative;
+  bottom: calc(100% - 16px - 16px);
+  width: calc(100% - 16px - 8px);
+  justify-content: flex-center;
+
+  .badgeContainer__635ed {
+      will-change: backdrop-filter;
+      backdrop-filter: blur(3px);
+      background-color: rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      padding: 4px;
+      isolation: isolate;
+
+      svg path,
+      [data-text-variant="text-xs/normal"] {
+          text-shadow: none !important;
+          color: #ffffff !important;
+          fill: #ffffff !important;
+          font-size: 10px;
+          justify-content: flex-start;
+      }
+  }
+}
+
+.contentImage__42bf5.thumbnail__0f2e8 {
+  will-change: transform;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%!important;
+  height: 100%!important;
+  max-width: none!important;
+  z-index: -1;
+  border-radius: 0px;
+  transform: translateZ(0);
+  contain: paint;
+}
+
+.thumbnail__0f2e8 {
+  opacity: 0.75;
+}
+
+.badgesContainerPopout__635ed {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 8px;
+  align-content: center;
+  flex-direction: column;
+}
+
+.listeningTimeline__66799 {
+  margin: -10px 10px 20px 10px;
+  padding: 0 15px;
+}
+
+.hero_af3b89.theme-dark.images-dark.disable-adaptative-theme {
+  padding: 50px;
+}
+
+.popoutHeroInner_af3b89 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.popoutHeroBody_af3b89 {
+  width: 90%;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  row-gap: 4px;
+  position: relative;
+  bottom: calc(100% - 32px);
+  width: calc(100% - 24px);
+  border: 0px;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+  outline: 0px;
+  align-items: center;
+  display: flex;
+  gap: 0px 8px;
+}
+
+/* CHANNELS - - - - - - - - - - - - - - - - - - - -  - - */
+/* Without this, the background image and several things in the sidebar where the channels are get messed. I'd need to go further into that one */
+.sidebarList_c48ade,
+.sidebar_c48ade,
+.container__2637a {
+  overflow: visible !important;
+  z-index: 2 !important;
+/* This makes the selector larger (like, the blurple thing, and so the lists) */
+  .scroller__629e4,
+  .scroller__99e7c {
+    width: calc(100% + 24px);
+  }
+}
+
+/* Without this one, the list of DMs gets weird
+I need it for the selected channel look*/
+.privateChannels__35e86,
+.container__551b0 {
+  width: calc(100% + 16px);
+
+  .content__99f8c {
+    margin-right: 24px;
+  }
+}
+
+/* This one is expanding the left side of the container to the left. Probably because it's... jk, a margin-right. */
+.sidebarList_c48ade {
+  margin-right: 16px;
+}
+
+.link__2ea32 {
+  /* This one generates a spacing beetween the channels. Important for the looks. */
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+  height: 40px;
+  justify-content: center;
+  gap: var(--spacing-12) !important;
+  contain: paint;
+/* This makes the icons of the channels smaller */
+  .iconContainer__2ea32 {
+    will-change: transform;
+    transform: scale(0.8);
+    width: 15px;
+  }
+}
+
+/* Can't say a lot, but this is making a margin for the text or thing that shows the level of the server */
+.containerWithMargin_eff079 {
+  margin: 12px 16px;
+}
+
+/* SLTDND */
+.header_f37cb1 {
+  /* width: calc(100% + 16px); */
+  width: calc(100%);
+}
+
+.containerDefault__29444 .mainContent__29444 {
+  /* This creates a space in the left for the arrows */
+  gap: 8px;
+/* This is making the arrows next to the channels move to the beginning, which is just better */
+  .icon__29444 {
+    order: -1;
+  }
+}
+
+/* This paddings is kinda grouping the arrows, the names of the categories creating a padding and getting them together */
+.wrapperCommon__29444 {
+  padding: 0 var(--space-lg);
+}
+
+/* 
+.sidebarResizeHandle_c48ade {
+  left: calc(var(--custom-guild-sidebar-width) + 16px);
+  z-index: 1000 !important;
+}
+
+.sidebar_c48ade {
+  width: calc(var(--custom-guild-sidebar-width) + 200px) !important;
+} */
+
+/* Deleting that stick that resizes the channel list */
+.sidebarResizeHandle_c48ade {
+  opacity: 0;
+}
+
+/* └ DMS -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  */
+/* Id' keep this, because otherwise it's creating a weird space on the top of the profile panel when checking DMs, so that the last item in the DM list has that weird case of a rectangle (kind off) over it */
+.privateChannels__35e86 .scroller__99e7c {
+  margin-bottom: var(--custom-app-panels-height) !important;
+}
+/* I'd remove this, since it literally adds a weird line-with-cut in the search bar for conversations (in the DMs tab) */
+/* .searchBar__35e86 {
+  margin: 0px 0px 0px 4px;
+} */
+
+/* └ BANNER -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  */
+/* This is crucial for the banner */
+/* .animatedContainer_f37cb1 {
+  position: fixed;
+  width: calc(100vw - var(--custom-guild-list-width)) !important;
+  height: 100vh !important;
+  opacity: 1 !important;
+  transform: translateX(calc(-85px + var(--custom-guild-list-width))) translateY(-95px) !important;
+  background-color: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none;
+  margin-left: 5px;
+  pointer-events: none;
+} */
+
+/* This is the banner of the server */
+.bannerImage_f37cb1 {
+  transform: translateY(0px) scale(1) !important;
+  pointer-events: none;
+  /* filter: blur(5px); */
+}
+
+/* This is also crucial for the banner */
+/* .bannerImg_f37cb1 {
+  width: 100vw !important;
+  height: 400px !important;
+  mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+} */
+
+/* SLTDND */
+/* If enabled, the banner won't loop
+Perhaps I could see what else is doing changes to this selectors */
+/* .animatedBannerHoverLayer_f37cb1 {
+  display: none;
+} */
+
+/* This one is creating a big space that I think it might be for the banner originally */
+/* .content__99f8c>div[aria-hidden="true"][style="height: 84px;"] {
+  display: none;
+} */
+
+/* I can't describe it really well, but a weird blurred rectangle appears behind the channel list for some reason after I comment this rule */
+.headerEllipseForeground_f37cb1,
+.headerGlass_f37cb1,
+.headerEllipseBackdrop_f37cb1 {
+  display: none !important;
+}
+
+.animatedContainer_f37cb1 {
+  z-index: -999;
+  border-radius: 12px 12px 12px 12px;
+  /* border: #b9b9b9 4px solid !important; */
+
+}
+
+.animatedBannerHoverLayer_f37cb1 {
+  border-radius: 12px 12px 12px 12px;
+  /* border: #b9b9b9 4px solid !important; */
+  /* position: relative; */
+  /* top: -130px; */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* min-height: 130px;
+  contain: paint; */
+  /* background-color: #000;
+  opacity: 70%; */
+  /* position: relative; */
+}
+
+.bannerImg_f37cb1 {
+  position: relative;
+}
+
+/* { HEADER  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
+/* This one makes the name of the server in the channel list have padding */
+.header_f37cb1 {
+  padding: 16px inherit !important;
+  min-height: none;
+  align-items: center !important;
+  height: auto !important;
+  border-bottom: none;
+  /* margin-bottom: 60px !important; */
+  border-top: none;
+  border-top-left-radius: none;
+  /* position: relative; */
+  /* top: 100px; */
+}
+
+
+
+/* This one modifies the name of the server in the channel list. For example, the font and its weight */
+.name_f37cb1 {
+  font-size: 14px;
+  font-weight: 500;
+  text-overflow: unset;
+  white-space: normal;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+  text-shadow: none;
+}
+
+
+
+/* Space after the little icon-badge of the server, before the name of it, but only in channel list/sidebar */
+.headerContent_f37cb1 {
+  align-items: flex-start !important;
+  align-items: center !important;
+  gap: 4px;
+}
+
+/* Without this, the name of the server in the channel list has such a weird behavior where it takes threee lines of something instead of two
+It also makes the arrow appear*/
+.headerChildren_f37cb1 {
+  display: none;
+}
+
+/* USERPANEL - - - - - - - - - - - - - - - - - - - - - - */
+/* Best pannel */
+@keyframes pointerDelay {
+  99.9999% {
+    pointer-events: none;
+  }
+  to {
+    pointer-events: all;
+  }
+}
+:root {
+  --panel-spotify-marginLeft: 0;
+  --panel-spotify-marginRight: 8px;
+  --panel-activityIcon-marginLeft: 0;
+  --panel-activityIcon-marginRight: 4px;
+  --panel-voiceOffset: 40px;
+  --panel-pingOffset: -40px;
+}
+:root.refresh-fast-follow-avatars {
+  --panel-spotify-marginLeft: 2px;
+  --panel-spotify-marginRight: 10px;
+  --panel-activityIcon-marginLeft: 2px;
+  --panel-activityIcon-marginRight: 6px;
+  --panel-voiceOffset: 44px;
+  --panel-pingOffset: -42px;
+}
+.panels_c48ade > div {
+  z-index: 0;
+}
+.wrapperVisible__0d616 {
+  z-index: inherit;
+}
+
+/*Buttons*/
+.buttons__37e49.buttons__37e49, .voiceButtonsContainer_e131a9, .actionButtons_e131a9, .actions__4cd01, .icons_e0cf27 {
+  background-color: var(--background-surface-highest);
+  border-radius: var(--radius-round);
+  box-shadow: var(--shadow-border), var(--shadow-low);
+  display: flex;
+  gap: 2px !important;
+  height: unset;
+  margin: 0 !important;
+  padding: 2px !important;
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  right: 6px;
+  top: 0;
+  transition: .15s ease;
+  z-index: 2;
+}
+.micButtonParent__37e49 button {
+  border-top-right-radius: unset !important;
+  border-bottom-right-radius: unset !important;
+  padding-right: 4px !important;
+}
+.micButtonParent__37e49:not(:first-child) button {
+  border-radius: unset !important;
+  padding: 4px !important;
+}
+.button__67645.button__67645.button__67645 {
+  border-radius: unset;
+  height: unset;
+  margin: unset;
+  padding: 4px;
+  width: unset;
+  .contents__201d5 {
+    transition: scale .4s cubic-bezier(.16,1,.3,1);
+  }
+  .lottieIcon__5eb9b, svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  &:first-child {
+    border-top-left-radius: var(--radius-round);
+    border-bottom-left-radius: var(--radius-round);
+    padding-left: 6px;
+  }
+  &:last-of-type {
+    border-top-right-radius: var(--radius-round);
+    border-bottom-right-radius: var(--radius-round);
+    padding-right: 6px;
+  }
+  &:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--interactive-hover);
+    .contents__201d5 {
+      scale: 1.1;
+    }
+  }
+}
+
+/*ListenAlong*/
+.listeningAlong_e0cf27 {
+  background: unset;
+  background-color: hsl(var(--spotify-hsl) / .1);
+  border-bottom: 1px solid var(--border-faint);
+  border-radius: 0;
+  gap: var(--space-8);
+  min-height: 56px;
+  padding: var(--space-xs) var(--space-md);
+  position: relative;
+  &:first-child {
+    border-radius: 7px 7px 0 0;
+  }
+  &:before {
+    background-color: var(--spotify);
+    content: "";
+    height: 24px;
+    margin-left: var(--panel-spotify-marginLeft);
+    margin-right: var(--panel-spotify-marginRight);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='24' viewBox='0 0 24 24' width='24'%3E%3Cpath d='m12 0c-6.6275 0-12 5.3725-12 12 0 6.6274 5.3725 12 12 12 6.6274 0 12-5.3726 12-12 0-3.1826-1.2643-6.2348-3.5147-8.4853-2.2505-2.2505-5.3027-3.5147-8.4853-3.5147zm5.475 17.325c-.2201.3343-.6576.4478-1.0124.2624-2.8126-1.7249-6.3751-2.1-10.5376-1.1624-.2612.0602-.5348-.0234-.7176-.2195-.1829-.1961-.2472-.4748-.1687-.7313.0784-.2563.2876-.4514.5489-.5117 4.575-1.05 8.475-.6 11.6626 1.35.1679.1012.2869.2666.3294.458.0426.1913.0048.3917-.1044.5544zm1.5-3.3c-.1286.2096-.3356.3593-.575.4156s-.4914.0148-.7-.1156c-3.225-1.9876-8.1376-2.55-11.9626-1.3876-.3216.0938-.6686.009-.9107-.2226-.242-.2316-.3421-.5747-.2626-.9.0796-.3253.3266-.5836.6481-.6774 4.35-1.3124 9.7876-.6749 13.4626 1.6126.4211.279.5525.8375.3 1.275zm.1124-3.375c-3.8624-2.2876-10.2374-2.5126-13.95-1.3876-.5572.0889-1.094-.2486-1.2553-.7895-.1613-.5407.103-1.1172.6179-1.3481 4.2376-1.275 11.2874-1.05 15.75 1.6126.2572.151.4421.3997.5128.6894.0707.2897.021.5956-.1378.848-.3385.5036-1.0051.6662-1.5376.375z' fill='%23fff'/%3E%3C/svg%3E");;
+    width: 24px;
+  }
+  &:hover {
+    .icons_e0cf27 {
+      animation: pointerDelay .15s ease forwards;
+      opacity: 1;
+      top: -14px;
+    }
+  }
+}
+.party_e0cf27 {
+  margin: 0;
+}
+.avatar_e0cf27 > .svg__44b0c {
+  width: 20px;
+  height: 20px;
+}
+.moreUsers_b2d72f {
+  background: linear-gradient(315deg, hsl(var(--spotify-hsl) / .35), hsl(var(--spotify-hsl) / .75));
+  color: var(--white);
+}
+/*ActivityPanel*/
+.activityPanel_c48ade.activityPanel_c48ade {
+  background: unset;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: flex;
+  min-height: 56px;
+  padding: var(--space-xs) var(--space-sm);
+  transition: background-color .2s ease;
+  &:first-child {
+    border-radius: 7px 7px 0 0;
+  }
+  &:hover {
+    background-color: var(--background-mod-normal);
+    .actions__4cd01 {
+      animation: pointerDelay .15s ease forwards;
+      opacity: 1;
+      top: -14px;
+    }
+  }
+}
+.body__5dec7 {
+  width: 100%;
+}
+.gameWrapper__5dec7, .gameWrapper__8c6c2 {
+  gap: var(--space-8);
+}
+.wrapper_a629d4, .gameIcon__5dec7, .gameIconWrapper__8c6c2 {
+  margin-left: var(--panel-activityIcon-marginLeft);
+  margin-right: var(--panel-activityIcon-marginRight);
+}
+.info__8c6c2, .info__5dec7 {
+  margin-left: 0;
+  a:first-child div {
+    text-decoration: none;
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+}
+.panelButtonContainer__4cd01 {
+  display: contents;
+  &:not(:only-child) .button__67645 {
+    border-top-right-radius: unset !important;
+    border-bottom-right-radius: unset !important;
+    padding-right: 4px !important;
+  }
+}
+/*VoicePanel*/
+.wrapper_e131a9 {
+  transition: background-color .2s ease;
+  &:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  &:hover {
+    background-color: var(--background-mod-normal);
+    .voiceButtonsContainer_e131a9, .actionButtons_e131a9 {
+      animation: pointerDelay .15s ease forwards;
+      opacity: 1;
+      top: -14px;
+    }
+  }
+}
+.container_e131a9.container_e131a9 {
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: unset;
+  gap: var(--space-8);
+  padding: var(--space-xs) var(--space-md);
+  margin: 0;
+  min-height: 56px;
+}
+.connection_e131a9 {
+  flex: unset !important;
+  min-width: 40px;
+}
+.rtcConnectionStatusWrapper__06d62 {
+  padding-left: var(--panel-voiceOffset);
+}
+.ping__06d62 {
+  height: 24px;
+  margin-left: var(--panel-pingOffset);
+  top: calc(50% - 12px);
+  position: absolute;
+  pointer-events: all;
+  width: 24px;
+}
+.rtcConnectionStatus__06d62 {
+  pointer-events: none;
+  z-index: 1;
+}
+.labelWrapper__06d62 {
+  pointer-events: all;
+  > button {
+    width: 100%;
+    justify-content: unset;
+  }
+  .contents__201d5 {
+    width: inherit;
+  }
+}
+.rtcConnectionStatusConnected__06d62.rtcConnectionStatusConnected__06d62 {
+  color: var(--status-positive);
+}
+.rtcConnectionStatusLabel__06d62 [data-text-variant] {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.channel_e131a9 {
+  text-decoration: unset !important;
+  div {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+}
+.voiceUsers_e131a9 {
+  border-radius: var(--radius-md);
+  flex: 1 0 auto;
+  margin: -8px;
+  padding: 8px !important;
+  max-height: 36px;
+  min-height: 20px;
+  transition: .2s ease;
+  pointer-events: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &:has(div:nth-of-type(9)) {
+    pointer-events: all;
+    &:hover {
+      background-color: var(--background-surface-highest);
+      box-shadow: var(--shadow-border), var(--shadow-low);
+      z-index: 3;
+    }
+    .voiceUsers__68617 {
+      justify-content: unset;
+    }
+  }
+}
+.voiceUsers__68617 {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: flex-end;
+  max-width: 132px;
+  min-height: 100%;
+  row-gap: 4px;
+  z-index: 1;
+}
+.avatarContainer__68617:not(:last-of-type,:nth-of-type(8n)) {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' viewBox='0 0 20 20' width='100'%3E%3Cpath d='m18 0h-18v20h18c-2.8526705-2.3846085-4.6687684-5.979124-4.6687684-10 0-4.02087599 1.8160979-7.6153915 4.6687684-10z' fill-rule='evenodd'/%3E%3C/svg%3E");
+  mask-size: 100%;
+  margin-right: -4px;
+}
+.avatar__68617, .button__06eda {
+  width: 20px;
+  height: 20px;
+  min-width: unset;
+  min-height: unset;
+  pointer-events: all;
+}
+.avatarIconOverlay__68617 {
+  width: 12px;
+  height: 12px;
+  padding: 4px;
+}
+.actionButtons_e131a9.actionButtons_e131a9.actionButtons_e131a9.actionButtons_e131a9 {
+  right: 72px;
+  .disabledButtonWrapper__201d5 {
+    height: unset;
+    min-height: unset;
+  }
+  button {
+    background: transparent;
+    border: unset !important;
+    border-radius: unset;
+    color: var(--icon-secondary);
+    height: unset;
+    margin: unset;
+    min-height: unset;
+    min-width: unset;
+    padding: 4px;
+    width: unset;
+    &.buttonActive_e131a9 {
+      color: var(--green-360) !important;
+      background-color: hsl(var(--green-360-hsl) / .1);
+      &:hover {
+        background-color: hsl(var(--green-360-hsl) / .2);
+      }
+    }
+    &:first-child {
+      border-top-left-radius: var(--radius-round);
+      border-bottom-left-radius: var(--radius-round);
+      padding-left: 6px;
+    }
+    .contents__201d5 {
+      transition: scale .4s cubic-bezier(.16,1,.3,1);
+    }
+    .buttonContents_e131a9 {
+      width: 16px !important;
+      height: 16px !important;
+    }
+    &:hover {
+      background-color: var(--background-modifier-hover);
+      color: var(--interactive-hover);
+      .contents__201d5 {
+        scale: 1.1;
+      }
+    }
+  }
+  > div > button {
+    border-top-left-radius: unset !important;
+    border-bottom-left-radius: unset !important;
+    border-top-right-radius: var(--radius-round);
+    border-bottom-right-radius: var(--radius-round);
+    padding-left: 4px !important;
+    padding-right: 6px;
+  }
+}
+/*UserPanel*/
+.container__37e49.container__37e49 {
+  border-radius: 0 0 7px 7px;
+  padding: 0 !important;
+  margin: 0;
+  transition: background-color .2s ease;
+  &:hover {
+    background-color: var(--background-mod-normal);
+    .buttons__37e49 {
+      animation: pointerDelay .15s ease forwards;
+      opacity: 1;
+      top: -14px;
+    }
+  }
+}
+.wrapper_e131a9:first-child:empty + .container__37e49 {
+  border-radius: 7px;
+}
+.avatarWrapper__37e49.avatarWrapper__37e49 {
+  background: transparent !important;
+  border-radius: inherit;
+  padding: var(--space-xs);
+  padding-right: var(--space-md);
+}
+.title_b6c092 {
+  align-items: center;
+  gap: 4px;
+  display: flex;
+}
+.density-compact .avatarWrapper__37e49.avatarWrapper__37e49 {
+  padding-left: var(--space-4);
+}
+.density-cozy .avatarWrapper__37e49.avatarWrapper__37e49 {
+  padding-left: var(--space-12);
+}
+
+#vc-spotify-info-wrapper {
+  gap: var(--space-8);
+  height: fit-content;
+}
+#vc-spotify-album-image {
+  height: 40px;
+}
+#vc-spotify-album-expanded-wrapper #vc-spotify-album-image {
+  height: unset;
+}
+#vc-spotify-titles {
+  padding: 0;
+}
+#vc-spotify-song-title {
+  font-weight: 500;
+  line-height: 18px;
+}
+.vc-spotify-secondary-song-info {
+  line-height: 13px;
+}
+.vc-spotify-artist, .vc-spotify-album {
+  color: var(--text-secondary) !important;
+}
+.vc-spotify-button-row.vc-spotify-button-row {
+  background-color: var(--background-surface-highest);
+  border-radius: var(--radius-round);
+  box-shadow: var(--shadow-border), var(--shadow-low);
+  display: flex;
+  gap: 2px !important;
+  height: unset;
+  margin: 0;
+  padding: 2px;
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  right: 6px;
+  top: 0;
+  transition: .15s ease;
+  z-index: 2;
+}
+.vc-spotify-button.vc-spotify-button {
+  border-radius: 0;
+  height: unset;
+  margin: 0;
+  padding: 4px;
+  transition: background-color .2s ease;
+  width: unset;
+  &:first-child {
+    border-top-left-radius: var(--radius-round);
+    border-bottom-left-radius: var(--radius-round);
+    padding-left: 6px;
+  }
+  &:last-child {
+    border-top-right-radius: var(--radius-round);
+    border-bottom-right-radius: var(--radius-round);
+    padding-right: 6px;
+  }
+  &:hover {
+    .vc-spotify-button-icon.vc-spotify-button-icon {
+      scale: 1.1;
+    }
+  }
+}
+.vc-spotify-button-icon.vc-spotify-button-icon {
+  height: 16px;
+  width: 16px;
+  transition: scale .4s cubic-bezier(.16,1,.3,1);
+}
+.vc-spotify-repeat-1 {
+  left: calc(50% - 1px);
+}
+#vc-spotify-progress-bar#vc-spotify-progress-bar {
+  background-color: var(--background-surface-highest);
+  border-radius: 14px;
+  box-shadow: var(--shadow-border), var(--shadow-low);
+  box-sizing: border-box;
+  column-gap: 2px;
+  display: grid;
+  grid-template-areas: "vcSpotifySlider vcSpotifySlider vcSpotifySlider" "vcSpotifyProgress vcSpotifySlash vcSpotifyDuration";
+  left: 6px;
+  margin: 0;
+  min-height: 28px;
+  opacity: 0;
+  padding: 2px 6px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: .15s ease, max-width .4s ease;
+  width: unset;
+  .slider_a562c8 {
+    grid-area: vcSpotifySlider;
+    margin-bottom: -24px;
+    opacity: 0;
+    transition: .15s ease;
+  }
+  .track_a562c8 {
+    right: 15px;
+    left: 0;
+  }
+  .barFill_a562c8 {
+    background-color: var(--spotify);
+  }
+  &:after {
+    content: "/";
+    display: flex;
+    grid-area: vcSpotifySlash;
+    justify-content: center;
+    pointer-events: none;
+    transition: opacity .15s ease;
+  }
+  &:hover {
+    right: 6px;
+    z-index: 3;
+    .slider_a562c8 {
+      opacity: 1;
+    }
+    .vc-spotify-progress-time, &:after {
+      opacity: 0;
+    }
+  }
+}
+.vc-spotify-progress-time.vc-spotify-progress-time {
+  display: flex;
+  position: unset;
+  margin: 0;
+  pointer-events: none;
+  transition: .15s ease;
+}
+.vc-spotify-time-left {
+  grid-area: vcSpotifyProgress;
+}
+.vc-spotify-time-right {
+  grid-area: vcSpotifyDuration;
+  justify-content: end;
+}
+
+/* The rest */
+section.panels_c48ade {
+  background: var(--background-base-lowest);
+  left: 0px !important;
+  bottom: 0px !important;
+  width: calc(100%) !important;
+  border: none !important;
+  border-radius: 0px !important;
+  border-top: 1px solid var(--border-subtle) !important;
+  min-height: 80px;
+  align-content: center;
+
+  .mask__44b0c,
+  .avatarDecoration__44b0c {
+
+    g,
+    >rect {
+      display: none !important;
+    }
+
+    foreignObject {
+      mask: none;
+
+      .avatarStack__44b0c img {
+        border-radius: 50%;
+        contain: paint;
+      }
+    }
+  }
+}
+
+.container__37e49 {
+  padding: 20px 24px 20px 22px !important;
+}
+
+.avatar__37e49 {
+  will-change: transform;
+  transform: scale(0.7);
+}
+
+/* GUILDS - - - - - - - - - - - - - - - - - - - - - - */
+/* Without this one, there is a hughe space between the Discord letters and the DMs icon */
+.guilds_c48ade {
+  z-index: 3 !important;
+  top: calc(var(--custom-app-top-bar-height) - var(--custom-app-top-bar-height) * 2);
+  margin-bottom: calc(var(--custom-app-panels-height) - var(--custom-app-top-bar-height)) !important;
+  background-color: transparent !important;
+  /* border-right: 1px solid var(--border-subtle); */
+}
+
+/* Without this, the whole server list goes up, too much */
+.itemsContainer_ef3116>.stack_dbd263 {
+  padding-top: calc(var(--custom-app-top-bar-height) + 8px) !important;
+}
+
+/* SLTDND */
+.wrapper__48112>.stack_dbd263 {
+  overflow: visible !important;
+}
+
+/* SLTDND */
+.tutorialContainer__1f388 .numberBadge__2b1f5 {
+  outline: 2px solid var(--bg-base-tertiary);
+  border-radius: 50%;
+  contain: paint;
+}
+
+/* SLTDND */
+.iconSizeMini_f34534 {
+  border-radius: 50% !important;
+  contain: paint;
+}
+
+/* This affects the icons of the servers in the server list */
+.icon__6e9f8,
+.childWrapper__6e9f8,
+.circleIconButton__5bc7e {
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  contain: paint;
+}
+
+/* TITLEBAR - - - - - - - - - - - - - - - - - - - - - */
+/* SLTDND */
+:root {
+  --custom-app-top-bar-height: 32px !important;
+}
+
+/* This is responsible for the div that contains the name of the server and the icon, both appearing in the titlebar */
+.title_c38106 {
+  display: none !important;
+}
+
+/* THIS IS WHAT I GOT FROM CHROME */
+/* .defaultColor__4bd52 .lineClamp1__4bd52 .text-sm .medium_cf4812  {
+  display: none !important;
+} */
+
+/* Now, this moves the bottom (Windows buttons, and all that other stuff in the top right of the screen). It makes them get together, or something like it */
+.trailing_c38106 {
+  /* This is just a gap */
+  gap: var(--space-4) !important;
+/* And these are the Windows buttons, in case it wasn't really obvious by reading the name  */
+  .winButtons_c38106 {
+    gap: 0px !important;
+    padding-right: 4px;
+  }
+}
+
+/* EXTRA */
+.info__2debe::after {
+  width: 100%;
+  display: block;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 8px;
+  margin-top: 8px;
+  content: "Pinkord \A By Fox \A Dedicated to my girlfriend, Pinkie \A I love you, Ximena";
+  text-transform: none;
+  font-family: var(--font-primary);
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--text-muted);
+  white-space: pre;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  container-name: root;
+  --custom-guild-list-padding: 12px;
+  --panel-backdrop-filter: none;
+  --border-hover: var(--border-subtle);
+}
+
+body {
+  container-name: body;
+  --font: 'figtree';
+  --code-font: 'JetBrains Mono';
+  --divider-thickness: 4.5px; /* thickness of unread messages divider and highlighted message borders */
+  --border-thickness: 0px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
+  --custom-guild-list-width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2.7 + var(--border-thickness) * 2);
+  --border-hover-transition: 0.4s ease;
+}
+
+.visual-refresh {
+  .scroller__629e4 /* channel list inner scroller */ {
+      margin-bottom: 0;
+  }
+
+  .sidebar_c48ade:after /* server list + channel list bottom shadow */ {
+      display: none;
+  }
+
+  .chat_f75fb0 /* chat group outer */ {
+      border: none !important;
+      background: none;
+  }
+
+  .listeningAlong_e0cf27 /* user panel listening along */ {
+      border-top: none !important;
+  }
+
+  .content_f75fb0 > .outer_c0bea0 /* dm user panel */ {
+      margin-left: 8px;
+      overflow: hidden;
+      height: auto;
+      min-width: 340px;
+      margin-bottom: 32px;
+      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+      box-shadow: 0px 16px 30px rgba(0,0,0,0.15);
+      contain: paint;
+  }
+
+  .searchResultsWrap_a9e706 /* search results */ {
+      margin-left: calc(var(--gap) * 1.3);
+      margin: 0 0 32px 16px;
+      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+      box-shadow: 0px 16px 30px rgba(0,0,0,0.15);
+      overflow: hidden;
+      contain: paint;
+  }
+
+  .notice__6e2b9 /* notice banner */ {
+      margin: 0 var(--gap) var(--gap) 0;
+      border-radius: var(--radius-md);
+      box-sizing: border-box;
+      height: 40px;
+      contain: paint;
+  }
+
+  .container__01ae2 /* vc chat + titlebar group */ {
+      border: none;
+      background: none;
+  }
+  .chat_ee72fa::before /* vc chat shadow */ {
+      display: none;
+  }
+  .channelChatWrapper_cb9592 /* vc chat + titlebar group outer */ {
+      background: none;
+  }
+
+
+
+  /* remove excess background from settings  */
+  .standardSidebarView__23e6b,
+  .contentRegion__23e6b,
+  .sidebarRegionScroller__23e6b,
+  .contentRegionScroller__23e6b {
+      background: none;
+  }
+  .standardSidebarView__23e6b {
+      backdrop-filter: var(--panel-backdrop-filter);
+  }
+
+  /* remove excess backgrounds */
+  .wrapper_d852db /* message loading placeholders */,
+  .wrapper_d852db > .wrapper_fc8177 {
+      background: none;
+  }
+
+  .newMessagesBar__0f481 /* unread messages bar */ {
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      border-radius: calc(var(--radius-sm) * 1.7);
+      padding: 4px 8px;
+      contain: paint;
+  }
+
+  .bottom__7aaec /* channel list new unreads pill */,
+  .unreadBottom__629e4 /* channel list non-community unread pill */ {
+      bottom: 0;
+  }
+
+  .unreadMentionsIndicatorBottom_ef3116 /* server list new pill */,
+  .unreadMentionsIndicatorTop_ef3116 {
+      width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2);
+      padding: calc(var(--custom-guild-list-padding) / 2);
+  }
+
+  /* improve unread divider */
+  .divider__908e2 {
+      border-width: var(--divider-thickness);
+      border-radius: var(--divider-thickness);
+  }
+  .endCap__908e2 {
+      margin-top: calc(var(--divider-thickness) / -2);
+  }
+  .divider__908e2 .content__908e2 {
+      margin-top: calc(var(--divider-thickness) - var(--divider-thickness) * 2);
+  }
+
+  /* improve highlight message left edge */
+  .message__5126c.mentioned__5126c::before,
+  .replying__5126c::before,
+  .ephemeral__5126c::before {
+      width: var(--divider-thickness);
+      border-radius: var(--divider-thickness);
+      contain: paint;
+      height: calc(100% - 2 * var(--radius-sm));
+      top: var(--radius-sm);
+      left: calc(var(--divider-thickness) / -2 + 1px);
+      left: calc(var(--radius-sm) / 2);
+  }
+
+  .message__5126c {
+      border-radius: var(--radius-md);
+      margin-left: 14px;
+  }
+
+  /* improve server selected marker */
+  .pill_e5445c.wrapper__58105 {
+      width: calc((var(--custom-guild-list-padding) - 4px) / 2 + 4px);
+  }
+  .item__58105 {
+      width: 4px;
+      border-radius: 4px;
+      margin-left: calc((var(--custom-guild-list-padding) - 4px) / 2);
+  }
+
+  /* improve embeds */
+  .embedFull__623de {
+      border: 4px solid var(--border-normal);
+      border-top-color: var(--border-subtle) !important;
+      border-top-width: 1px;
+      border-bottom-color: var(--border-subtle) !important;
+      border-bottom-width: 1px;
+      border-right-color: var(--border-subtle) !important;
+      border-right-width: 1px;
+  }
+
+  /* improve borders */
+  .reaction__23977 /* message reactions */,
+  .reactionBtn__23977.forceShow__23977 /* add reaction button */ {
+      border-width: 2px;
+  }
+
+  /* remove unnecessary backgrounds */
+  .app__160d8,
+  #app-mount,
+  body {
+      background: transparent !important;
+  }
+}
+
+body {
+  --font-primary: var(--font), 'gg sans';
+  --font-display: var(--font), 'gg sans';
+  --font-code: var(--code-font), 'gg mono';
+}
+
+[class*='scroll'] {
+  will-change: scroll-position;
+}
+.burstGlow__23977 {
+  display: none;
+}
+
+/* animations.css */
+body {
+  --list-item-transition: 0.2s ease; /* transition for list items */
+  --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+}
+
+@property --animations {
+  syntax: 'off | on';
+  inherits: false;
+  initial-value: on;
+}
+
+@container body style(--animations: on) {
+  .visual-refresh {
+      /* list hover animations */
+      .wrapper__2ea32 .link__2ea32 /* channels */,
+      .container__91a9d /* members */,
+      .channel__972a0 /* dms */,
+      .side_b3f026 .item_b3f026 /* settings */ {
+          transition: margin-left var(--list-item-transition);
+          will-change: margin-left;
+      }
+      .wrapper__2ea32:hover .link__2ea32,
+      .side_b3f026 .item_b3f026:hover {
+          margin-left: 10px;
+      }
+      .container__91a9d:hover,
+      .channel__972a0:hover {
+          margin-left: 18px;
+      }
+      /* list hover channel dot */
+      .unread__2ea32 {
+          border-radius: 50%;
+          contain: paint;
+          width: 8px;
+          height: 8px;
+          margin-left: -4px;
+          transition: var(--list-item-transition);
+          /* will-change: margin-left; */
+      }
+      .wrapper__2ea32:hover .unread__2ea32 {
+          margin-left: 4px;
+      }
+  }
+}
+
+/* window-controls.css */
+body {
+  --window-control-size: 14px;
+}
+
+@property --custom-window-controls {
+  syntax: 'off | on';
+  inherits: false;
+  initial-value: on;
+}
+
+@container body style(--custom-window-controls: on) {
+  .winButtons_c38106 {
+      gap: 0;
+      padding-right: calc(var(--gap) - (var(--window-control-size) / 2) + 1px);
+  }
+  .winButtons_c38106::before {
+      margin-right: calc(var(--custom-app-top-bar-height) / 4);
+  }
+  .winButton_c38106 > svg {
+      display: none;
+  }
+  .winButton_c38106 {
+      background: none !important;
+      width: calc(var(--window-control-size) * 2);
+      height: var(--custom-app-top-bar-height);
+  }
+  .winButton_c38106::after {
+      display: block;
+      content: '';
+      height: var(--window-control-size);
+      width: var(--window-control-size);
+      border-radius: 50%;
+      contain: paint;
+  }
+  .winButton_c38106:hover::after {
+      filter: brightness(0.5);
+  }
+  .winButton_c38106:active::after {
+      transform: scale(0.9);
+  }
+  .winButtonClose_c38106::after {
+      background-color: #f0438c;
+  }
+  .winButtonMinMax_c38106:nth-child(1)::after {
+      background-color: #fefbb1
+  }
+  .winButtonMinMax_c38106:nth-child(2)::after {
+      background-color: #86d8f7
+  }
+}
+
+@container body style(--custom-window-controls: off) and style(--top-bar-button-position: titlebar) {
+  .visual-refresh {
+      .winButton_c38106 {
+          width: calc(var(--window-control-size) * 2);
+          height: calc(var(--window-control-size) * 2);
+      }
+      .winButtons_c38106 {
+          gap: 0;
+      }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Snippets --------------------------- */
+
+/* Deleting the counter of people reacting when it's only 1 --- */
+.reaction__23977:has(.reactionInner__23977[aria-label*="1 reaction"], 
+.reactionInner__23977[aria-label*="1 super reaction"]) .reactionCount__23977 {display: none;}
+
+
+/* The roles in the bio have a little of the color of the role in their background --- */
+.role_dfa8b6 {
+  transform: translate(0);
+  overflow: hidden;
+  border: 0;
+
+  --transparency: .05;
+  border-radius: 5px;
+  contain: paint;
+}
+.role_dfa8b6 .roleRemoveIcon__48c1c {
+  margin: 0;
+  left: unset;
+  transform: translate(50%,-50%);
+}
+.role_dfa8b6 .roleRemoveButton_dfa8b6 {
+  position: static;
+}
+.role_dfa8b6 .roleCircle__4f569:after {
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  opacity: var(--transparency);
+}
+
+
+/* The date of the messages appear by hovering on them --- */
+.message__5126c .header_c19a55 > .timestamp_c19a55 {
+  opacity: 0;
+  transition: 0.1s ease;
+}
+.mouse-mode.full-motion
+  .message__5126c:hover
+  .header_c19a55
+  > .timestamp_c19a55 {
+  opacity: 1;
+}
+
+
+/* The date when a message was edited appears --- */
+.message__5126c .edited_c19a55 {
+  color: var(--text-muted);
+  font-size: 0;
+}
+
+.message__5126c:not(:hover) .edited_c19a55::before {
+  content: " (✎)                                 ";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.message__5126c:hover .timestamp_c19a55:not(.timestampInline_c19a55, .timestampVisibleOnHover_c19a55) time::before {
+  content: " (" attr(aria-label) ")";
+  text-transform: lowercase;
+  transition: 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+/* Removing elements --- */
+/* Gift button */
+button[aria-label="Send a gift"] {
+  display: none;
+}
+
+/* Command button in bot dms */
+.entryPointButtonContainer_f75fb0 {
+  display: none;
+}
+/* Suggestion to create a thread, help button next to Windows buttons, and notification settings */
+.threadSuggestionBar__841c8, [aria-label="Help"], [aria-label="Notification Settings"] {
+  display: none !important;
+}
+
+
+
+/* Better blocked messages --- */
+.scrollerInner__36d07
+  > .groupStart__5126c:not(.backgroundFlash__5126c)
+  > .wrapper_c19a55 {
+  padding: 0 0 0 16px;
+}
+.scrollerInner__36d07
+  > .groupStart__5126c:not(.backgroundFlash__5126c)
+  > .wrapper_c19a55.compact_c19a55 {
+  padding: 0 0 0 108px;
+}
+.scrollerInner__36d07 > .groupStart__5126c:not(.backgroundFlash__5126c) {
+  margin: 0;
+}
+.scrollerInner__36d07
+  > .groupStart__5126c.expanded__7a70a:not(.backgroundFlash__5126c) {
+  background-color: var(--info-danger-background);
+}
+.scrollerInner__36d07
+  > .groupStart__5126c:not(.backgroundFlash__5126c)
+  .messageListItem__5126c
+  .groupStart__5126c,
+.scrollerInner__36d07
+  > .groupStart__5126c:not(.backgroundFlash__5126c, .expanded__7a70a)
+  + .messageListItem__5126c
+  .groupStart__5126c {
+  margin-top: 0;
+}
+.scrollerInner__36d07
+  > .groupStart__5126c:not(.backgroundFlash__5126c)
+  .messageListItem__5126c {
+  opacity: 0.5;
+}
+.blockedSystemMessage__7a70a .iconContainer__235ca {
+  display: none;
+}
+.blockedMessageText__7a70a {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--interactive-muted);
+}
+.blockedMessageText__7a70a:hover {
+  text-decoration: underline;
+}
+.blockedMessageText__7a70a:hover,
+.groupStart__5126c.expanded__7a70a .blockedMessageText__7a70a {
+  color: var(--info-danger-foreground);
+}
+.blockedAction__7a70a {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+
+/* Better search button, with an animation by hovering --- */
+.search__97492:not(.open__97492):hover .searchBar__97492 {
+  width: 184px;
+  background-color: var(--background-tertiary);
+}
+.search__97492:not(.open__97492) .iconContainer_fea832 {
+  transform: scale(1.3);
+}
+.search__97492:not(.open__97492):hover .iconContainer_fea832 {
+  transform: scale(1);
+}
+.search__97492:not(.open__97492) .icon_fea832 {
+  color: var(--text-normal);
+}
+.search__97492:not(.open__97492):hover .icon_fea832 {
+  color: var(--text-muted);
+}
+.search__97492:not(.open__97492) .icon_fea832 {
+  color: #b5bac1;
+}
+
+
+
+/* Compact context menu --- */
+.layer_da8173 > .menu_c1e9c4 > .scroller_c1e9c4 {
+  .separator_c1e9c4 {
+      margin: 1px 8px !important;
+  }
+  .wrapper_f563df {
+      padding: 2px !important;
+  }
+  .item_c1e9c4{
+      min-height: 32;
+      /* padding is 4px 8px as default, change value for desired look */
+      padding: 4px 16px;
+      font-size: 14px;
+      font-weight: 500;
+  }
+}
+
+/* Compact context menu --- */
+/* reduce context menu padding */
+.layer_da8173 > .menu_c1e9c4 {
+  min-width: 0;
+  width: 200px !important;
+  .item_c1e9c4 {
+      min-height: 0;
+      padding: 4px 8px;
+  }
+  .icon_f563df {
+      width: 32px;
+  }
+  .button_f563df {
+      width: 36px;
+      height: 36px;
+      border-radius: 4px;
+      contain: paint;
+  }
+  .icon_c1e9c4 {
+      width: 18px;
+      height: 18px;
+  }
+  .iconContainer_c1e9c4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Background color when a profile doesn't have Nitro */
+/* .inner_c0bea0 {
+  background-color: #000;
+} */
+
+
+
+
+
+
+
+
+
+
+/* Full screen emoji/sticker/GIF picker --- */
+.positionLayer__08434 {
+  width: 100vw;
+  height: 100vh !important;
+  left: 0px;
+  bottom: 0px !important;
+  align-items: center !important;
+  align-content: center !important;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .drawerSizingWrapper__08434 {
+      justify-self: center !important;
+      align-self: center !important;
+      right: 50vw !important;
+      left: 55vw !important;
+      top: 42vh !important;
+      /* top: 30vh !important; */
+      bottom: 50vh !important;
+      height: 85vh;
+      /* height: 70vh; */
+      width: 93vw !important;
+  }
+}
+/* Commented this because it made the chat in VC to act really weird.
+.layerContainer_da8173,  */
+
+
+
+/* .header_c0e32c {
+  height: 50px;
+} */
+
+/* .emojiItem_fc7141 {
+  width: 100px;
+  height: 100px;
+}
+
+.gridcell {
+  width: 100px;
+} */
+
+/* .emojiListRow_fc7141  {
+  transform: scale(1.5);
+  gap: 8px;
+  position: relative;
+  top: 5px;
+} */
+
+/* .categorySection_c656ac {
+}
+
+.emojiListRow_fc7141 {
+} */
+
+
+
+/* Animated guild tag icons --- */
+[class^="chipletContainerInner_"] > span > .unselectable__10651 {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+  will-change: max-width, margin;
+  transition: max-width 0.7s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              margin 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+[class^="chipletContainerInner_"]:hover > span > .unselectable__10651 {
+  max-width: 20ch;
+  margin-right: .3ch;
+  /* Prevents it from triggering if you just quickly mouseover :D */
+  transition-delay: 0.08s;
+}
+
+[class^="chipletContainerInner_"] > span > img.badge__10651 {
+  margin-right: 0;
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              margin 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+[class^="chipletContainerInner_"]:hover > span > img.badge__10651 {
+  transform: rotateZ(360deg);
+  margin-right: .6ch;
+  /* Same as above transition delay */
+  transition-delay: 0.08s;
+}
+
+[class^="chipletContainerInner_"] {
+  position: relative;
+}
+
+[class^="chipletContainerInner_"]::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  pointer-events: none;
+}
+
+/* And this places them after the icon role --- */
+[class^="headerText"] {
+  display: inline-flex;
+}
+
+[class^="headerText"] > span:has([class^="roleIcon"]) {
+  order: 2;
+}
+
+[class^="headerText"] > span:has([class^="chipletContainerInner"])  {
+  order: 3;
+}
+
+[class^="headerText"] > span:is([class^="username"]) {
+  order: 1;
+}
+
+[class^="headerText"] > span[style="display: none;"] {
+  order: 4;
+}
+
+[class^="headerText"] > .vc-message-decorations-wrapper {
+  order: 5;
+}
+
+[class^="headerText"] > span:has(> [class^="newMemberBadge"]) {
+  order: 6;
+}
+
+[class^="headerText"] > span:is([class^="botTag"]) {
+  order: 7;
+}
+
+
+
+
+
+
+
+/* Three reactions pop up --- */
+.button_f7ecac:has(> div),
+.separator_f84418 {
+    width: 0;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    opacity: 0;
+    transition: min-width var(--animation-speed) ease-out,
+                width     var(--animation-speed) ease-out,
+                height    var(--animation-speed) ease-out,
+                padding   var(--animation-speed) ease-out,
+                opacity   var(--animation-speed) ease-out;
+}
+.buttonsInner__5126c:hover > :not(.separator_f84418) {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    padding: 2px;
+    opacity: 1;
+    > div {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+        transform: .4s cubic-bezier(.16,1,.3,1)
+    }
+}
+.buttonsInner__5126c:hover > .separator_f84418 {
+    width: 1px;
+    height: 24px;
+    margin: 2px 4px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/* Scrollbar in message section. I'll use this to apply color to it */
+.scroller__36d07::-webkit-scrollbar {
+  opacity: 0;
+}
+
+
+
+
+/* Resizing the pop up for activities */
+.popoutContentWrapper_af3b89, .interactionsContainer_af3b89 {
+  width: 200px;
+  position: relative;
+  left: 120px;
+  border: none;
+}
+
+.primaryActionPopoutActionButtons_af3b89 {
+  flex-direction: column;
+}
+
+
+/* Animation for the pins */
+.iconBadge__9293f, .iconBadgeBottom__9293f {
+  /* background-color: #000; You know what? I'm using this, lol */
+  animation: pulse 1s ease-in-out infinite;
+  border: 2px solid var(--background-base-lower);
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.75);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+
+
+/* .textArea__74017 {
+
+  .placeholder__1b31f {
+    padding: 6px 0px;
+  }
+
+  .editor__1b31f {
+    min-height: 15px !important; 
+    position: relative;
+    top: 0px;
+  }
+} */
+
+
+
+body {
+  --dms-icon-svg-url: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHzklEQVR4nO2dC6gWRRTHf/eqPcyyNE29mqiZSpGIYU8J0yjKXlDZO3pRWhQWFZVoWSRZ9iQrK6O0l5mo0S2trITKCiqiLLOUSu1h9tY0vXfjXObC57C73+7O7O7s5/7hgI+Z+c6Zs7tn5sw5Z6C4OBh4BFgB/KtI/vwoMDRv5nYkdACeBJoBL4Dk/54A2ufNbK1jN+DdEEXotBTYNW+maxkzYyijlabnzXStYXfgUGB8lc9UEDUB5wKd8xakiKgDDgDGAs8CqxMqIciufAY8CJwOdAzgYSdgOHAhcDlwBjAIqGcHgXzjRwMzgB8tTX4U2gI0ApcAXYA2wA3A+oD264BpQG9qEPK0jQJmAf9kqAQvgLaptzGqIu9RC4zCYx9gEvCdA0rwDOlr9SkrJA5SK6TNDkykF4H+BBYCDwELgE0B7X4DhlAgHAi8ZNEwexkpo5cmh3yeLlBvhd7+J6A7jqMv8IxacnoFo6VVvARP+fSZj6MQV8Vk5VfyCkq/RTDY9/r0E9+aUzixRoy1B0ytIqsskd/R+sjKKxe0BdpV/L2jcvZ5NUTNanMahhO0PqKgzDBErThWAv8p2/CNenW/d2ACvZTogRCP8VCt7fIsdvOyb3jOgYnxciR54K7UVlLiXXjBp+0rwF5pKUMcer86MCGeQ5+xVepNCNtPrUpjbzIqxKWxVbkabAgpv3EZ0Ek9WUcBLxZ0uVxJm9S+xdpm7i+fH/lIOQF3UcvC6RYYPyWAh+OB3x2YWFOaYKqMnYGvfAa+Ta2uKtHdkFlZIIRhCLDRgUk1pftNjP0EnwHHhRh8E0bnRODnbAcm1AbN1rYKkSCfoQ3aQA+HtD/PkElZvUXBYgcm1AY9rQ7gIuNMbYD1IadqMvAyQwalf9QFhlcjdFcchczQOt8d0vYKC8xtUauraqj3eXOLTNdGVcibWseTAtoNs+g8vCYib687MJE29zOjkyjkWJ82JwN/W2RufcS3ZK4DE+lZlruhmtCPa50WKv+/YP+AcwAbND/CsnCZA5Nom95WXuNQ97nfjjML98lMn31OK/pY9Ay4RjcRgvqcfVfv+xzydFb/7jny7V9peY42+hwXO7e8/ER9HucGuHDyIDlLH6zmqY3y/tp6a+Wo2xevOiC45yDJU9zPZ75utvjmHaYPPqhgkSFehiSHcEF+v18s/YaEGm2HSQ4I7jlKR1qOxvejbXqI6qcOCO45SnuGKGS8xd+5o3JZmbfQLlPbEIVcavF31rQOepYDQrtM3UIUcqPl3xqIikHKW2iXaXSIQuZZ/q2xtea481KgoIO0LilEaLacES13QGiXqRkY6aOQWSn81ntknLVUVPoLuEjlO/ZL0dH6LQXK2fB2AJKwqMBklJLIfA4kTJe15eTjysMnsWgt3tW8GSmJljn4UhTyWDkhuPJASLB2S4J83oyURMscTGo9lStyCppXQzQszU1OScS2H3WVWbPl8pdcHyJx8m4HCVorn2pymYN5QXG/95VKIWtlLFE5N76oU+kHLhSE8WqcNqtVlZSDqooGFcT1AfCzA8x7NUD/qlPBRmUeukZRRIkSJUqUKJEWHnDAOHoFzMJNDYc4IKBXVP9UWvDLYy8J3zlYGTfzNgnKOGAiP4ATyQD9LEXKvwbsp8ZbbHio0wD0VJuupOMsUk7W/pZy45sD0hhSQZyC+EEkwtuIL+5ZMU4vg3H6aA+dqXwyR5lhnAWGe2hj/pBwHB1Ja2JVoocF+YJKkqSCTirx34Th47Qx5+eoECllq1cjMg3n2ZuMsdByBurEHBVii5fAjKgsMMaQaSlUVonROSpEL5KwwFA2uVEhc8ihyh8GTEsRzUp0y1EhEsleiTWGlbFzu9VnpuGyUC8YuS4HhcitCDbrgMndV7lhpCHzI7TxXs5BIZIPH1aPNy4dTY6oN1iu+pUqujUHhUhami2DvrZa/ZIsMNWw9J1ebcjLWCHHWDTod+IABhsI8IU2Vs+MFdLsc1mYiUGXe1KcwGcJBWiqKAHVirgZXTpiZyxZMuif4xBuMBDkcG2sxgwVMseiQb8eh9BgUB1HKutU4vYMFSIPko2jhaawMkt5YYmldfupGSpkpCV3kJRHdA4XJxTmY22c3hkppNmn3mPS9D7J0HUOeySMoN+iSh1VIk7ZIx1JS513M4hIDCtQkyvmJBRKv/98UQYKed6Sc1PuEXEWSTZ2nqqqU4kpGSjkOksGPai+sRNoF3KXbJwrtk/LQCEjLBj0DVGj1/NEkntFpPJoJfqmrJBmn+9+EoMu93I5jyMSCLZJKxRWF6Peu44ofVZYMuj6ptZJ1CmXRFzhDtTGeSNFhchd7aYGfXUWQXC2MDmBgOcn9CLrSOL2vyUBv3JUUBj0t1COdUyKCpHLx0wPxgZQMHyYoDh9EqXqiGLQOxoeHUuqX+FwdYLggPqK/nURb2rTEanAi6FBv4oCoqu68zCOoP21Md5KQSGzI9wKEUZb1blJIdFoGM80LQWFSPFjE4PeUrGnqDgnprBTElybp6Na++GGBl14Kizax7wiaZHWf6BlhTSpQpZJDfo/PkfOhUOcCp7rtb71Ee4Q0RHWVkrimtxWKrIUHgNiBi7sq/VfalEhUoYq6Q59nbqLqyawqwoXGhqBOmh9+1RpryOsrZ6T0iUiT4PzjNctUaJECdzE/4q0JvDjSoyOAAAAAElFTkSuQmCC");
+  --dms-icon-svg-size: 100%;
+  --dms-icon-color-before: var(--icon-secondary);
+  --dms-icon-color-after: var(--white);
+  --dms-background-image-url: url('');
+  --dms-background-image-size: cover;
+  --dms-background-color: linear-gradient(
+    70deg, 
+    color-mix(in srgb, var(--blue-2) 80%, transparent),
+    color-mix(in srgb, var(--purple-2) 80%, transparent),
+    color-mix(in srgb, var(--red-2) 80%, transparent)
+  );
+}
+@property --custom-dms-icon {
+  syntax: 'off | hide | custom';
+  inherits: false;
+  initial-value: custom;
+}
+@container body style(--custom-dms-icon: custom) {
+  .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 > svg {
+      display: none;
+  }
+  .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 65%;
+      height: 65%;
+      background: var(--dms-icon-color-before);
+      mask-image: var(--dms-icon-svg-url);
+      mask-size: var(--dms-icon-svg-size);
+      mask-position: center;
+      mask-repeat: no-repeat;
+      transform: rotate(0) scale(1);
+      transition: 
+          background-color 0.30s ease-out,
+          transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
+  .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
+      background: var(--dms-icon-color-after);
+      transform: rotate(360deg) scale(0.75);
+  }
+  @container body style(--animations: on) {
+      .wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8::before {
+          transition: 
+              background-color 0.30s ease-out,
+              transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover .childWrapper__6e9f8::before,
+      .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 .childWrapper__6e9f8::before {
+          transition-delay: 0.08s;
+      }
+  }
+}
+
+
+
+
+
+
+
+/* This is the color of the "41 Boosts" thing */
+/* .progressText_eff079 {
+  color: purple;
+} */
+
+ /* This is the color of the "Level 3" thing */
+/* .goalText_eff079 {
+  color: purple;
+} */
+
+/* .bannerImg_f37cb1 {
+  display: none;
+} */
+
+/* Goodbye, new unreads */
+.container__7aaec {
+  display: none;
+}
+
+
+
+/* Fixing the position of the label for VC channels */
+.wrapper__2ea32:has(.icon__2ea32 > [d="M11 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1h-.06a1 1 0 0 1-.74-.32L5.92 17H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2.92l4.28-4.68a1 1 0 0 1 .74-.32H11ZM20.5 12c-.28 0-.5.22-.52.5a7 7 0 0 1-5.13 6.25c-.48.13-.85.55-.85 1.05v.03c0 .6.52 1.06 1.1.92a9 9 0 0 0 6.89-8.25.48.48 0 0 0-.49-.5h-1ZM16.5 12c-.28 0-.5.23-.54.5a3 3 0 0 1-1.33 2.02c-.35.23-.63.6-.63 1.02v.14c0 .63.59 1.1 1.16.83a5 5 0 0 0 2.82-4.01c.02-.28-.2-.5-.48-.5h-1Z"]) .linkTop__2ea32{ 
+  position: relative;
+  top: 7px;
+}
+.wrapper__2ea32:has(.icon__2ea32 > [d="M11 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1h-.06a1 1 0 0 1-.74-.32L5.92 17H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2.92l4.28-4.68a1 1 0 0 1 .74-.32H11ZM20.5 12c-.28 0-.5.22-.52.5a7 7 0 0 1-5.13 6.25c-.48.13-.85.55-.85 1.05v.03c0 .6.52 1.06 1.1.92a9 9 0 0 0 6.89-8.25.48.48 0 0 0-.49-.5h-1ZM16.5 12c-.28 0-.5.23-.54.5a3 3 0 0 1-1.33 2.02c-.35.23-.63.6-.63 1.02v.14c0 .63.59 1.1 1.16.83a5 5 0 0 0 2.82-4.01c.02-.28-.2-.5-.48-.5h-1Z"]) .name__2ea32{ 
+  transform: scale(0.9);
+  position: relative;
+  left: -5px;
+}
+.linkBottom__2ea32 {
+  position: relative;
+  bottom: 8px;
+  left: -13px;
+  transform: scale(0.9);
+}
+
+
+
+.callContainer_cb9592 {
+  box-shadow: 0px 0px 60px rgba(0,0,0,0.6);
+  margin: 0 0 32px 0px;
+}
+
+
+
+/* Fixing themming issues. Now all the themes are compatible */
+.container__2637a {
+  background: transparent !important;
+}
+.bg__960e4 {
+  background: var(--theme-base-color-hsl);
+}
+.panels_c48ade {
+  background: var(--theme-base-color-hsl) !important;
+}
+.itemsContainer_ef3116 {
+  background: transparent !important;
+}
+.privateChannels__35e86, .scroller__99e7c   {
+  background: transparent !important;
+}
+
+/* This was neccesary to enlarge the container for chats after making it a little smaller, cuz if you get a notice, it will go down to oblivion */
+/* .chat_f75fb0 {
+  min-height: calc(100vh - var(--custom-app-top-bar-height));
+} */
+/* .container__133bf {
+  min-height: calc(95vh - var(--custom-app-top-bar-height));
+} */
+/* .shop__6db1d {
+  min-height: calc(95vh - var(--custom-app-top-bar-height));
+} */
+
+.button_e131a9 {
+  background: transparent !important;
+  border: #000 4px solid;
+}
+
+.withLayer__78332 {
+  backdrop-filter: blur(5px);
+}
+
+.resizeHandle__01ae2 {
+  opacity: 0;
+}
+
+
+[class="callContainer_cb9592 theme-dark theme-midnight images-dark"] .chatContent_f75fb0{ 
+  display: none;
+}
+
+
+
+.popoutHeroTextSecondary_af3b89 {
+  padding: 3px 0;
+  text-align: center;
+  font-size: 11px;
+}
+
+.popoutHeroTextPrimary_af3b89 {
+  text-align: center;
+}
