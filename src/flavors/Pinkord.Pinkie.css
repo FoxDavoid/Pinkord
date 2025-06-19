@@ -281,6 +281,66 @@
 
 
 
+/* DM ICONS */
+body {
+  --dms-icon-svg-url: url('https://FoxDavoid.github.io/Pinkord/assets/Pinkie.png');
+  --dms-icon-svg-size: 100%;
+  --dms-icon-color-before: var(--icon-secondary);
+  --dms-icon-color-after: var(--white);
+  --dms-background-image-url: url('');
+  --dms-background-image-size: cover;
+  --dms-background-color: linear-gradient(
+    70deg, 
+    color-mix(in srgb, var(--blue-2) 80%, transparent),
+    color-mix(in srgb, var(--purple-2) 80%, transparent),
+    color-mix(in srgb, var(--red-2) 80%, transparent)
+  );
+}
+@property --custom-dms-icon {
+  syntax: 'off | hide | custom';
+  inherits: false;
+  initial-value: custom;
+}
+@container body style(--custom-dms-icon: custom) {
+  .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 > svg {
+      display: none;
+  }
+  .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 65%;
+      height: 65%;
+      background: var(--dms-icon-color-before);
+      mask-image: var(--dms-icon-svg-url);
+      mask-size: var(--dms-icon-svg-size);
+      mask-position: center;
+      mask-repeat: no-repeat;
+      transform: rotate(0) scale(1);
+      transition: 
+          background-color 0.30s ease-out,
+          transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
+  .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
+      background: var(--dms-icon-color-after);
+      transform: rotate(360deg) scale(0.75);
+  }
+  @container body style(--animations: on) {
+      .wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8::before {
+          transition: 
+              background-color 0.30s ease-out,
+              transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover .childWrapper__6e9f8::before,
+      .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 .childWrapper__6e9f8::before {
+          transition-delay: 0.08s;
+      }
+  }
+}
+
+
+
 /* EXTRA */
 .info__2debe::after {
     width: 100%;
