@@ -285,7 +285,7 @@
 /* DM ICONS */
 body {
   --dms-icon-svg-url: url('https://FoxDavoid.github.io/Pinkord/assets/Quesito.png');
-  --dms-icon-svg-size: 100%;
+  --dms-icon-svg-size: 130%;
   --dms-icon-color-before: var(--icon-secondary);
   --dms-icon-color-after: var(--white);
   --dms-background-image-url: url('');
