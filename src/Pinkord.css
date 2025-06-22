@@ -2707,10 +2707,15 @@ body {
 
 
 /* Snippets --------------------------- */
-
-/* Deleting the counter of people reacting when it's only 1 --- */
-.reaction__23977:has(.reactionInner__23977[aria-label*="1 reaction"], 
-.reactionInner__23977[aria-label*="1 super reaction"]) .reactionCount__23977 {display: none;}
+ 
+ /* Deleting the counter of people reacting when it's only 1 --- */
+.reaction__23977:has(.reactionInner__23977[aria-label*="1 reaction"],
+.reactionInner__23977[aria-label*="1 super reaction"])
+.reaction__23977:has(.reactionInner__23977[aria-label*="1 reacción"],
+.reactionInner__23977[aria-label*="1 superreacción"])
+.reactionCount__23977 {
+  display: none;
+}
 
 
 /* The roles in the bio have a little of the color of the role in their background --- */
@@ -2790,16 +2795,16 @@ body {
 
 /* Removing elements --- */
 /* Gift button */
-button[aria-label="Send a gift"] {
+button[aria-label="Send a gift"],
+button[aria-label="Enviar un regalo"]{
   display: none;
 }
-
-/* Command button in bot dms */
+/* Command button (DMs)*/
 .entryPointButtonContainer_f75fb0 {
   display: none;
 }
-/* Suggestion to create a thread, help button next to Windows buttons, and notification settings */
-.threadSuggestionBar__841c8, [aria-label="Help"], [aria-label="Notification Settings"] {
+/* "Create a thread" suggestion, "Help" button, and "Notification Settings" */
+.threadSuggestionBar__841c8, [aria-label="Help"], [aria-label="Ayuda"], [aria-label="Notification Settings"], [aria-label="Ajustes de notificaciones"] {
   display: none !important;
 }
 
