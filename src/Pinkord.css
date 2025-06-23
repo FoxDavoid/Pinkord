@@ -107,20 +107,21 @@
   }
 }
 
-/* ROUNDED STUFF */
-:root {
+/*
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+--- MAKING EVERYTHING (Well, almost everything) ROUNDED
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+*/
+ :root {
   --radius: 16px;
 }
-
 #bd-editor-controls button,
 #floating-editor-window,
 .accountProfileCard__1fed1,
-.achievementContainer_f8824b,
-.actionButtons_cc1819,
-.actionContainer__6446f,
-.action_c66e86,
-.activityItem__18da2,
-.activityTag__18da2,
 .activity__5be3e,
 .activity_f00225,
 .addAnotherRuleCardContainer__0c1e8,
@@ -180,7 +181,6 @@
 .box_d9914b,
 .burstGlow__23977,
 .burstGlow_f8896c,
-.buttonInner__34c2c,
 .button__02a39,
 .button__14992,
 .button__201d5,
@@ -188,6 +188,7 @@
 .button_f23d00,
 .button_f7ecac.selected_f7ecac,
 .button_f7ecac:hover,
+.buttonInner__34c2c,
 .calloutContainer__6fddf,
 .cameraPreview__19236,
 .cameraWrapper_d41d5f,
@@ -298,8 +299,6 @@
 .contentContainer__8f46b,
 .contentContainer_c6b177,
 .contentContainer_f8758b,
-/* .contentImage__42bf5.thumbnail__0f2e8, */
-/* THAT LINE HAS BEEN COMMENTED BECAUSE IT CREATES A QUITE WEIRD BORDER RADIUS TO THE IMAGE OF THE ACTIVITIES. Issue 02 */
 .contentPreview__9a337,
 .contentWrapper__08434,
 .contentWrapper__9b0f4:only-child,
@@ -642,7 +641,6 @@ div#anchor,
 html:not(.visual-refresh-chat-input) .inner_a99829 {
   border-radius: var(--radius);
 }
-/* SLTDND */
 #replugged-quickcss-wrapper .cm-editor,
 .audioControls_f316dd,
 .avatarWrapper__37e49,
@@ -658,11 +656,9 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .ͼ1 .cm-scroller {
   border-radius: var(--radius) !important;
 }
-/* SLTDND */
 #bd-editor-controls,
 #vc-spotify-player,
 .activityPanel_c48ade,
-/* .bannerSVGWrapper_b32cc2:not(:has([style*="image"])) [style*="background-color"], */
 .banner__183e8,
 .bd-modal-header,
 .borders__22c64,
@@ -707,7 +703,6 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .wrapper__0d616 {
   border-radius: var(--radius) var(--radius) 0 0;
 }
-/* SLTDND */
 #replugged-quickcss-wrapper .cm-gutters,
 .backdrop__8a7fc,
 .bd-controls > .bd-addon-button:first-of-type,
@@ -723,7 +718,6 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .sidebarContainer__1d6c7 {
   border-radius: var(--radius) 0 0 var(--radius);
 }
-/* SLTDND */
 .allow__344e6,
 .allow_f5fff4,
 .bd-controls > .bd-addon-button:last-of-type,
@@ -733,7 +727,6 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .roundedRow__71c22 td:last-child {
   border-radius: 0 var(--radius) var(--radius) 0;
 }
-/* SLTDND */
 .animatedContainer_f37cb1,
 .bd-modal-footer,
 .changeDetails__43dab,
@@ -771,16 +764,9 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .visual-refresh .lastChannel_e4503a {
   border-radius: 0 0 var(--radius) var(--radius);
 }
-/* SLTDND */
-/* IT HAS A HAS */
-/* .wrapper_e131a9:has(.container_e131a9) ~ .container__37e49 {
-  border-radius: 0 0 var(--radius) var(--radius) !important;
-} */
-/* SLTDND */
 .modal_b962dc .footer__49fc1 {
   border-radius: 0 0 var(--radius) 0;
 }
-/* SLTDND */
 .activityPanel_c48ade ~ .wrapper_e131a9 .container_e131a9,
 .content__49fc1.body_c6f1a4.thin__99f8c.scrollerBase__99f8c,
 .floating-window #bd-editor-controls,
@@ -791,12 +777,10 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .root_e5f3a9 .body_c6f1a4 {
   border-radius: 0 !important;
 }
-/* SLTDND */
 .categoryList_c0e32c,
 .wrapper__4e6ce {
   border-bottom-left-radius: var(--radius);
 }
-/* SLTDND */
 .applicationStore_f07d62,
 .chat_f75fb0,
 .containerSidenav_dc2e0e,
@@ -808,98 +792,48 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .main_c08b38,
 .pageWrapper_a3a4ce,
 .shop__6db1d,
-.sidebarContainer__656be {
-  border-radius: var(--radius);
-}
-/* SLTDND */
-.sidebar_c48ade {
-  border-radius: var(--radius) !important;
-}
-.wrapper_ef3116 {
-  border-radius: var(--radius);
-}
-/* SLTDND */
-.channelChatWrapper_cb9592 {
-  border-radius: var(--radius);
-}
-/* SLTDND */
-.container__0be77 {
-  border-radius: var(--radius);
-}
-/* SLTDND */
-.chat_f75fb0.threadSidebarOpen_f75fb0 {
-  border-radius: var(--radius);
-}
-/* SLTDND */
-div.profileThemedContainer__656be {
-  border-radius: var(--radius);
-}
-/* SLTDND */
+.sidebarContainer__656be,
+.sidebar_c48ade,
+.wrapper_ef3116,
+.channelChatWrapper_cb9592,
+.container__0be77,
+.chat_f75fb0.threadSidebarOpen_f75fb0,
+div.profileThemedContainer__656be,
 .editor__2a891,
 .notice__6e2b9,
-.themeEditor_cf6da1 {
-  border-radius: var(--radius);
-}
-/* SLTDND */
-.shopScroll__6db1d {
-  border-radius: var(--radius);
-}
-/* SLTDND */
+.themeEditor_cf6da1,
+.shopScroll__6db1d,
 .container__2637a,
 .container__551b0,
-.privateChannels__35e86 {
+.privateChannels__35e86,
+.visual-refresh .sidebarList_c48ade,
+.banReasonOtherClickable__837b7,
+.vc-shiki-btn:last-child,
+.better-codeblocks-btn:last-child,
+.userProfileOuterUnthemed_c69a7b,
+.inviteRow__67dba {
   border-radius: var(--radius);
 }
-/* SLTDND */
-.visual-refresh .sidebarList_c48ade {
-  border-radius: var(--radius);
-}
-/* SLTDND */
-.banReasonOtherClickable__837b7 {
-  border-radius: var(--radius);
-}
-/* SLTDND */
-.vc-shiki-btn:last-child {
-  border-radius: var(--radius);
-}
-/* SLTDND */
-.better-codeblocks-btn:last-child {
-  border-radius: var(--radius) !important;
-}
-/* SLTDND */
 .categoryItemDefaultCategory_b9ee0c {
   border-radius: 8px;
 }
-/* SLTDND */
 .cozy_c19a55.hasThread_c19a55:after {
   border-bottom-left-radius: var(--radius) !important;
 }
-/* SLTDND */
 .suggestedColor__713b5 {
   border-radius: 10px;
-}
-/* SLTDND */
-.userProfileOuterUnthemed_c69a7b {
-  border-radius: var(--radius);
 }
 .childContainer__91a9d,
 .layout__91a9d,
 .visual-refresh .layout__91a9d {
   border-radius: 20px;
 }
-/* SLTDND */
 .bottomControls_bfe55a .button__201d5 {
   border-radius: 30px !important;
 }
-/* SLTDND */
-.inviteRow__67dba {
-  border-radius: var(--radius);
-}
-/* SLTDND */
 .profileCustomizationSection__44061 .clickable__75b30:hover {
   border-radius: var(--radius) var(--radius) 0 0;
 }
-/* END OF ROUNDED STUFF */
 
 /* THIS ONE MAKES SEVERAL THINGS TRANSPARENT, SUCH AS THE LIST OF THE CHANNELS AND THE LIST OF MEMBERS.
 EVEN THE IT'S REMOVED EVERYTHING TURNS DARKER IN THE BACKGROUND */
