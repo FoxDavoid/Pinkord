@@ -3245,7 +3245,7 @@ body {
   background: transparent !important;
 }
 .bg__960e4 {
-  background: var(--theme-base-color-hsl);
+  background: var(--bg-overlay-5, var(--background-base-lowest)) !important;
 }
 .panels_c48ade {
   background: var(--theme-base-color-hsl) !important;
