@@ -9,6 +9,8 @@
  * @invite fWQmQBgCCv
  */
 
+
+
  /*
 ------------------------------------------------------------------
 ------------------------------------------------------------------
@@ -128,6 +130,8 @@
  }
 }
 
+
+
 /*
 ------------------------------------------------------------------
 ------------------------------------------------------------------
@@ -137,8 +141,8 @@
 ------------------------------------------------------------------
 ------------------------------------------------------------------
 */
- :root {
-  --radius: 16px;
+:root {
+ --radius: 16px;
 }
 #bd-editor-controls button,
 #floating-editor-window,
@@ -660,7 +664,7 @@
 :where(.visual-refresh) .lookFilled__3f413.select__3f413,
 div#anchor,
 html:not(.visual-refresh-chat-input) .inner_a99829 {
-  border-radius: var(--radius);
+ border-radius: var(--radius);
 }
 #replugged-quickcss-wrapper .cm-editor,
 .audioControls_f316dd,
@@ -675,7 +679,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .vc-notification-root,
 .vc-st-modal-content input,
 .ͼ1 .cm-scroller {
-  border-radius: var(--radius) !important;
+ border-radius: var(--radius) !important;
 }
 #bd-editor-controls,
 #vc-spotify-player,
@@ -722,7 +726,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .visual-refresh .panel__5dec7,
 .withFooter__44c9a,
 .wrapper__0d616 {
-  border-radius: var(--radius) var(--radius) 0 0;
+ border-radius: var(--radius) var(--radius) 0 0;
 }
 #replugged-quickcss-wrapper .cm-gutters,
 .backdrop__8a7fc,
@@ -737,7 +741,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .scroller_cc2dff,
 .searchFilter_bd8186,
 .sidebarContainer__1d6c7 {
-  border-radius: var(--radius) 0 0 var(--radius);
+ border-radius: var(--radius) 0 0 var(--radius);
 }
 .allow__344e6,
 .allow_f5fff4,
@@ -746,7 +750,7 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .item__3d4a0:last-child,
 .modal_b962dc,
 .roundedRow__71c22 td:last-child {
-  border-radius: 0 var(--radius) var(--radius) 0;
+ border-radius: 0 var(--radius) var(--radius) 0;
 }
 .animatedContainer_f37cb1,
 .bd-modal-footer,
@@ -783,10 +787,10 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .videoControls_f316dd,
 .visual-refresh .groupCollapsedContainer_b6a9f9,
 .visual-refresh .lastChannel_e4503a {
-  border-radius: 0 0 var(--radius) var(--radius);
+ border-radius: 0 0 var(--radius) var(--radius);
 }
 .modal_b962dc .footer__49fc1 {
-  border-radius: 0 0 var(--radius) 0;
+ border-radius: 0 0 var(--radius) 0;
 }
 .activityPanel_c48ade ~ .wrapper_e131a9 .container_e131a9,
 .content__49fc1.body_c6f1a4.thin__99f8c.scrollerBase__99f8c,
@@ -796,11 +800,11 @@ html:not(.visual-refresh-chat-input) .inner_a99829 {
 .formContainer_d9be46 .title_d9be46,
 .iconWrapper__96f95 ~ .inputWrapper__0f084,
 .root_e5f3a9 .body_c6f1a4 {
-  border-radius: 0 !important;
+ border-radius: 0 !important;
 }
 .categoryList_c0e32c,
 .wrapper__4e6ce {
-  border-bottom-left-radius: var(--radius);
+ border-bottom-left-radius: var(--radius);
 }
 .applicationStore_f07d62,
 .chat_f75fb0,
@@ -833,31 +837,41 @@ div.profileThemedContainer__656be,
 .better-codeblocks-btn:last-child,
 .userProfileOuterUnthemed_c69a7b,
 .inviteRow__67dba {
-  border-radius: var(--radius);
+ border-radius: var(--radius);
 }
 .categoryItemDefaultCategory_b9ee0c {
-  border-radius: 8px;
+ border-radius: 8px;
 }
 .cozy_c19a55.hasThread_c19a55:after {
-  border-bottom-left-radius: var(--radius) !important;
+ border-bottom-left-radius: var(--radius) !important;
 }
 .suggestedColor__713b5 {
-  border-radius: 10px;
+ border-radius: 10px;
 }
 .childContainer__91a9d,
 .layout__91a9d,
 .visual-refresh .layout__91a9d {
-  border-radius: 20px;
+ border-radius: 20px;
 }
 .bottomControls_bfe55a .button__201d5 {
-  border-radius: 30px !important;
+ border-radius: 30px !important;
 }
 .profileCustomizationSection__44061 .clickable__75b30:hover {
-  border-radius: var(--radius) var(--radius) 0 0;
+ border-radius: var(--radius) var(--radius) 0 0;
 }
 
-/* THIS ONE MAKES SEVERAL THINGS TRANSPARENT, SUCH AS THE LIST OF THE CHANNELS AND THE LIST OF MEMBERS.
-EVEN THE IT'S REMOVED EVERYTHING TURNS DARKER IN THE BACKGROUND */
+
+
+/*
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+--- LAYOUT
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+*/
+/* - - - CONTAINERS - - - - - - - - - - - - - - - - - - - - - - */
 .container_c8ffbb,
 .members_c8ffbb,
 .member__5d473,
@@ -868,1401 +882,1217 @@ EVEN THE IT'S REMOVED EVERYTHING TURNS DARKER IN THE BACKGROUND */
 .scroller__99e7c,
 section.panels_c48ade,
 .container__37e49 {
-  background: var(--theme-base-color-hsl);
-  background-color: var(--theme-base-color-hsl);
-  border: none !important;
+ background: var(--theme-base-color-hsl);
+ background-color: var(--theme-base-color-hsl);
+ border: none !important;
 }
-
-/* .bg__960e4: This "fixes" the background, add it if you want */
-
-/* SLTDND */
 .members_c8ffbb,
 .guilds_c48ade,
 .chatContent_f75fb0,
-/* .sidebarList_c48ade, */
 .layerContainer_da8173,
 .app__160d8 {
-  contain: strict !important;
+ contain: strict !important;
 }
-
-/* SLTDND */
 .typingDots_b88801,
 .vc-typing-indicator-dots {
-  contain: paint !important;
+ contain: paint !important;
 }
-
-/* THIS ONE CREATES MORE CONTRAST IN THE DARK MODE BY MAKING THE CONTAINER BRIGHTER. */
 .theme-darker:not(.custom-theme-background) {
-  --bg-base-tertiary: #171717;
-  --background-base-lowest: var(--bg-base-tertiary) !important;
-  --background-base-lower: #272727 !important;
-  --background-surface-higher: #2c2c2c !important;
-  --background-floating: var(--background-surface-higher) !important;
-  --bg-surface-overlay: var(--background-surface-higher) !important;
-  --bg-surface-raised: var(--background-surface-higher) !important;
-  --chat-background-default: var(--background-base-lower) !important;
-  --background-primary: var(--background-base-lower);
-  --background-secondary: var(--bg-base-tertiary);
-  --background-tertiary: var(--bg-base-tertiary);
-  --background-secondary-alt: var(--background-surface-higher);
-  --modal-background: var(--background-floating);
-  --modal-footer-background: var(--background-floating);
-  --background-base-low: var(--background-base-lower);
+ --bg-base-tertiary: #171717;
+ --background-base-lowest: var(--bg-base-tertiary) !important;
+ --background-base-lower: #272727 !important;
+ --background-surface-higher: #2c2c2c !important;
+ --background-floating: var(--background-surface-higher) !important;
+ --bg-surface-overlay: var(--background-surface-higher) !important;
+ --bg-surface-raised: var(--background-surface-higher) !important;
+ --chat-background-default: var(--background-base-lower) !important;
+ --background-primary: var(--background-base-lower);
+ --background-secondary: var(--bg-base-tertiary);
+ --background-tertiary: var(--bg-base-tertiary);
+ --background-secondary-alt: var(--background-surface-higher);
+ --modal-background: var(--background-floating);
+ --modal-footer-background: var(--background-floating);
+ --background-base-low: var(--background-base-lower);
+}
+.resizeHandle__01ae2 {
+ opacity: 0;
+}
+/* Fixing themming issues. Now all the themes are compatible */
+.container__2637a {
+ background: transparent !important;
+}
+.bg__960e4 {
+ background: var(--bg-overlay-5, var(--background-base-lowest)) !important;
+}
+.panels_c48ade {
+ background: var(--theme-base-color-hsl) !important;
+}
+.itemsContainer_ef3116 {
+ background: transparent !important;
+}
+.privateChannels__35e86, .scroller__99e7c   {
+ background: transparent !important;
+}
+[class="callContainer_cb9592 theme-dark theme-midnight images-dark"] .chatContent_f75fb0{ 
+ display: none;
+}
+.callContainer_cb9592 {
+ box-shadow: 0px 0px 60px rgba(0,0,0,0.6);
+ margin: 0 0 32px 0px;
 }
 
-/* CHAT - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-/* THIS ONE IS RESPONSIBLE FOR THE ROUNDED AND SPACING LOOK IN THE BOTTOM OF THE CHATS */
-.chatContent_f75fb0{
-  margin: 0 0 32px 0px;
-  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-  contain: paint;
-  box-shadow: 0px 16px 90px rgba(0,0,0,0.6);
+/* - - - CHAT - - - - - - - - - - - - - - - - - - - - - - */
+.chatContent_f75fb0 {
+ contain: paint;
+ margin: 0 0 32px 0;
+ border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+ box-shadow: 0 16px 90px rgba(0, 0, 0, 0.6);
 }
-
-/* THIS ONE CREATES A SPACING ABOVE THE CHAT CONTAINER, IT ALSO (REALLY) GET THE TITLE THICKER AND CONSISTENT. AS CONSEQUENCE, THE MEMBER LIST GET ALSO PLACEDD OR MODIFIED. */
-.title_f75fb0 {
-  width: 100%;
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-  height: var(--custom-channel-header-height) !important;
-  height: 64px !important;
-  padding-right: 20px !important;
-  contain: paint;
-  /* border-left: 1px solid var(--border-subtle);
-  border-right: 1px solid var(--border-subtle);
-  border-top: 1px solid var(--border-subtle); */
-}
-
-/* SLTDND */
-.dot__9293f {
-  will-change: transform;
-  transform: scale(2);
-}
-
-/* SLTDND */
-.icon__9293f {
-  will-change: transform;
-  transform: scale(0.8398320336);
-  --channel-icon: var(--header-primary);
-}
-
-/* THIS ONE CHANGES THE COLOR OF THE DESCRIPCION OF THE CHANNEL (IN THE TITLE) */
-.topic__6ec1a {
-  --text-tertiary: color-mix(in oklab, var(--neutral-40) 100%, var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
-  font-weight: 300 !important;
-}
-
-/* SLTDND */
-.title__9293f {
-  font-weight: 450 !important;
-}
-
-/* OKAY, NO IDEA WHAT THE HELL IS HAPPENING, BUT WITHOUT THIS THE SHADOW FOR THE CONTAINER THAT IMPACTS THE CHANNEL LIST GETS MESSED UP, LMAO */
 .chat_f75fb0 {
-  overflow: visible !important;
+ overflow: visible !important;
 }
-
-/* COMMENT/DELETE THIS AND THE WHOLE BOTTOM OF DISCORD WILL GO DOWN TO OBLIVION */
 .page_c48ade {
-  max-height: calc(100vh - var(--custom-app-top-bar-height)) !important;
+ z-index: 3;
+ overflow: visible !important;
+ max-height: calc(100vh - var(--custom-app-top-bar-height)) !important;
 }
-
-/* THIS ONE CHANGES THE ORDER FOR THE MIGNIFYING GLASS
-IT HAS A HAS*/
-/* .iconWrapper__9293f:has([d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM18.44 17.27c.15.43.54.73 1 .73h1.06c.83 0 1.5-.67 1.5-1.5a7.5 7.5 0 0 0-6.5-7.43c-.55-.08-.99.38-1.1.92-.06.3-.15.6-.26.87-.23.58-.05 1.3.47 1.63a9.53 9.53 0 0 1 3.83 4.78ZM12.5 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM2 20.5a7.5 7.5 0 0 1 15 0c0 .83-.67 1.5-1.5 1.5a.2.2 0 0 1-.2-.16c-.2-.96-.56-1.87-.88-2.54-.1-.23-.42-.15-.42.1v2.1a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z"]) {
-  order: 1;
-} */
-
-/* SLTDND */
-.iconWrapper__9293f[class^="vc-"] {
-  order: 2;
-}
-
-/* THIS ONE IS RESPONSIBLE OF THE COLOR OF THE CHANNEL SELECTED. */
-.modeSelected__2ea32 {
-  .link__2ea32 {
-    /* background: url(https://media.discordapp.net/attachments/1037057936960274532/1382782593941901412/videoframe_4073.png?ex=684c6825&is=684b16a5&hm=d69271f321a05e9da80e8a459cbb3539bdcadea71cb5ca7b4e80e481b99d8d6d&=&width=358&height=67), var(--brand-500); */
-    background: var(--brand-500);
-    /* background: var(--brand-500); */
-    background-size: cover;
-    --icon-primary: #FFF;
-    .name__2ea32 {
-      color: #FFF;
-    }
-  }
-
-  &:hover .link__2ea32 {
-    background: var(--brand-460);
-  }
-}
-
-/* FIRST OF ALL ONE MAKES THE SCROLLING BAR APPEAR (FOR DISCORD ITSELF) AND PLACE THE CONTAINER OR SOMETHING ELSE IN THE WRONG LAYER */
-.page_c48ade {
-  z-index: 3;
-  overflow: visible !important;
-}
-
-/* THIS ONE IS THE GREAT RESPONSIBLE OF MAKING THE SEARCH BAR AND OPTIONS FIT WITH THE CONTAINER */
-.page_c48ade:has(.membersWrap_c8ffbb) .title_f75fb0 {
-  width: calc(100% - var(--custom-member-list-width));
-}
-
-/* BY LOOKING AT IT I ALREADY NOTICED THAT THIS ONE FIXES SOMETHING ABOUT THE SIZE OF THE PREVIOUS RULE. DOESN'T DO ANYTHING TO ME, BUT IT MIGHT FOR ANYONE ELSE*/
-/* .page_c48ade:has(.panel_c0bea0) .title_f75fb0 {
-  width: calc(100% - 348px);
-} */
-
-/* THIS ONE SEEMS TO ADD MARGIN TO THE MEMBER LIST, SINCE IT WOULD BE THE OPPOSITE IF IT WAS FOR THE CONTAINER. IT'S WEIRD BECAUSE IT SAID CONTENT */
 .content_c48ade {
-  margin-right: 16px;
+ margin-right: 16px;
 }
-
-/* Container of the DMs tab, like, where you see the online people and all that */
+/* Channel header */
+.title_f75fb0 {
+ contain: paint;
+ width: 100%;
+ height: var(--custom-channel-header-height) !important;
+ height: 64px !important;
+ padding-right: 20px !important;
+ border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+.topic__6ec1a {
+ font-weight: 300 !important;
+ --text-tertiary: color-mix(in oklab, var(--neutral-40) 100%, 
+                   var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
+}
+.title__9293f {
+ font-weight: 450 !important;
+}
+/* Channel list and selection */
+.modeSelected__2ea32 .link__2ea32 {
+ background: var(--brand-500);
+ background-size: cover;
+ --icon-primary: #FFF;
+}
+.modeSelected__2ea32 .link__2ea32 .name__2ea32 {
+ color: #FFF;
+}
+.modeSelected__2ea32:hover .link__2ea32 {
+ background: var(--brand-460);
+}
+/* Icons and badges */
+.dot__9293f {
+ will-change: transform;
+ transform: scale(2);
+}
+.icon__9293f {
+ will-change: transform;
+ --channel-icon: var(--header-primary);
+ transform: scale(0.84);
+}
+.iconWrapper__9293f[class^="vc-"] {
+ order: 2;
+}
+/* Search bar */
+.search__97492:not(.open__97492) .searchBar__97492 {
+ width: 22px;
+ background: transparent;
+ border: none;
+}
+.search__97492:not(.open__97492) .icon__97492 {
+ cursor: pointer;
+}
+.search__97492:not(.open__97492) .iconContainer_fea832 {
+ will-change: transform;
+ margin-top: 3px;
+ transform: scale(1.25);
+}
+.search__97492:not(.open__97492) .icon_fea832 {
+ color: var(--interactive-normal);
+}
+.search__97492:not(.open__97492) .iconContainer_fea832:hover > .icon_fea832 {
+ color: var(--interactive-active);
+}
+.search__97492:not(.open__97492):hover::after {
+ will-change: transform;
+ content: '..';
+ position: absolute;
+ z-index: 1003;
+ top: calc(100% + 4.7px);
+ left: 50%;
+ font-size: 15px;
+ width: 6.076px !important;
+ height: 6.076px !important;
+ transform: translateX(-50%) rotate(45deg);
+ background-color: var(--background-floating);
+ background-image: linear-gradient(to bottom, var(--border-subtle) 0%, var(--border-subtle) 25%, transparent 25%),
+                   linear-gradient(to right, color-mix(in srgb, var(--background-floating), var(--border-subtle) 75%) 0%, 
+                   color-mix(in srgb, var(--background-floating), var(--border-subtle) 75%) 25%, var(--background-floating) 25%);
+ pointer-events: none;
+}
+.search__97492:not(.open__97492) .DraftEditor-root {
+ padding: 0 !important;
+}
+/* More containers */
 .container__133bf,
 .applicationStore_f07d62,
 .shop__6db1d,
 .container_a592e1 {
-  margin: 0 0 32px 0px;
-  border-radius: var(--radius-lg);
-  box-shadow: 0px 0px 60px rgba(0,0,0,0.3);
-  overflow: hidden;
-  contain: paint;
+ contain: paint;
+ margin: 0 0 32px;
+ overflow: hidden;
+ border-radius: var(--radius-lg);
+ box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+}
+/* Responsive things */
+.page_c48ade:has(.membersWrap_c8ffbb) .title_f75fb0 {
+ width: calc(100% - var(--custom-member-list-width));
+}
+/* Getting rid of the bakcground for the scroll bar in the messages section */
+.scroller__36d07::-webkit-scrollbar {
+ opacity: 0;
+}
+/* Animation for the pins */
+.iconBadge__9293f, .iconBadgeBottom__9293f {
+ animation: pulse 1s ease-in-out infinite;
+ border: 2px solid var(--background-base-lower);
+}
+@keyframes pulse {
+ 0%, 100% {
+   transform: scale(0.75);
+ }
+ 25% {
+   transform: scale(1.5);
+ }
 }
 
-/* THIS ONE IS THE CODE THAT MAKES THE MAGNIFYING GLASS SO AMAZING */
-.search__97492:not(.open__97492) {
-  .searchBar__97492 {
-    width: 22px;
-    background: transparent;
-    border: none;
-  }
-
-  .icon__97492 {
-    cursor: pointer;
-
-    .iconContainer_fea832 {
-      will-change: transform;
-      margin-top: 3px;
-      transform: scale(1.25);
-
-      .icon_fea832 {
-        color: var(--interactive-normal);
-      }
-
-      &:hover>svg.icon_fea832 {
-        color: var(--interactive-active);
-      }
-    }
-  }
-
-  /* &:hover::before {
-    will-change: transform;
-    position: absolute;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    z-index: 1002;
-    top: calc(100% + 8px);
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--text-normal);
-    padding: 8px 12px;
-    background-color: var(--background-floating);
-    content: 'Search';
-    border: 1px solid var(--border-subtle);
-    border-radius: 8px;
-  } */
-
-  &:hover::after {
-    will-change: transform;
-    content: '..';
-    --aeiou: color-mix(in srgb, var(--background-floating), var(--border-subtle) 75%);
-    overflow: hidden;
-    font-size: 15px;
-    position: absolute;
-    z-index: 1003;
-    top: calc(100% + 4.7px);
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    width: 6.076px !important;
-    height: 6.076px !important;
-    background-color: var(--background-floating);
-    background-image: linear-gradient(to bottom, var(--border-subtle) 0%, var(--border-subtle) 25%, transparent 25%), linear-gradient(to right, var(--aeiou) 0%, var(--aeiou) 25%, var(--background-floating) 25%), ;
-    pointer-events: none;
-  }
-
-  .DraftEditor-root {
-    padding: 0px !important;
-  }
-}
-
-/* TEXTBOX - - - - - - - - - - - - - - - - - - - - - -   */
-/* THIS ONE DELETES A PADDING FROM THE TEXTBOX, PERSONALLY I PREFER IT WITH THE PADDING */
-.form_f75fb0 {
-  padding: 0px !important;
-}
-
-/* THIS HERE IS WHAT IS MAKING THE TEXTBOX SO GOOD-LOOKING MATCHIHG THE THEME */
+/* - - - TEXTBOX - - - - - - - - - - - - - - - - - - - - - - */
+/* Text input container*/
 .channelTextArea_f75fb0 {
-  --custom-chat-input-margin-bottom: 2px;
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0px;
-  --custom-channel-textarea-text-area-height: 70px;
+ --custom-channel-textarea-text-area-height: 70px;
+ --custom-chat-input-margin-bottom: 2px;
+ background: transparent !important;
+ border: none !important;
+ border-radius: 0;
 }
-
-/* TODO: DELETE THIS. Look, this one messes with the line limit in the textbox. */
-/* .scrollableContainer__74017 {
-  background: transparent !important;
-  border-radius: 0px;
-} */
-
-/* THIS ONE MANAGES THE SPACE WHEN YOU ARE GONNA SEND AN IMAGE, FOR EXAMPLE */
+/* Form container padding */
+.form_f75fb0 {
+ padding: 0 !important;
+}
+/* Attachment preview area */
 .channelAttachmentArea_b77158 {
-  background: transparent !important;
-  padding: 10px !important;
-  border-top: 1px solid var(--border-subtle) !important;
-  margin: 0px !important;
+ background: transparent !important;
+ border-top: 1px solid var(--border-subtle) !important;
+ margin: 0 !important;
+ padding: 10px !important;
 }
-
-/* THIS IS THE LINE THAT DIVIDES THE TEXTBOX AND THE ZONE WHERE YOUR IMAGE PREVIEW BEFORE SENDING IS
-BUT IT'S ALSO JUST THE LINE ABOVE THE TEXTBOX */
+/* Text input divider */
 .inner__74017 {
-  border-top: 1px solid var(--border-subtle) !important;
+ border-top: 1px solid var(--border-subtle) !important;
 }
-
-/* Who really knows what this one does. All I've seen it doing was to move the content in the textbox a little more to the right. */
+/* Button positioning (like, the attachment button) */
 .attachButton__0923f {
-  padding-left: 20px !important;
+ padding-left: 20px !important;
 }
-
-/* This one creates a padding for the button on the right (textbox). Like the gift nitro, gif, sticker, emoji, yk */
-/* .buttons__74017 {
-  padding-right: 8px;
-} */
-
-/* This one deletes the button to start an activity */
-.channelAppLauncher_e6e74f {
-  display: none !important;
-}
-
+/* Right-side buttons */
 .buttons__74017 {
-  padding-right: 9px;
+ padding-right: 9px;
+}
+/* Activity button */
+.channelAppLauncher_e6e74f {
+ display: none !important;
 }
 
-/* MEMBERS - - - - - - - - - - - - - - - - - - - - - - - */
-/* This one creates a spacing above the member list */
+/* - - - MEMBER LIST - - - - - - - - - - - - - - - - - - - - - - */
+/* Member list container */
 .membersWrap_c8ffbb {
-  top: calc(0px - var(--custom-channel-header-height));
-  height: calc(100vh - var(--custom-app-top-bar-height)) !important;
-  max-height: none !important;
-  background: transparent !important;
-  justify-content: start;
+ background: transparent !important;
+ height: calc(100vh - var(--custom-app-top-bar-height)) !important;
+ justify-content: start;
+ max-height: none !important;
+ top: calc(0px - var(--custom-channel-header-height));
 }
-
-/* This one unlimits the height of the member list, or sets it a height */
+/* Member list content */
 .members_c8ffbb {
-  height: calc(100vh - var(--custom-app-top-bar-height)) !important;
+ height: calc(100vh - var(--custom-app-top-bar-height)) !important;
 }
-
-/* This one sets a width for the member list, making it thiner */
+/* Member list width */
 :root {
-  --custom-member-list-width: 236px !important;
+ --custom-member-list-width: 236px !important;
 }
 
-/* └ DMS -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  */
-/* SLTDND */
+/* - - - DIRECT MESSAGES - - - - - - - - - - - - - - - - - - - - - - */
+/* DM panel*/
 .outer_c0bea0.panel_c0bea0 {
-  top: calc(0px - var(--custom-channel-header-height) - 6px);
-  margin-left: 8px !important;
-  border-radius: var(--radius-lg) !important;
-  overflow: hidden;
-  height: calc(100% + var(--custom-channel-header-height) - 16px) !important;
-  contain: paint;
+ border-radius: var(--radius-lg) !important;
+ contain: paint;
+ height: calc(100% + var(--custom-channel-header-height) - 16px) !important;
+ margin-left: 8px !important;
+ overflow: hidden;
+ top: calc(0px - var(--custom-channel-header-height) - 6px);
 }
-/* ACTIVITY GOOBERS  -  -  -  -  -  -  -  -  -  -  -  -  - */
+
+/* ACTIVITIES */
 .container__0f2e8 {
-  /* gradient */
-  z-index: 0;
-  overflow: hidden;
-  background-color: black !important;
-  margin-left: 0px;
-  padding-left: 16px;
-  height: 120px;
-  border-radius: 0px 12px 12px 0px;
-  border: none !important;
-  contain: paint;
-
-  &::after {
-      z-index: -1;
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      right: 0px;
-      left: 0px;
-      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-      background-blend-mode: screen, difference, ligthen;
-      border-radius: 0px 0px 0 0;
-      opacity: 0.6;
-      contain: paint;
-  }
+ z-index: 0;
+ contain: paint;
+ overflow: hidden;
+ height: 120px;
+ padding-left: 16px;
+ margin-left: 0;
+ border: none !important;
+ border-radius: 0 12px 12px 0;
+ background-color: #000 !important;
+ &::after {
+   z-index: -1;
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0.6;
+   contain: paint;
+   border-radius: 0 0 0 0;
+   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+   background-blend-mode: screen, difference, lighten;
+ }
 }
-
 .infoSection__0f2e8 {
-  height: 100%;
-  justify-content: end;
-  z-index: 0;
-
-  .contentTitle__0f2e8::before {
-      color: #ffffff;
-      opacity: 0.75;
-      font-size: 12px;
-  }
-
-  * {
-      /* text-shadow: 0px 0px 10px rgb(0, 0, 0); */
-      overflow: visible !important;
-      z-index: 1;
-  }
-
-  /* svg>path {
-      box-shadow: 0px 0px 10px rgb(0, 0, 0);
-  } */
+ z-index: 0;
+ height: 100%;
+ justify-content: end;
+ * {
+   z-index: 1;
+   overflow: visible !important;
+ }
+ .contentTitle__0f2e8::before {
+   opacity: 0.75;
+   color: #fff;
+   font-size: 12px;
+ }
 }
-
-/* username */
+/* User and activity */
 .userName__0f2e8 {
-  position: relative;
-  left: 6px;
-  top: 21px;
-  font-family: "figtree";
-  font-size: 13px;
-  white-space: normal;
-  font-weight: 700;
-  text-shadow: #000 0px 0px 10px;
+ top: 21px;
+ left: 6px;
+ position: relative;
+ font-size: 13px;
+ font-weight: 700;
+ white-space: normal;
+ font-family: "figtree";
+ text-shadow: #000 0 0 10px;
 }
-
-/* below username text */
 .contentTitle__0f2e8 {
-  position: relative;
-  font-size: 10px;
-  width: 150px;
-  white-space: wrap;
-  bottom: 3px;
-  left: 44px;
-  top: 16px;
-  color: #fff !important;
-  font-family: "figtree";
-  opacity: 0.75;
-  text-shadow: #000 0px 0px 10px;
+ top: 16px;
+ left: 44px;
+ bottom: 3px;
+ width: 150px;
+ opacity: 0.75;
+ color: #fff !important;
+ font-size: 10px;
+ white-space: wrap;
+ font-family: "figtree";
+ position: relative;
+ text-shadow: #000 0 0 10px;
 }
-
+/* Pfp and stuff */
 .facePile__0f2e8,
 .facePileItem__0f2e8,
 .facePileItem__0f2e8 div,
 .facePileItem__0f2e8 svg,
 .facePileItem__0f2e8 foreignObject {
-  top: 12px;
-  width: 23px !important;
-  height: 23px !important;
-  contain: none;
-  align-self: center;
-  overflow: hidden;
+ top: 12px;
+ width: 23px !important;
+ height: 23px !important;
+ contain: none;
+ overflow: hidden;
+ align-self: center;
 }
-
 .userSection__0f2e8 {
-  gap: 8px;
+ gap: 8px;
 }
-
-/* .badgeContainer__635ed:has(path[fill="var(--status-positive)"]),
-.badgeContainer__635ed:has(path[d^="M4 12a8 8 0 0 1 14.93-4H15a1"]) {
-  height: 16px !important;
-  width: 16px;
-  justify-content: center;
-
-  .badgeLabel__635ed {
-      display: none;
-
-  }
-} */
-
 .badgeContainer__635ed:has([style*="color: var(--text-positive);"]) {
-  background-color: rgba(0, 125, 50, 0.726) !important;
-
-  .tabularNumbers__4bd52 {
-      color: #ffffff !important;
-      text-shadow: none !important;
-      font-family: "figtree";
-      font-size: 10px;
-      font-weight: 400;
-  }
+ background-color: rgba(0, 125, 50, 0.726) !important;
+ .tabularNumbers__4bd52 {
+   color: #fff !important;
+   font-size: 10px;
+   font-weight: 400;
+   text-shadow: none !important;
+   font-family: "figtree";
+ }
 }
-
 .badgesContainer__635ed {
-  position: relative;
-  bottom: calc(100% - 16px - 16px);
-  width: calc(100% - 16px - 8px);
-  justify-content: flex-center;
-
-  .badgeContainer__635ed {
-      will-change: backdrop-filter;
-      backdrop-filter: blur(3px);
-      background-color: rgba(0, 0, 0, 0.25);
-      border-radius: 8px;
-      padding: 4px;
-      isolation: isolate;
-
-      svg path,
-      [data-text-variant="text-xs/normal"] {
-          text-shadow: none !important;
-          color: #ffffff !important;
-          fill: #ffffff !important;
-          font-size: 10px;
-          justify-content: flex-start;
-      }
-  }
+ width: calc(100% - 24px);
+ bottom: calc(100% - 32px);
+ position: relative;
+ justify-content: flex-center;
+ .badgeContainer__635ed {
+   padding: 4px;
+   border-radius: 8px;
+   isolation: isolate;
+   will-change: backdrop-filter;
+   background-color: rgba(0, 0, 0, 0.25);
+   backdrop-filter: blur(3px);
+   svg path,
+   [data-text-variant="text-xs/normal"] {
+     fill: #fff !important;
+     color: #fff !important;
+     font-size: 10px;
+     text-shadow: none !important;
+     justify-content: flex-start;
+   }
+ }
 }
-
+/* Popout */
 .contentImage__42bf5.thumbnail__0f2e8 {
-  will-change: transform;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%!important;
-  height: 100%!important;
-  max-width: none!important;
-  z-index: -1;
-  border-radius: 0px;
-  transform: translateZ(0);
-  contain: paint;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ position: absolute;
+ contain: paint;
+ border-radius: 0;
+ transform: translateZ(0);
+ will-change: transform;
+ width: 100% !important;
+ height: 100% !important;
+ max-width: none !important;
 }
-
 .thumbnail__0f2e8 {
-  opacity: 0.75;
+ opacity: 0.75;
 }
-
 .badgesContainerPopout__635ed {
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 8px;
-  align-content: center;
-  flex-direction: column;
+ gap: 8px 8px;
+ flex-wrap: wrap;
+ align-items: center;
+ flex-direction: column;
+ align-content: center;
 }
-
 .listeningTimeline__66799 {
-  margin: -10px 10px 20px 10px;
-  padding: 0 15px;
+ margin: -10px 10px 20px;
+ padding: 0 15px;
 }
-
+/* Resizing the pop up for activities */
+.popoutContentWrapper_af3b89, .interactionsContainer_af3b89 {
+ width: 200px;
+ position: relative;
+ left: 120px;
+ border: none;
+}
+.primaryActionPopoutActionButtons_af3b89 {
+ flex-direction: column;
+}
+/* Hero */
 .hero_af3b89.theme-dark.images-dark.disable-adaptative-theme {
-  padding: 50px;
+ padding: 50px;
 }
-
 .popoutHeroInner_af3b89 {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  padding: 10px 0px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-content: center;
+ padding: 10px 0;
 }
-
 .popoutHeroBody_af3b89 {
-  width: 90%;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  row-gap: 4px;
-  position: relative;
-  bottom: calc(100% - 32px);
-  width: calc(100% - 24px);
-  border: 0px;
-  font-family: inherit;
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
-  margin: 0px;
-  padding: 0px;
-  vertical-align: baseline;
-  outline: 0px;
-  align-items: center;
-  display: flex;
-  gap: 0px 8px;
+ gap: 0 8px;
+ width: 90%;
+ border: 0;
+ margin: 0;
+ padding: 0;
+ display: flex;
+ outline: 0;
+ font-size: 100%;
+ font-style: inherit;
+ font-weight: inherit;
+ vertical-align: baseline;
+ font-family: inherit;
+ align-items: center;
+ position: relative;
+ flex-wrap: wrap;
+ row-gap: 4px;
+ align-content: center;
+ bottom: calc(100% - 32px);
+ width: calc(100% - 24px);
+}
+.popoutHeroTextSecondary_af3b89 {
+ padding: 3px 0;
+ text-align: center;
+ font-size: 11px;
+}
+.popoutHeroTextPrimary_af3b89 {
+ text-align: center;
 }
 
-/* CHANNELS - - - - - - - - - - - - - - - - - - - -  - - */
-/* Without this, the background image and several things in the sidebar where the channels are get messed. I'd need to go further into that one */
+/* - - - CHANNEL LIST - - - - - - - - - - - - - - - - - - - - - - */
 .sidebarList_c48ade,
 .sidebar_c48ade,
 .container__2637a {
-  overflow: visible !important;
-  z-index: 2 !important;
-/* This makes the selector larger (like, the blurple thing, and so the lists) */
-  .scroller__629e4,
-  .scroller__99e7c {
-    width: calc(100% + 24px);
-  }
+ z-index: 2 !important;
+ overflow: visible !important;
 }
-
-/* Without this one, the list of DMs gets weird
-I need it for the selected channel look*/
+.sidebarList_c48ade .scroller__629e4,
+.sidebarList_c48ade .scroller__99e7c,
+.sidebar_c48ade .scroller__629e4,
+.sidebar_c48ade .scroller__99e7c,
+.container__2637a .scroller__629e4,
+.container__2637a .scroller__99e7c {
+ width: calc(100% + 24px);
+}
+.sidebarList_c48ade {
+ margin-right: 16px;
+}
+/* DM list */
 .privateChannels__35e86,
 .container__551b0 {
-  width: calc(100% + 16px);
-
-  .content__99f8c {
-    margin-right: 24px;
-  }
+ width: calc(100% + 16px);
 }
-
-/* This one is expanding the left side of the container to the left. Probably because it's... jk, a margin-right. */
-.sidebarList_c48ade {
-  margin-right: 16px;
+.privateChannels__35e86 .content__99f8c,
+.container__551b0 .content__99f8c {
+ margin-right: 24px;
 }
-
-.link__2ea32 {
-  /* This one generates a spacing beetween the channels. Important for the looks. */
-  border-radius: var(--radius-md) 0 0 var(--radius-md);
-  height: 40px;
-  justify-content: center;
-  gap: var(--spacing-12) !important;
-  contain: paint;
-/* This makes the icons of the channels smaller */
-  .iconContainer__2ea32 {
-    will-change: transform;
-    transform: scale(0.8);
-    width: 15px;
-  }
-}
-
-/* Can't say a lot, but this is making a margin for the text or thing that shows the level of the server */
-.containerWithMargin_eff079 {
-  margin: 12px 16px;
-}
-
-/* SLTDND */
-.header_f37cb1 {
-  /* width: calc(100% + 16px); */
-  width: calc(100%);
-}
-
-.containerDefault__29444 .mainContent__29444 {
-  /* This creates a space in the left for the arrows */
-  gap: 8px;
-/* This is making the arrows next to the channels move to the beginning, which is just better */
-  .icon__29444 {
-    order: -1;
-  }
-}
-
-/* This paddings is kinda grouping the arrows, the names of the categories creating a padding and getting them together */
-.wrapperCommon__29444 {
-  padding: 0 var(--space-lg);
-}
-
-/* 
-.sidebarResizeHandle_c48ade {
-  left: calc(var(--custom-guild-sidebar-width) + 16px);
-  z-index: 1000 !important;
-}
-
-.sidebar_c48ade {
-  width: calc(var(--custom-guild-sidebar-width) + 200px) !important;
-} */
-
-/* Deleting that stick that resizes the channel list */
-.sidebarResizeHandle_c48ade {
-  opacity: 0;
-}
-
-/* └ DMS -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  */
-/* Id' keep this, because otherwise it's creating a weird space on the top of the profile panel when checking DMs, so that the last item in the DM list has that weird case of a rectangle (kind off) over it */
 .privateChannels__35e86 .scroller__99e7c {
-  margin-bottom: var(--custom-app-panels-height) !important;
+ margin-bottom: var(--custom-app-panels-height) !important;
 }
-/* I'd remove this, since it literally adds a weird line-with-cut in the search bar for conversations (in the DMs tab) */
-/* .searchBar__35e86 {
-  margin: 0px 0px 0px 4px;
-} */
+/* Channel items */
+.link__2ea32 {
+ border-radius: var(--radius-md) 0 0 var(--radius-md);
+ contain: paint;
+ gap: var(--spacing-12) !important;
+ height: 40px;
+ justify-content: center;
+}
+.link__2ea32 .iconContainer__2ea32 {
+ transform: scale(0.8);
+ width: 15px;
+ will-change: transform;
+}
+/* Categories */
+.containerDefault__29444 .mainContent__29444 {
+ gap: 8px;
+}
+.containerDefault__29444 .mainContent__29444 .icon__29444 {
+ order: -1;
+}
+.wrapperCommon__29444 {
+ padding: 0 var(--space-lg);
+}
+.containerWithMargin_eff079 {
+ margin: 12px 16px;
+}
+/* Sidebar resize handle */
+.sidebarResizeHandle_c48ade {
+ opacity: 0;
+}
+/* Header */
+.header_f37cb1 {
+ width: 100%;
+}
+/* Goodbye, new unreads */
+.container__7aaec {
+ display: none;
+}
+.unreadBottom__629e4.unread__629e4.container__3b95d {
+ display: none;
+}
+/* Fixing the position of the label for VC channels */
+.wrapper__2ea32:has(.icon__2ea32 > [d="M11 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1h-.06a1 1 0 0 1-.74-.32L5.92 17H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2.92l4.28-4.68a1 1 0 0 1 .74-.32H11ZM20.5 12c-.28 0-.5.22-.52.5a7 7 0 0 1-5.13 6.25c-.48.13-.85.55-.85 1.05v.03c0 .6.52 1.06 1.1.92a9 9 0 0 0 6.89-8.25.48.48 0 0 0-.49-.5h-1ZM16.5 12c-.28 0-.5.23-.54.5a3 3 0 0 1-1.33 2.02c-.35.23-.63.6-.63 1.02v.14c0 .63.59 1.1 1.16.83a5 5 0 0 0 2.82-4.01c.02-.28-.2-.5-.48-.5h-1Z"]) .linkTop__2ea32{ 
+ position: relative;
+ top: 7px;
+}
+.wrapper__2ea32:has(.icon__2ea32 > [d="M11 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1h-.06a1 1 0 0 1-.74-.32L5.92 17H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2.92l4.28-4.68a1 1 0 0 1 .74-.32H11ZM20.5 12c-.28 0-.5.22-.52.5a7 7 0 0 1-5.13 6.25c-.48.13-.85.55-.85 1.05v.03c0 .6.52 1.06 1.1.92a9 9 0 0 0 6.89-8.25.48.48 0 0 0-.49-.5h-1ZM16.5 12c-.28 0-.5.23-.54.5a3 3 0 0 1-1.33 2.02c-.35.23-.63.6-.63 1.02v.14c0 .63.59 1.1 1.16.83a5 5 0 0 0 2.82-4.01c.02-.28-.2-.5-.48-.5h-1Z"]) .name__2ea32{ 
+ transform: scale(0.9);
+ position: relative;
+ left: -5px;
+}
+.linkBottom__2ea32 {
+ position: relative;
+ bottom: 8px;
+ left: -13px;
+ transform: scale(0.9);
+}
 
-/* └ BANNER -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  */
-/* This is crucial for the banner */
-/* .animatedContainer_f37cb1 {
-  position: fixed;
-  width: calc(100vw - var(--custom-guild-list-width)) !important;
-  height: 100vh !important;
-  opacity: 1 !important;
-  transform: translateX(calc(-85px + var(--custom-guild-list-width))) translateY(-95px) !important;
-  background-color: transparent !important;
-  border-bottom: none !important;
-  box-shadow: none;
-  margin-left: 5px;
-  pointer-events: none;
-} */
-
-/* This is the banner of the server */
+/* - - - BANNER - - - - - - - - - - - - - - - - - - - - - - */
 .bannerImage_f37cb1 {
-  transform: translateY(0px) scale(1) !important;
-  pointer-events: none;
-  /* filter: blur(5px); */
+ pointer-events: none;
+ transform: translateY(0) scale(1) !important;
 }
-
-/* This is also crucial for the banner */
-/* .bannerImg_f37cb1 {
-  width: 100vw !important;
-  height: 400px !important;
-  mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
-} */
-
-/* SLTDND */
-/* If enabled, the banner won't loop
-Perhaps I could see what else is doing changes to this selectors */
-/* .animatedBannerHoverLayer_f37cb1 {
-  display: none;
-} */
-
-/* This one is creating a big space that I think it might be for the banner originally */
-/* .content__99f8c>div[aria-hidden="true"][style="height: 84px;"] {
-  display: none;
-} */
-
-/* I can't describe it really well, but a weird blurred rectangle appears behind the channel list for some reason after I comment this rule */
+.animatedContainer_f37cb1 {
+ border-radius: 12px;
+ z-index: -999;
+}
+.animatedBannerHoverLayer_f37cb1 {
+ border-radius: 12px;
+}
+.bannerImg_f37cb1 {
+ position: relative;
+}
 .headerEllipseForeground_f37cb1,
 .headerGlass_f37cb1,
 .headerEllipseBackdrop_f37cb1 {
-  display: none !important;
+ display: none !important;
 }
 
-.animatedContainer_f37cb1 {
-  z-index: -999;
-  border-radius: 12px 12px 12px 12px;
-  /* border: #b9b9b9 4px solid !important; */
-
-}
-
-.animatedBannerHoverLayer_f37cb1 {
-  border-radius: 12px 12px 12px 12px;
-  /* border: #b9b9b9 4px solid !important; */
-  /* position: relative; */
-  /* top: -130px; */
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* min-height: 130px;
-  contain: paint; */
-  /* background-color: #000;
-  opacity: 70%; */
-  /* position: relative; */
-}
-
-.bannerImg_f37cb1 {
-  position: relative;
-}
-
-/* { HEADER  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
-/* This one makes the name of the server in the channel list have padding */
+/* - - - HEADER - - - - - - - - - - - - - - - - - - - - - - */
 .header_f37cb1 {
-  padding: 16px inherit !important;
-  min-height: none;
-  align-items: center !important;
-  height: auto !important;
-  border-bottom: none;
-  /* margin-bottom: 60px !important; */
-  border-top: none;
-  border-top-left-radius: none;
-  /* position: relative; */
-  /* top: 100px; */
+ align-items: center !important;
+ border-bottom: none;
+ border-top: none;
+ height: auto !important;
+ min-height: 0;
+ padding: 16px inherit !important;
 }
-
-
-
-/* This one modifies the name of the server in the channel list. For example, the font and its weight */
-.name_f37cb1 {
-  font-size: 14px;
-  font-weight: 500;
-  text-overflow: unset;
-  white-space: normal;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
-  text-shadow: none;
-}
-
-
-
-/* Space after the little icon-badge of the server, before the name of it, but only in channel list/sidebar */
 .headerContent_f37cb1 {
-  align-items: flex-start !important;
-  align-items: center !important;
-  gap: 4px;
+ align-items: center !important;
+ gap: 4px;
 }
-
-/* Without this, the name of the server in the channel list has such a weird behavior where it takes threee lines of something instead of two
-It also makes the arrow appear*/
+.name_f37cb1 {
+ font-size: 14px;
+ font-weight: 500;
+ text-overflow: unset;
+ text-shadow: none;
+ white-space: normal;
+}
 .headerChildren_f37cb1 {
-  display: none;
+ display: none;
 }
 
-/* USERPANEL - - - - - - - - - - - - - - - - - - - - - - */
-/* Best pannel */
+/* - - - USER PANEL - - - - - - - - - - - - - - - - - - - - - - */
 @keyframes pointerDelay {
-  99.9999% {
-    pointer-events: none;
-  }
-  to {
-    pointer-events: all;
-  }
+ 99.9999% { pointer-events: none; }
+ to { pointer-events: all; }
 }
 :root {
-  --panel-spotify-marginLeft: 0;
-  --panel-spotify-marginRight: 8px;
-  --panel-activityIcon-marginLeft: 0;
-  --panel-activityIcon-marginRight: 4px;
-  --panel-voiceOffset: 40px;
-  --panel-pingOffset: -40px;
+ --panel-spotify-marginLeft: 0;
+ --panel-spotify-marginRight: 8px;
+ --panel-activityIcon-marginLeft: 0;
+ --panel-activityIcon-marginRight: 4px;
+ --panel-voiceOffset: 40px;
+ --panel-pingOffset: -40px;
 }
 :root.refresh-fast-follow-avatars {
-  --panel-spotify-marginLeft: 2px;
-  --panel-spotify-marginRight: 10px;
-  --panel-activityIcon-marginLeft: 2px;
-  --panel-activityIcon-marginRight: 6px;
-  --panel-voiceOffset: 44px;
-  --panel-pingOffset: -42px;
+ --panel-spotify-marginLeft: 2px;
+ --panel-spotify-marginRight: 10px;
+ --panel-activityIcon-marginLeft: 2px;
+ --panel-activityIcon-marginRight: 6px;
+ --panel-voiceOffset: 44px;
+ --panel-pingOffset: -42px;
 }
 .panels_c48ade > div {
-  z-index: 0;
+ z-index: 0;
 }
 .wrapperVisible__0d616 {
-  z-index: inherit;
+ z-index: inherit;
 }
-
-/*Buttons*/
-.buttons__37e49.buttons__37e49, .voiceButtonsContainer_e131a9, .actionButtons_e131a9, .actions__4cd01, .icons_e0cf27 {
-  background-color: var(--background-surface-highest);
-  border-radius: var(--radius-round);
-  box-shadow: var(--shadow-border), var(--shadow-low);
-  display: flex;
-  gap: 2px !important;
-  height: unset;
-  margin: 0 !important;
-  padding: 2px !important;
-  pointer-events: none;
-  position: absolute;
-  opacity: 0;
-  right: 6px;
-  top: 0;
-  transition: .15s ease;
-  z-index: 2;
+/* Buttons */
+.buttons__37e49.buttons__37e49,
+.voiceButtonsContainer_e131a9,
+.actionButtons_e131a9,
+.actions__4cd01,
+.icons_e0cf27 {
+ background-color: var(--background-surface-highest);
+ border-radius: var(--radius-round);
+ box-shadow: var(--shadow-border), var(--shadow-low);
+ display: flex;
+ gap: 2px !important;
+ height: unset;
+ margin: 0 !important;
+ opacity: 0;
+ padding: 2px !important;
+ pointer-events: none;
+ position: absolute;
+ right: 6px;
+ top: 0;
+ transition: .15s ease;
+ z-index: 2;
 }
 .micButtonParent__37e49 button {
-  border-top-right-radius: unset !important;
-  border-bottom-right-radius: unset !important;
-  padding-right: 4px !important;
+ border-top-right-radius: unset !important;
+ border-bottom-right-radius: unset !important;
+ padding-right: 4px !important;
 }
 .micButtonParent__37e49:not(:first-child) button {
-  border-radius: unset !important;
-  padding: 4px !important;
+ border-radius: unset !important;
+ padding: 4px !important;
 }
 .button__67645.button__67645.button__67645 {
-  border-radius: unset;
-  height: unset;
-  margin: unset;
-  padding: 4px;
-  width: unset;
-  .contents__201d5 {
-    transition: scale .4s cubic-bezier(.16,1,.3,1);
-  }
-  .lottieIcon__5eb9b, svg {
-    width: 16px !important;
-    height: 16px !important;
-  }
-  &:first-child {
-    border-top-left-radius: var(--radius-round);
-    border-bottom-left-radius: var(--radius-round);
-    padding-left: 6px;
-  }
-  &:last-of-type {
-    border-top-right-radius: var(--radius-round);
-    border-bottom-right-radius: var(--radius-round);
-    padding-right: 6px;
-  }
-  &:hover {
-    background-color: var(--background-modifier-hover);
-    color: var(--interactive-hover);
-    .contents__201d5 {
-      scale: 1.1;
-    }
-  }
+ border-radius: unset;
+ height: unset;
+ margin: unset;
+ padding: 4px;
+ width: unset;
+ .contents__201d5 {
+   transition: scale .4s cubic-bezier(.16,1,.3,1);
+ }
+ .lottieIcon__5eb9b, svg {
+   width: 16px !important;
+   height: 16px !important;
+ }
+ &:first-child {
+   border-top-left-radius: var(--radius-round);
+   border-bottom-left-radius: var(--radius-round);
+   padding-left: 6px;
+ }
+ &:last-of-type {
+   border-top-right-radius: var(--radius-round);
+   border-bottom-right-radius: var(--radius-round);
+   padding-right: 6px;
+ }
+ &:hover {
+   background-color: var(--background-modifier-hover);
+   color: var(--interactive-hover);
+   .contents__201d5 {
+     scale: 1.1;
+   }
+ }
 }
-
-/*ListenAlong*/
+/* Spotify Panel */
 .listeningAlong_e0cf27 {
-  background: unset;
-  background-color: hsl(var(--spotify-hsl) / .1);
-  border-bottom: 1px solid var(--border-faint);
-  border-radius: 0;
-  gap: var(--space-8);
-  min-height: 56px;
-  padding: var(--space-xs) var(--space-md);
-  position: relative;
-  &:first-child {
-    border-radius: 7px 7px 0 0;
-  }
-  &:before {
-    background-color: var(--spotify);
-    content: "";
-    height: 24px;
-    margin-left: var(--panel-spotify-marginLeft);
-    margin-right: var(--panel-spotify-marginRight);
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='24' viewBox='0 0 24 24' width='24'%3E%3Cpath d='m12 0c-6.6275 0-12 5.3725-12 12 0 6.6274 5.3725 12 12 12 6.6274 0 12-5.3726 12-12 0-3.1826-1.2643-6.2348-3.5147-8.4853-2.2505-2.2505-5.3027-3.5147-8.4853-3.5147zm5.475 17.325c-.2201.3343-.6576.4478-1.0124.2624-2.8126-1.7249-6.3751-2.1-10.5376-1.1624-.2612.0602-.5348-.0234-.7176-.2195-.1829-.1961-.2472-.4748-.1687-.7313.0784-.2563.2876-.4514.5489-.5117 4.575-1.05 8.475-.6 11.6626 1.35.1679.1012.2869.2666.3294.458.0426.1913.0048.3917-.1044.5544zm1.5-3.3c-.1286.2096-.3356.3593-.575.4156s-.4914.0148-.7-.1156c-3.225-1.9876-8.1376-2.55-11.9626-1.3876-.3216.0938-.6686.009-.9107-.2226-.242-.2316-.3421-.5747-.2626-.9.0796-.3253.3266-.5836.6481-.6774 4.35-1.3124 9.7876-.6749 13.4626 1.6126.4211.279.5525.8375.3 1.275zm.1124-3.375c-3.8624-2.2876-10.2374-2.5126-13.95-1.3876-.5572.0889-1.094-.2486-1.2553-.7895-.1613-.5407.103-1.1172.6179-1.3481 4.2376-1.275 11.2874-1.05 15.75 1.6126.2572.151.4421.3997.5128.6894.0707.2897.021.5956-.1378.848-.3385.5036-1.0051.6662-1.5376.375z' fill='%23fff'/%3E%3C/svg%3E");;
-    width: 24px;
-  }
-  &:hover {
-    .icons_e0cf27 {
-      animation: pointerDelay .15s ease forwards;
-      opacity: 1;
-      top: -14px;
-    }
-  }
+ background: unset;
+ background-color: hsl(var(--spotify-hsl) / .1);
+ border-bottom: 1px solid var(--border-faint);
+ border-radius: 0;
+ gap: var(--space-8);
+ min-height: 56px;
+ padding: var(--space-xs) var(--space-md);
+ position: relative;
+
+ &:first-child {
+   border-radius: 7px 7px 0 0;
+ }
+ &:before {
+   background-color: var(--spotify);
+   content: "";
+   height: 24px;
+   margin-left: var(--panel-spotify-marginLeft);
+   margin-right: var(--panel-spotify-marginRight);
+   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='24' viewBox='0 0 24 24' width='24'%3E%3Cpath d='m12 0c-6.6275 0-12 5.3725-12 12 0 6.6274 5.3725 12 12 12 6.6274 0 12-5.3726 12-12 0-3.1826-1.2643-6.2348-3.5147-8.4853-2.2505-2.2505-5.3027-3.5147-8.4853-3.5147zm5.475 17.325c-.2201.3343-.6576.4478-1.0124.2624-2.8126-1.7249-6.3751-2.1-10.5376-1.1624-.2612.0602-.5348-.0234-.7176-.2195-.1829-.1961-.2472-.4748-.1687-.7313.0784-.2563.2876-.4514.5489-.5117 4.575-1.05 8.475-.6 11.6626 1.35.1679.1012.2869.2666.3294.458.0426.1913.0048.3917-.1044.5544zm1.5-3.3c-.1286.2096-.3356.3593-.575.4156s-.4914.0148-.7-.1156c-3.225-1.9876-8.1376-2.55-11.9626-1.3876-.3216.0938-.6686.009-.9107-.2226-.242-.2316-.3421-.5747-.2626-.9.0796-.3253.3266-.5836.6481-.6774 4.35-1.3124 9.7876-.6749 13.4626 1.6126.4211.279.5525.8375.3 1.275zm.1124-3.375c-3.8624-2.2876-10.2374-2.5126-13.95-1.3876-.5572.0889-1.094-.2486-1.2553-.7895-.1613-.5407.103-1.1172.6179-1.3481 4.2376-1.275 11.2874-1.05 15.75 1.6126.2572.151.4421.3997.5128.6894.0707.2897.021.5956-.1378.848-.3385.5036-1.0051.6662-1.5376.375z' fill='%23fff'/%3E%3C/svg%3E");
+   width: 24px;
+ }
+ &:hover .icons_e0cf27 {
+   animation: pointerDelay .15s ease forwards;
+   opacity: 1;
+   top: -14px;
+ }
 }
 .party_e0cf27 {
-  margin: 0;
+ margin: 0;
 }
 .avatar_e0cf27 > .svg__44b0c {
-  width: 20px;
-  height: 20px;
+ width: 20px;
+ height: 20px;
 }
 .moreUsers_b2d72f {
-  background: linear-gradient(315deg, hsl(var(--spotify-hsl) / .35), hsl(var(--spotify-hsl) / .75));
-  color: var(--white);
+ background: linear-gradient(315deg, hsl(var(--spotify-hsl) / .35), hsl(var(--spotify-hsl) / .75));
+ color: var(--white);
 }
-/*ActivityPanel*/
+/* Activity Panel */
 .activityPanel_c48ade.activityPanel_c48ade {
-  background: unset;
-  border-radius: 0;
-  box-sizing: border-box;
-  display: flex;
-  min-height: 56px;
-  padding: var(--space-xs) var(--space-sm);
-  transition: background-color .2s ease;
-  &:first-child {
-    border-radius: 7px 7px 0 0;
-  }
-  &:hover {
-    background-color: var(--background-mod-normal);
-    .actions__4cd01 {
-      animation: pointerDelay .15s ease forwards;
-      opacity: 1;
-      top: -14px;
-    }
-  }
+ background: unset;
+ border-radius: 0;
+ box-sizing: border-box;
+ display: flex;
+ min-height: 56px;
+ padding: var(--space-xs) var(--space-sm);
+ transition: background-color .2s ease;
+ &:first-child {
+   border-radius: 7px 7px 0 0;
+ }
+ &:hover {
+   background-color: var(--background-mod-normal);
+
+   .actions__4cd01 {
+     animation: pointerDelay .15s ease forwards;
+     opacity: 1;
+     top: -14px;
+   }
+ }
 }
 .body__5dec7 {
-  width: 100%;
+ width: 100%;
 }
-.gameWrapper__5dec7, .gameWrapper__8c6c2 {
-  gap: var(--space-8);
+.gameWrapper__5dec7,
+.gameWrapper__8c6c2 {
+ gap: var(--space-8);
 }
-.wrapper_a629d4, .gameIcon__5dec7, .gameIconWrapper__8c6c2 {
-  margin-left: var(--panel-activityIcon-marginLeft);
-  margin-right: var(--panel-activityIcon-marginRight);
+.wrapper_a629d4,
+.gameIcon__5dec7,
+.gameIconWrapper__8c6c2 {
+ margin-left: var(--panel-activityIcon-marginLeft);
+ margin-right: var(--panel-activityIcon-marginRight);
 }
-.info__8c6c2, .info__5dec7 {
-  margin-left: 0;
-  a:first-child div {
-    text-decoration: none;
-    &:before {
-      content: "";
-      position: absolute;
-      inset: 0;
-    }
-  }
+.info__8c6c2,
+.info__5dec7 {
+ margin-left: 0;
+ a:first-child div:before {
+   content: "";
+   position: absolute;
+   inset: 0;
+ }
 }
 .panelButtonContainer__4cd01 {
-  display: contents;
-  &:not(:only-child) .button__67645 {
-    border-top-right-radius: unset !important;
-    border-bottom-right-radius: unset !important;
-    padding-right: 4px !important;
-  }
+ display: contents;
+ &:not(:only-child) .button__67645 {
+   border-top-right-radius: unset !important;
+   border-bottom-right-radius: unset !important;
+   padding-right: 4px !important;
+ }
 }
-/*VoicePanel*/
+/* Voice Panel */
 .wrapper_e131a9 {
-  transition: background-color .2s ease;
-  &:first-child {
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-  }
-  &:hover {
-    background-color: var(--background-mod-normal);
-    .voiceButtonsContainer_e131a9, .actionButtons_e131a9 {
-      animation: pointerDelay .15s ease forwards;
-      opacity: 1;
-      top: -14px;
-    }
-  }
+ transition: background-color .2s ease;
+ &:first-child {
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+ }
+ &:hover {
+   background-color: var(--background-mod-normal);
+   .voiceButtonsContainer_e131a9,
+   .actionButtons_e131a9 {
+     animation: pointerDelay .15s ease forwards;
+     opacity: 1;
+     top: -14px;
+   }
+ }
 }
 .container_e131a9.container_e131a9 {
-  align-items: center;
-  box-sizing: border-box;
-  flex-direction: unset;
-  gap: var(--space-8);
-  padding: var(--space-xs) var(--space-md);
-  margin: 0;
-  min-height: 56px;
+ align-items: center;
+ box-sizing: border-box;
+ flex-direction: unset;
+ gap: var(--space-8);
+ margin: 0;
+ min-height: 56px;
+ padding: var(--space-xs) var(--space-md);
 }
 .connection_e131a9 {
-  flex: unset !important;
-  min-width: 40px;
+ flex: unset !important;
+ min-width: 40px;
 }
 .rtcConnectionStatusWrapper__06d62 {
-  padding-left: var(--panel-voiceOffset);
+ padding-left: var(--panel-voiceOffset);
 }
 .ping__06d62 {
-  height: 24px;
-  margin-left: var(--panel-pingOffset);
-  top: calc(50% - 12px);
-  position: absolute;
-  pointer-events: all;
-  width: 24px;
+ height: 24px;
+ margin-left: var(--panel-pingOffset);
+ pointer-events: all;
+ position: absolute;
+ top: calc(50% - 12px);
+ width: 24px;
 }
 .rtcConnectionStatus__06d62 {
-  pointer-events: none;
-  z-index: 1;
+ pointer-events: none;
+ z-index: 1;
 }
 .labelWrapper__06d62 {
-  pointer-events: all;
-  > button {
-    width: 100%;
-    justify-content: unset;
-  }
-  .contents__201d5 {
-    width: inherit;
-  }
+ pointer-events: all;
+ > button {
+   justify-content: unset;
+   width: 100%;
+ }
+ .contents__201d5 {
+   width: inherit;
+ }
 }
 .rtcConnectionStatusConnected__06d62.rtcConnectionStatusConnected__06d62 {
-  color: var(--status-positive);
+ color: var(--status-positive);
 }
 .rtcConnectionStatusLabel__06d62 [data-text-variant] {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 18px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+ font-size: 14px;
+ font-weight: 600;
+ line-height: 18px;
+ overflow: hidden;
+ text-overflow: ellipsis;
 }
 .channel_e131a9 {
-  text-decoration: unset !important;
-  div {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 13px;
-  }
-  &:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-  }
+ text-decoration: unset !important;
+ div {
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 13px;
+ }
+ &:before {
+   content: "";
+   position: absolute;
+   inset: 0;
+ }
 }
 .voiceUsers_e131a9 {
-  border-radius: var(--radius-md);
-  flex: 1 0 auto;
-  margin: -8px;
-  padding: 8px !important;
-  max-height: 36px;
-  min-height: 20px;
-  transition: .2s ease;
-  pointer-events: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  &:has(div:nth-of-type(9)) {
-    pointer-events: all;
-    &:hover {
-      background-color: var(--background-surface-highest);
-      box-shadow: var(--shadow-border), var(--shadow-low);
-      z-index: 3;
-    }
-    .voiceUsers__68617 {
-      justify-content: unset;
-    }
-  }
+ border-radius: var(--radius-md);
+ flex: 1 0 auto;
+ margin: -8px;
+ max-height: 36px;
+ min-height: 20px;
+ padding: 8px !important;
+ pointer-events: none;
+ transition: .2s ease;
+ &::-webkit-scrollbar {
+   display: none;
+ }
+ &:has(div:nth-of-type(9)) {
+   pointer-events: all;
+   z-index: 3;
+   &:hover {
+     background-color: var(--background-surface-highest);
+     box-shadow: var(--shadow-border), var(--shadow-low);
+   }
+   .voiceUsers__68617 {
+     justify-content: unset;
+   }
+ }
 }
 .voiceUsers__68617 {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0;
-  justify-content: flex-end;
-  max-width: 132px;
-  min-height: 100%;
-  row-gap: 4px;
-  z-index: 1;
+ box-sizing: border-box;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0;
+ justify-content: flex-end;
+ max-width: 132px;
+ min-height: 100%;
+ row-gap: 4px;
+ z-index: 1;
 }
 .avatarContainer__68617:not(:last-of-type,:nth-of-type(8n)) {
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' viewBox='0 0 20 20' width='100'%3E%3Cpath d='m18 0h-18v20h18c-2.8526705-2.3846085-4.6687684-5.979124-4.6687684-10 0-4.02087599 1.8160979-7.6153915 4.6687684-10z' fill-rule='evenodd'/%3E%3C/svg%3E");
-  mask-size: 100%;
-  margin-right: -4px;
+ mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' viewBox='0 0 20 20' width='100'%3E%3Cpath d='m18 0h-18v20h18c-2.8526705-2.3846085-4.6687684-5.979124-4.6687684-10 0-4.02087599 1.8160979-7.6153915 4.6687684-10z' fill-rule='evenodd'/%3E%3C/svg%3E");
+ mask-size: 100%;
+ margin-right: -4px;
 }
-.avatar__68617, .button__06eda {
-  width: 20px;
-  height: 20px;
-  min-width: unset;
-  min-height: unset;
-  pointer-events: all;
+.avatar__68617,
+.button__06eda {
+ height: 20px;
+ min-height: unset;
+ min-width: unset;
+ pointer-events: all;
+ width: 20px;
 }
 .avatarIconOverlay__68617 {
-  width: 12px;
-  height: 12px;
-  padding: 4px;
+ height: 12px;
+ padding: 4px;
+ width: 12px;
 }
 .actionButtons_e131a9.actionButtons_e131a9.actionButtons_e131a9.actionButtons_e131a9 {
-  right: 72px;
-  .disabledButtonWrapper__201d5 {
-    height: unset;
-    min-height: unset;
-  }
-  button {
-    background: transparent;
-    border: unset !important;
-    border-radius: unset;
-    color: var(--icon-secondary);
-    height: unset;
-    margin: unset;
-    min-height: unset;
-    min-width: unset;
-    padding: 4px;
-    width: unset;
-    &.buttonActive_e131a9 {
-      color: var(--green-360) !important;
-      background-color: hsl(var(--green-360-hsl) / .1);
-      &:hover {
-        background-color: hsl(var(--green-360-hsl) / .2);
-      }
-    }
-    &:first-child {
-      border-top-left-radius: var(--radius-round);
-      border-bottom-left-radius: var(--radius-round);
-      padding-left: 6px;
-    }
-    .contents__201d5 {
-      transition: scale .4s cubic-bezier(.16,1,.3,1);
-    }
-    .buttonContents_e131a9 {
-      width: 16px !important;
-      height: 16px !important;
-    }
-    &:hover {
-      background-color: var(--background-modifier-hover);
-      color: var(--interactive-hover);
-      .contents__201d5 {
-        scale: 1.1;
-      }
-    }
-  }
-  > div > button {
-    border-top-left-radius: unset !important;
-    border-bottom-left-radius: unset !important;
-    border-top-right-radius: var(--radius-round);
-    border-bottom-right-radius: var(--radius-round);
-    padding-left: 4px !important;
-    padding-right: 6px;
-  }
+ right: 72px;
+ .disabledButtonWrapper__201d5 {
+   height: unset;
+   min-height: unset;
+ }
+ button {
+   background: transparent;
+   border: unset !important;
+   border-radius: unset;
+   color: var(--icon-secondary);
+   height: unset;
+   margin: unset;
+   min-height: unset;
+   min-width: unset;
+   padding: 4px;
+   width: unset;
+   &.buttonActive_e131a9 {
+     background-color: hsl(var(--green-360-hsl) / .1);
+     color: var(--green-360) !important;
+     &:hover {
+       background-color: hsl(var(--green-360-hsl) / .2);
+     }
+   }
+   &:first-child {
+     border-top-left-radius: var(--radius-round);
+     border-bottom-left-radius: var(--radius-round);
+     padding-left: 6px;
+   }
+   .contents__201d5 {
+     transition: scale .4s cubic-bezier(.16,1,.3,1);
+   }
+   .buttonContents_e131a9 {
+     height: 16px !important;
+     width: 16px !important;
+   }
+   &:hover {
+     background-color: var(--background-modifier-hover);
+     color: var(--interactive-hover);
+     .contents__201d5 {
+       scale: 1.1;
+     }
+   }
+ }
+ > div > button {
+   border-top-left-radius: unset !important;
+   border-bottom-left-radius: unset !important;
+   border-top-right-radius: var(--radius-round);
+   border-bottom-right-radius: var(--radius-round);
+   padding-left: 4px !important;
+   padding-right: 6px;
+ }
 }
-/*UserPanel*/
 .container__37e49.container__37e49 {
-  border-radius: 0 0 7px 7px;
-  padding: 0 !important;
-  margin: 0;
-  transition: background-color .2s ease;
-  &:hover {
-    background-color: var(--background-mod-normal);
-    .buttons__37e49 {
-      animation: pointerDelay .15s ease forwards;
-      opacity: 1;
-      top: -14px;
-    }
-  }
+ border-radius: 0 0 7px 7px;
+ margin: 0;
+ padding: 0 !important;
+ transition: background-color 0.2s ease;
+}
+.container__37e49.container__37e49:hover {
+ background-color: var(--background-mod-normal);
+}
+.container__37e49.container__37e49:hover .buttons__37e49 {
+ animation: pointerDelay 0.15s ease forwards;
+ opacity: 1;
+ top: -14px;
 }
 .wrapper_e131a9:first-child:empty + .container__37e49 {
-  border-radius: 7px;
+ border-radius: 7px;
 }
 .avatarWrapper__37e49.avatarWrapper__37e49 {
-  background: transparent !important;
-  border-radius: inherit;
-  padding: var(--space-xs);
-  padding-right: var(--space-md);
+ background: transparent !important;
+ border-radius: inherit;
+ padding: var(--space-xs) var(--space-md) var(--space-xs) var(--space-xs);
 }
 .title_b6c092 {
-  align-items: center;
-  gap: 4px;
-  display: flex;
+ align-items: center;
+ display: flex;
+ gap: 4px;
 }
 .density-compact .avatarWrapper__37e49.avatarWrapper__37e49 {
-  padding-left: var(--space-4);
+ padding-left: var(--space-4);
 }
 .density-cozy .avatarWrapper__37e49.avatarWrapper__37e49 {
-  padding-left: var(--space-12);
+ padding-left: var(--space-12);
 }
-
+/* Spotify player */
 #vc-spotify-info-wrapper {
-  gap: var(--space-8);
-  height: fit-content;
+ gap: var(--space-8);
+ height: fit-content;
 }
 #vc-spotify-album-image {
-  height: 40px;
+ height: 40px;
 }
 #vc-spotify-album-expanded-wrapper #vc-spotify-album-image {
-  height: unset;
+ height: unset;
 }
 #vc-spotify-titles {
-  padding: 0;
+ padding: 0;
 }
 #vc-spotify-song-title {
-  font-weight: 500;
-  line-height: 18px;
+ font-weight: 500;
+ line-height: 18px;
 }
 .vc-spotify-secondary-song-info {
-  line-height: 13px;
+ line-height: 13px;
 }
-.vc-spotify-artist, .vc-spotify-album {
-  color: var(--text-secondary) !important;
+.vc-spotify-artist,
+.vc-spotify-album {
+ color: var(--text-secondary) !important;
 }
 .vc-spotify-button-row.vc-spotify-button-row {
-  background-color: var(--background-surface-highest);
-  border-radius: var(--radius-round);
-  box-shadow: var(--shadow-border), var(--shadow-low);
-  display: flex;
-  gap: 2px !important;
-  height: unset;
-  margin: 0;
-  padding: 2px;
-  pointer-events: none;
-  position: absolute;
-  opacity: 0;
-  right: 6px;
-  top: 0;
-  transition: .15s ease;
-  z-index: 2;
+ background-color: var(--background-surface-highest);
+ border-radius: var(--radius-round);
+ box-shadow: var(--shadow-border), var(--shadow-low);
+ display: flex;
+ gap: 2px !important;
+ height: unset;
+ margin: 0;
+ opacity: 0;
+ padding: 2px;
+ pointer-events: none;
+ position: absolute;
+ right: 6px;
+ top: 0;
+ transition: 0.15s ease;
+ z-index: 2;
 }
 .vc-spotify-button.vc-spotify-button {
-  border-radius: 0;
-  height: unset;
-  margin: 0;
-  padding: 4px;
-  transition: background-color .2s ease;
-  width: unset;
-  &:first-child {
-    border-top-left-radius: var(--radius-round);
-    border-bottom-left-radius: var(--radius-round);
-    padding-left: 6px;
-  }
-  &:last-child {
-    border-top-right-radius: var(--radius-round);
-    border-bottom-right-radius: var(--radius-round);
-    padding-right: 6px;
-  }
-  &:hover {
-    .vc-spotify-button-icon.vc-spotify-button-icon {
-      scale: 1.1;
-    }
-  }
+ border-radius: 0;
+ height: unset;
+ margin: 0;
+ padding: 4px;
+ transition: background-color 0.2s ease;
+ width: unset;
+}
+.vc-spotify-button.vc-spotify-button:first-child {
+ border-top-left-radius: var(--radius-round);
+ border-bottom-left-radius: var(--radius-round);
+ padding-left: 6px;
+}
+.vc-spotify-button.vc-spotify-button:last-child {
+ border-top-right-radius: var(--radius-round);
+ border-bottom-right-radius: var(--radius-round);
+ padding-right: 6px;
+}
+.vc-spotify-button.vc-spotify-button:hover .vc-spotify-button-icon.vc-spotify-button-icon {
+ scale: 1.1;
 }
 .vc-spotify-button-icon.vc-spotify-button-icon {
-  height: 16px;
-  width: 16px;
-  transition: scale .4s cubic-bezier(.16,1,.3,1);
+ height: 16px;
+ transition: scale 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+ width: 16px;
 }
 .vc-spotify-repeat-1 {
-  left: calc(50% - 1px);
+ left: calc(50% - 1px);
 }
 #vc-spotify-progress-bar#vc-spotify-progress-bar {
-  background-color: var(--background-surface-highest);
-  border-radius: 14px;
-  box-shadow: var(--shadow-border), var(--shadow-low);
-  box-sizing: border-box;
-  column-gap: 2px;
-  display: grid;
-  grid-template-areas: "vcSpotifySlider vcSpotifySlider vcSpotifySlider" "vcSpotifyProgress vcSpotifySlash vcSpotifyDuration";
-  left: 6px;
-  margin: 0;
-  min-height: 28px;
-  opacity: 0;
-  padding: 2px 6px;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  transition: .15s ease, max-width .4s ease;
-  width: unset;
-  .slider_a562c8 {
-    grid-area: vcSpotifySlider;
-    margin-bottom: -24px;
-    opacity: 0;
-    transition: .15s ease;
-  }
-  .track_a562c8 {
-    right: 15px;
-    left: 0;
-  }
-  .barFill_a562c8 {
-    background-color: var(--spotify);
-  }
-  &:after {
-    content: "/";
-    display: flex;
-    grid-area: vcSpotifySlash;
-    justify-content: center;
-    pointer-events: none;
-    transition: opacity .15s ease;
-  }
-  &:hover {
-    right: 6px;
-    z-index: 3;
-    .slider_a562c8 {
-      opacity: 1;
-    }
-    .vc-spotify-progress-time, &:after {
-      opacity: 0;
-    }
-  }
+ background-color: var(--background-surface-highest);
+ border-radius: 14px;
+ box-shadow: var(--shadow-border), var(--shadow-low);
+ box-sizing: border-box;
+ column-gap: 2px;
+ display: grid;
+ grid-template-areas: 
+   "vcSpotifySlider vcSpotifySlider vcSpotifySlider"
+   "vcSpotifyProgress vcSpotifySlash vcSpotifyDuration";
+ left: 6px;
+ margin: 0;
+ min-height: 28px;
+ opacity: 0;
+ padding: 2px 6px;
+ pointer-events: none;
+ position: absolute;
+ top: 0;
+ transition: 0.15s ease, max-width 0.4s ease;
+ width: unset;
+}
+#vc-spotify-progress-bar#vc-spotify-progress-bar .slider_a562c8 {
+ grid-area: vcSpotifySlider;
+ margin-bottom: -24px;
+ opacity: 0;
+ transition: 0.15s ease;
+}
+#vc-spotify-progress-bar#vc-spotify-progress-bar .track_a562c8 {
+ left: 0;
+ right: 15px;
+}
+#vc-spotify-progress-bar#vc-spotify-progress-bar .barFill_a562c8 {
+ background-color: var(--spotify);
+}
+#vc-spotify-progress-bar#vc-spotify-progress-bar:after {
+ content: "/";
+ display: flex;
+ grid-area: vcSpotifySlash;
+ justify-content: center;
+ pointer-events: none;
+ transition: opacity 0.15s ease;
+}
+#vc-spotify-progress-bar#vc-spotify-progress-bar:hover {
+ right: 6px;
+ z-index: 3;
+}
+#vc-spotify-progress-bar#vc-spotify-progress-bar:hover .slider_a562c8 {
+ opacity: 1;
+}
+#vc-spotify-progress-bar#vc-spotify-progress-bar:hover .vc-spotify-progress-time,
+#vc-spotify-progress-bar#vc-spotify-progress-bar:hover:after {
+ opacity: 0;
 }
 .vc-spotify-progress-time.vc-spotify-progress-time {
-  display: flex;
-  position: unset;
-  margin: 0;
-  pointer-events: none;
-  transition: .15s ease;
+ display: flex;
+ margin: 0;
+ pointer-events: none;
+ position: unset;
+ transition: 0.15s ease;
 }
 .vc-spotify-time-left {
-  grid-area: vcSpotifyProgress;
+ grid-area: vcSpotifyProgress;
 }
 .vc-spotify-time-right {
-  grid-area: vcSpotifyDuration;
-  justify-content: end;
+ grid-area: vcSpotifyDuration;
+ justify-content: end;
 }
-
-/* The rest */
 section.panels_c48ade {
-  background: var(--background-base-lowest);
-  left: 0px !important;
-  bottom: 0px !important;
-  width: calc(100%) !important;
-  border: none !important;
-  border-radius: 0px !important;
-  border-top: 1px solid var(--border-subtle) !important;
-  min-height: 80px;
-  align-content: center;
-
-  .mask__44b0c,
-  .avatarDecoration__44b0c {
-
-    g,
-    >rect {
-      display: none !important;
-    }
-
-    foreignObject {
-      mask: none;
-
-      .avatarStack__44b0c img {
-        border-radius: 50%;
-        contain: paint;
-      }
-    }
-  }
+ align-content: center;
+ background: var(--background-base-lowest);
+ border-top: 1px solid var(--border-subtle) !important;
+ bottom: 0 !important;
+ left: 0 !important;
+ min-height: 80px;
+ width: calc(100%) !important;
 }
-
-.container__37e49 {
-  padding: 20px 24px 20px 22px !important;
+section.panels_c48ade .mask__44b0c foreignObject .avatarStack__44b0c img,
+section.panels_c48ade .avatarDecoration__44b0c foreignObject .avatarStack__44b0c img {
+ border-radius: 50%;
+ contain: paint;
 }
-
+section.panels_c48ade .mask__44b0c foreignObject,
+section.panels_c48ade .avatarDecoration__44b0c foreignObject {
+ mask: none;
+}
+section.panels_c48ade .mask__44b0c g,
+section.panels_c48ade .mask__44b0c > rect,
+section.panels_c48ade .avatarDecoration__44b0c g,
+section.panels_c48ade .avatarDecoration__44b0c > rect {
+ display: none !important;
+}
+/* pfp */
 .avatar__37e49 {
-  will-change: transform;
-  transform: scale(0.7);
+ transform: scale(0.7);
+ will-change: transform;
+}
+.container__37e49 {
+ padding: 20px 24px 20px 22px !important;
+}
+/* - - - TITLE BAR - - - - - - - - - - - - - - - - - - - - - - */
+:root {
+ --custom-app-top-bar-height: 32px !important;
+}
+.title_c38106 {
+ display: none !important;
+}
+.trailing_c38106 {
+ gap: var(--space-4) !important;
+}
+.trailing_c38106 .winButtons_c38106 {
+ gap: 0 !important;
+ padding-right: 4px;
 }
 
-/* GUILDS - - - - - - - - - - - - - - - - - - - - - - */
-/* Without this one, there is a hughe space between the Discord letters and the DMs icon */
+/* - - - GUILDS - - - - - - - - - - - - - - - - - - - - - - */
 .guilds_c48ade {
-  z-index: 3 !important;
-  top: calc(var(--custom-app-top-bar-height) - var(--custom-app-top-bar-height) * 2);
-  margin-bottom: calc(var(--custom-app-panels-height) - var(--custom-app-top-bar-height)) !important;
-  background-color: transparent !important;
-  /* border-right: 1px solid var(--border-subtle); */
+ z-index: 3 !important;
+ top: calc(var(--custom-app-top-bar-height) - var(--custom-app-top-bar-height) * 2);
+ margin-bottom: calc(var(--custom-app-panels-height) - var(--custom-app-top-bar-height)) !important;
+ background-color: transparent !important;
 }
-
-/* Without this, the whole server list goes up, too much */
-.itemsContainer_ef3116>.stack_dbd263 {
-  padding-top: calc(var(--custom-app-top-bar-height) + 8px) !important;
+.itemsContainer_ef3116 > .stack_dbd263 {
+ padding-top: calc(var(--custom-app-top-bar-height) + 8px) !important;
 }
-
-/* SLTDND */
-.wrapper__48112>.stack_dbd263 {
-  overflow: visible !important;
+.wrapper__48112 > .stack_dbd263 {
+ overflow: visible !important;
 }
-
-/* SLTDND */
-.tutorialContainer__1f388 .numberBadge__2b1f5 {
-  outline: 2px solid var(--bg-base-tertiary);
-  border-radius: 50%;
-  contain: paint;
-}
-
-/* SLTDND */
-.iconSizeMini_f34534 {
-  border-radius: 50% !important;
-  contain: paint;
-}
-
-/* This affects the icons of the servers in the server list */
 .icon__6e9f8,
 .childWrapper__6e9f8,
 .circleIconButton__5bc7e {
-  border-radius: 14px !important;
-  overflow: hidden !important;
-  contain: paint;
+ border-radius: 14px !important;
+ overflow: hidden !important;
+ contain: paint;
+}
+.tutorialContainer__1f388 .numberBadge__2b1f5 {
+ outline: 2px solid var(--bg-base-tertiary);
+ border-radius: 50%;
+ contain: paint;
+}
+.iconSizeMini_f34534 {
+ border-radius: 50% !important;
+ contain: paint;
 }
 
-/* TITLEBAR - - - - - - - - - - - - - - - - - - - - - */
-/* SLTDND */
-:root {
-  --custom-app-top-bar-height: 32px !important;
-}
-
-/* This is responsible for the div that contains the name of the server and the icon, both appearing in the titlebar */
-.title_c38106 {
-  display: none !important;
-}
-
-/* THIS IS WHAT I GOT FROM CHROME */
-/* .defaultColor__4bd52 .lineClamp1__4bd52 .text-sm .medium_cf4812  {
-  display: none !important;
-} */
-
-/* Now, this moves the bottom (Windows buttons, and all that other stuff in the top right of the screen). It makes them get together, or something like it */
-.trailing_c38106 {
-  /* This is just a gap */
-  gap: var(--space-4) !important;
-/* And these are the Windows buttons, in case it wasn't really obvious by reading the name  */
-  .winButtons_c38106 {
-    gap: 0px !important;
-    padding-right: 4px;
-  }
-}
-
-/* EXTRA */
+/* - - - EXTRA - - - - - - - - - - - - - - - - - - - - - - */
 .info__2debe::after {
-  width: 100%;
-  display: block;
-  border-top: 1px solid var(--border-subtle);
-  padding-top: 8px;
-  margin-top: 8px;
-  content: "Pinkord \A By Fox \A Dedicated to my girlfriend, Pinkie \A I love you, Ximena";
-  text-transform: none;
-  font-family: var(--font-primary);
-  font-size: 12px;
-  line-height: 1.4;
-  font-weight: 400;
-  color: var(--text-muted);
-  white-space: pre;
+ content: "Pinkord \A By Fox \A Dedicated to my girlfriend, Pinkie \A I love you, Ximena";
+ display: block;
+ width: 100%;
+ padding-top: 8px;
+ margin-top: 8px;
+ border-top: 1px solid var(--border-subtle);
+ font-family: var(--font-primary);
+ font-size: 12px;
+ font-weight: 400;
+ line-height: 1.4;
+ color: var(--text-muted);
+ text-transform: none;
+ white-space: pre;
 }
 
 
@@ -2806,126 +2636,6 @@ button[aria-label="Enviar un regalo"]{
              padding var(--animation-speed) ease-out,
              width var(--animation-speed) ease-out;
  width: 0;
-}
-
-
-
-
-
-
-
-
-/* This is the color of the "41 Boosts" thing */
-/* .progressText_eff079 {
-  color: purple;
-} */
-
- /* This is the color of the "Level 3" thing */
-/* .goalText_eff079 {
-  color: purple;
-} */
-
-/* .bannerImg_f37cb1 {
-  display: none;
-} */
-
-/* Goodbye, new unreads */
-.container__7aaec {
-  display: none;
-}
-
-
-
-/* Fixing the position of the label for VC channels */
-.wrapper__2ea32:has(.icon__2ea32 > [d="M11 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1h-.06a1 1 0 0 1-.74-.32L5.92 17H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2.92l4.28-4.68a1 1 0 0 1 .74-.32H11ZM20.5 12c-.28 0-.5.22-.52.5a7 7 0 0 1-5.13 6.25c-.48.13-.85.55-.85 1.05v.03c0 .6.52 1.06 1.1.92a9 9 0 0 0 6.89-8.25.48.48 0 0 0-.49-.5h-1ZM16.5 12c-.28 0-.5.23-.54.5a3 3 0 0 1-1.33 2.02c-.35.23-.63.6-.63 1.02v.14c0 .63.59 1.1 1.16.83a5 5 0 0 0 2.82-4.01c.02-.28-.2-.5-.48-.5h-1Z"]) .linkTop__2ea32{ 
-  position: relative;
-  top: 7px;
-}
-.wrapper__2ea32:has(.icon__2ea32 > [d="M11 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1h-.06a1 1 0 0 1-.74-.32L5.92 17H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2.92l4.28-4.68a1 1 0 0 1 .74-.32H11ZM20.5 12c-.28 0-.5.22-.52.5a7 7 0 0 1-5.13 6.25c-.48.13-.85.55-.85 1.05v.03c0 .6.52 1.06 1.1.92a9 9 0 0 0 6.89-8.25.48.48 0 0 0-.49-.5h-1ZM16.5 12c-.28 0-.5.23-.54.5a3 3 0 0 1-1.33 2.02c-.35.23-.63.6-.63 1.02v.14c0 .63.59 1.1 1.16.83a5 5 0 0 0 2.82-4.01c.02-.28-.2-.5-.48-.5h-1Z"]) .name__2ea32{ 
-  transform: scale(0.9);
-  position: relative;
-  left: -5px;
-}
-.linkBottom__2ea32 {
-  position: relative;
-  bottom: 8px;
-  left: -13px;
-  transform: scale(0.9);
-}
-
-
-
-.callContainer_cb9592 {
-  box-shadow: 0px 0px 60px rgba(0,0,0,0.6);
-  margin: 0 0 32px 0px;
-}
-
-
-
-/* Fixing themming issues. Now all the themes are compatible */
-.container__2637a {
-  background: transparent !important;
-}
-.bg__960e4 {
-  background: var(--bg-overlay-5, var(--background-base-lowest)) !important;
-}
-.panels_c48ade {
-  background: var(--theme-base-color-hsl) !important;
-}
-.itemsContainer_ef3116 {
-  background: transparent !important;
-}
-.privateChannels__35e86, .scroller__99e7c   {
-  background: transparent !important;
-}
-
-/* This was neccesary to enlarge the container for chats after making it a little smaller, cuz if you get a notice, it will go down to oblivion */
-/* .chat_f75fb0 {
-  min-height: calc(100vh - var(--custom-app-top-bar-height));
-} */
-/* .container__133bf {
-  min-height: calc(95vh - var(--custom-app-top-bar-height));
-} */
-/* .shop__6db1d {
-  min-height: calc(95vh - var(--custom-app-top-bar-height));
-} */
-
-.button_e131a9 {
-  background: transparent !important;
-  border: #000 4px solid;
-}
-
-.withLayer__78332 {
-  backdrop-filter: blur(5px);
-}
-
-.resizeHandle__01ae2 {
-  opacity: 0;
-}
-
-
-[class="callContainer_cb9592 theme-dark theme-midnight images-dark"] .chatContent_f75fb0{ 
-  display: none;
-}
-
-
-
-.popoutHeroTextSecondary_af3b89 {
-  padding: 3px 0;
-  text-align: center;
-  font-size: 11px;
-}
-
-.popoutHeroTextPrimary_af3b89 {
-  text-align: center;
-}
-
-
-
-
-
-.unreadBottom__629e4.unread__629e4.container__3b95d {
-  display: none;
 }
 
 
