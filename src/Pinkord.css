@@ -451,7 +451,6 @@
 .overlayBackground_c69a7b,
 .overlayTitle__2f4f7,
 .overridePlaceholder_db81c6,
-.panels_c48ade,
 .paymentBanner_e335a7,
 .paymentPane__01014,
 .payment_e9cb00,
@@ -620,7 +619,6 @@
 .visual-refresh .messageContainer__95796,
 .visual-refresh .navButton__08434,
 .visual-refresh .option__56fec,
-.visual-refresh .panels_c48ade,
 .visual-refresh .popout__76f04,
 .visual-refresh .root__24502,
 .visual-refresh .root__49fc1,
@@ -1072,6 +1070,9 @@ section.panels_c48ade,
  25% {
    transform: scale(1.5);
  }
+}
+.jumpToPresentBar__0f481.bottomBar__0f481.barBase__0f481.barWithAppLauncherButton__0f481 {
+  border-radius: 32px;
 }
 
 /* - - - TEXTBOX - - - - - - - - - - - - - - - - - - - - - - */
@@ -2029,6 +2030,10 @@ section.panels_c48ade .avatarDecoration__44b0c > rect {
 }
 .container__37e49 {
  padding: 20px 24px 20px 22px !important;
+}
+/* Fixing corners of the user panel */
+.panels_c48ade {
+ border-radius: 0;
 }
 /* - - - TITLE BAR - - - - - - - - - - - - - - - - - - - - - - */
 :root {
