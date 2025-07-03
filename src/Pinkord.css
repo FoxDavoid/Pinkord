@@ -1221,15 +1221,12 @@ section.panels_c48ade,
 .userSection__0f2e8 {
  gap: 8px;
 }
-.badgeContainer__635ed:has([style*="color: var(--text-positive);"]) {
- background-color: rgba(0, 125, 50, 0.726) !important;
- .tabularNumbers__4bd52 {
-   color: #fff !important;
-   font-size: 10px;
-   font-weight: 400;
-   text-shadow: none !important;
-   font-family: "figtree";
- }
+.tabularNumbers__4bd52.text-xs\/medium_cf4812.fontCode__230d2.bold__230d2 {
+ color: #fff !important;
+ font-size: 10px;
+ font-weight: 400;
+ text-shadow: none !important;
+ font-family: "figtree";
 }
 .badgesContainer__635ed {
  width: calc(100% - 24px);
